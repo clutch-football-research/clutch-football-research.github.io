@@ -1,5 +1,5 @@
 {
-  "analysis": "Clutch Football Research detailed results site for locked methodology v1.2",
+  "analysis": "Clutch Football Research website for locked methodology v1.2",
   "status": "READY_FOR_PUBLIC_HOSTING",
   "methodology_version": "1.2",
   "public_study_window": "1999 through the completion of Week 3 of the 2026 season",
@@ -26,8 +26,8 @@
     "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
     "predictive_claim_allowed": false,
     "recommended_role": "descriptive_standardization_with_uncertainty",
-    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.01270486608900619,
-    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.008055617426687017,
+    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.012704258626754956,
+    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.008056260581352245,
     "predeclared_all_flags_pass": false,
     "publication_rule": "sCDCR may be published as a descriptive standardization and shrinkage estimate with uncertainty, but not as a demonstrated predictive enhancement over calibrated xCDCR unless both predeclared held-out scoring rules pass."
   },
@@ -36,13 +36,16 @@
     "qb_results.csv",
     "player_asof_trajectory.csv",
     "clutch_response_events.csv",
-    "article_results_summary.json",
+    "cdcr_vs_kacsmar_crosswalk.csv",
+    "burrow_game_crosswalk.csv",
+    "rank_movement_analysis.csv",
+    "rank_movement_summary.json",
+    "sdcr_sensitivity_summary.json",
+    "publication_freeze_summary.json",
     "methodology.md"
   ],
   "recommended_github_org": "clutch-football-research",
   "recommended_org_pages_repo": "clutch-football-research.github.io",
   "recommended_site_url_if_available": "https://clutch-football-research.github.io/",
-  "note": "Exact GitHub organization availability must be confirmed at creation time.",
-  "article_format": "long_form_results_driven",
-  "public_data_page": true
+  "note": "Exact GitHub organization availability must be confirmed at creation time."
 }

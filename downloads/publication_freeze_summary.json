@@ -1,0 +1,246 @@
+{
+  "analysis": "Methodology v1.2 locked viable-opportunity rebuild",
+  "freeze_date": "2026-09-30",
+  "methodology_version": "1.2",
+  "study_window": "1999 through 2026-09-28",
+  "public_study_window": "1999 through the completion of Week 3 of the 2026 season",
+  "source_latest_game_date": "2026-09-28",
+  "source_latest_week": 3,
+  "requested_through_date": "2026-09-29",
+  "publication_status": "LOCKED_V1_2_ANALYTICS_VALIDATED_WITH_SDCR_PREDICTIVE_LIMITATION",
+  "framework": {
+    "primary_metric": {
+      "name": "CDCR",
+      "definition": "Observed conversion rate on the team's last realistic meaningful offensive opportunity when one possession can tie the game or take the lead in the fourth quarter or overtime.",
+      "formula": "CONVERSION / (CONVERSION + FAILURE)",
+      "unit": "at most one locked viable CDCR opportunity per team-game"
+    },
+    "selection_rule": {
+      "literal_final_first": true,
+      "backward_search_trigger": "Only a qualifying literal-final possession that fails the locked pre-drive viability gate may be skipped backward.",
+      "nonqualifying_later_possession_blocks_earlier": true,
+      "viability_threshold_pct": 5.0,
+      "td_threat_zone_yardline_100": 30,
+      "fg_threat_zone_yardline_100": 38,
+      "start_already_in_threat_override": true,
+      "model_version": "drive-reachability-0.2",
+      "threshold_selection_basis": "predeclared threshold sensitivity, low-tail calibration, population stability, and internal blinded pre-drive football-state review",
+      "independent_second_review_completed": false,
+      "validation_limitation": "No independent reviewer was available; limitation disclosed."
+    },
+    "difficulty_model": {
+      "name": "xCDCR",
+      "role": "supplemental",
+      "definition": "Cross-fitted expected probability that the selected viable CDCR opportunity converts from its start-of-drive situation.",
+      "features": [
+        "era",
+        "starting score state",
+        "time remaining",
+        "starting field position"
+      ]
+    },
+    "above_expected": {
+      "name": "CAE",
+      "role": "supplemental",
+      "definition": "CDCR minus xCDCR, expressed in percentage points.",
+      "uncertainty_rule": "Confidence intervals must accompany player-level interpretation; an interval crossing zero is not evidence of above-expected performance."
+    },
+    "companion_event": {
+      "name": "Clutch Response Event",
+      "role": "descriptive companion; not a replacement rate",
+      "definition": "Any qualifying fourth-quarter/overtime possession that reaches the required score state and is classified as a conversion, including earlier successful qualifying possessions.",
+      "reporting_rule": "Report event counts and case histories, not a response-event success percentage with an outcome-selected denominator."
+    }
+  },
+  "frozen_dataset": {
+    "literal_final_previability_opportunities": 4588,
+    "final_team_game_opportunities": 4531,
+    "viability_fallback_opportunities_selected": 150,
+    "team_games_becoming_no_opportunity": 57,
+    "desperation_drives_skipped": 207,
+    "conversions": 1794,
+    "failures": 2565,
+    "nd_k": 92,
+    "manual_review": 80,
+    "resolved_qb_attribution": 4497,
+    "manual_qb_attribution": 34,
+    "qualifying_drive_candidates": 12669,
+    "clutch_response_events": 4168,
+    "resolved_qbs_with_response_events": 269
+  },
+  "xcdcr_publication_readiness": {
+    "all_predeclared_flags_pass": true,
+    "bucket_brier": 0.1866652409,
+    "bucket_log_loss": 0.5503127679,
+    "bucket_ece_pp": 1.267,
+    "bucket_calibration_slope": 0.997093,
+    "bucket_vs_spline_cae_rank_spearman": 0.9928,
+    "bucket_vs_qb_season_excluded_cae_rank_spearman": 1.0,
+    "cae_positive_95_ci_qbs": 6,
+    "cae_negative_95_ci_qbs": 2
+  },
+  "sdcr_publication_readiness": {
+    "rank_stability_pass": true,
+    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
+    "predictive_claim_allowed": false,
+    "recommended_role": "descriptive_standardization_with_uncertainty",
+    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.012704258626754956,
+    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.008056260581352245,
+    "predeclared_all_flags_pass": false,
+    "publication_rule": "sCDCR may be published as a descriptive standardization and shrinkage estimate with uncertainty, but not as a demonstrated predictive enhancement over calibrated xCDCR unless both predeclared held-out scoring rules pass."
+  },
+  "trajectory_publication_readiness": {
+    "all_acceptance_gates_pass": true,
+    "opportunity_counts_monotonic": true
+  },
+  "literal_final_terminal_regime_evidence": {
+    "note": "These diagnostics describe the literal-final decision regime used to train the viability model; they are intentionally validated against the preserved pre-viability baseline.",
+    "same_team_game_paired_clusters": 3314,
+    "go_rate_when_facing_fourth_terminal_pct": 56.93202146690519,
+    "go_rate_when_facing_fourth_earlier_q4_pct": 17.663149667839,
+    "punt_when_facing_fourth_terminal_pct": 17.71019677996422,
+    "punt_when_facing_fourth_earlier_q4_pct": 61.21531848378273,
+    "paired_fourth_go_drive_diff_pp": 13.413009742219156,
+    "paired_fourth_go_drive_ci95_pp": [
+      11.621262249619221,
+      15.243054358134323
+    ],
+    "paired_required_score_conversion_diff_pp": 9.33428169095037,
+    "paired_required_score_conversion_ci95_pp": [
+      7.394046182142139,
+      11.262147239704571
+    ]
+  },
+  "supersession_sensitivity_decision": {
+    "alternate_rule_status": "REJECTED_AS_PRIMARY_METRIC",
+    "reason": "Preserving earlier successes while superseding earlier failures makes inclusion outcome-dependent and materially changes rankings.",
+    "comparison_baseline": "literal-final pre-viability ledger",
+    "additional_successes_added": 2414,
+    "rank_spearman_vs_primary": 0.8276660839160839,
+    "mean_absolute_rank_change": 7.876923076923077,
+    "qbs_move_10_plus": 20,
+    "qbs_move_20_plus": 7,
+    "cae_rank_spearman": 0.7530157342657343,
+    "qbs_cae_move_10_plus": 30
+  },
+  "external_crosswalk": {
+    "common_cohort_qbs": 64,
+    "note": "Raw Kacsmar-style game-outcome comparison remains the primary external crosswalk; adjusted and all-drive comparisons remain supplemental."
+  },
+  "focal_clutch_response_counts": [
+    {
+      "qb_id": "00-0019596",
+      "display_name": "Tom Brady",
+      "clutch_response_events": 106,
+      "final_cdcr_conversions": 47,
+      "additional_successful_responses": 59,
+      "first_season": 2001,
+      "last_season": 2022
+    },
+    {
+      "qb_id": "00-0033873",
+      "display_name": "Patrick Mahomes",
+      "clutch_response_events": 58,
+      "final_cdcr_conversions": 26,
+      "additional_successful_responses": 32,
+      "first_season": 2017,
+      "last_season": 2026
+    },
+    {
+      "qb_id": "00-0034857",
+      "display_name": "Josh Allen",
+      "clutch_response_events": 50,
+      "final_cdcr_conversions": 20,
+      "additional_successful_responses": 30,
+      "first_season": 2018,
+      "last_season": 2026
+    },
+    {
+      "qb_id": "00-0036442",
+      "display_name": "Joe Burrow",
+      "clutch_response_events": 30,
+      "final_cdcr_conversions": 14,
+      "additional_successful_responses": 16,
+      "first_season": 2020,
+      "last_season": 2025
+    }
+  ],
+  "bills_chiefs_2021_divisional": [
+    {
+      "offense": "BUF",
+      "qb": "J.Allen",
+      "drive_id": "14",
+      "start_qtr": "4",
+      "start_clock": "13:26",
+      "start_score_diff": "-2",
+      "classification": "FAILURE",
+      "original_final": 0,
+      "preserved_success_selected": 0
+    },
+    {
+      "offense": "BUF",
+      "qb": "J.Allen",
+      "drive_id": "16",
+      "start_qtr": "4",
+      "start_clock": "08:55",
+      "start_score_diff": "-5",
+      "classification": "CONVERSION",
+      "original_final": 0,
+      "preserved_success_selected": 1
+    },
+    {
+      "offense": "KC",
+      "qb": "P.Mahomes",
+      "drive_id": "17",
+      "start_qtr": "4",
+      "start_clock": "01:54",
+      "start_score_diff": "-3",
+      "classification": "CONVERSION",
+      "original_final": 0,
+      "preserved_success_selected": 1
+    },
+    {
+      "offense": "BUF",
+      "qb": "J.Allen",
+      "drive_id": "18",
+      "start_qtr": "4",
+      "start_clock": "01:02",
+      "start_score_diff": "-4",
+      "classification": "CONVERSION",
+      "original_final": 1,
+      "preserved_success_selected": 1
+    },
+    {
+      "offense": "KC",
+      "qb": "P.Mahomes",
+      "drive_id": "19",
+      "start_qtr": "4",
+      "start_clock": "00:13",
+      "start_score_diff": "-3",
+      "classification": "CONVERSION",
+      "original_final": 0,
+      "preserved_success_selected": 1
+    },
+    {
+      "offense": "KC",
+      "qb": "P.Mahomes",
+      "drive_id": "20",
+      "start_qtr": "5",
+      "start_clock": "15:00",
+      "start_score_diff": "0",
+      "classification": "CONVERSION",
+      "original_final": 1,
+      "preserved_success_selected": 1
+    }
+  ],
+  "publication_decisions": [
+    "Methodology v1.2 is the active corrected specification; v1.1 is superseded.",
+    "The 5.0% scoring-threat reachability threshold is locked from the predeclared sensitivity set.",
+    "Threshold selection used low-tail calibration, population stability, and blinded pre-drive football-state review rather than player ranks.",
+    "A second independent blinded human review was not completed because no independent reviewer was available; this is a disclosed validation limitation.",
+    "xCDCR remains supplemental and is rebuilt from the locked viable ledger.",
+    "CAE is supplemental and must be reported with uncertainty.",
+    "Run 88 asymmetric preserved-success formulation remains a sensitivity analysis and is rejected as the primary rate.",
+    "Clutch Response Events preserve repeated successful late-game responses descriptively without altering the CDCR denominator."
+  ]
+}

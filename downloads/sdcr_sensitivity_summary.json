@@ -1,0 +1,310 @@
+{
+  "analysis": "sCDCR sensitivity and out-of-season validation",
+  "scope": "trailing",
+  "cohort": {
+    "qualified_qbs": 64,
+    "career_resolved_cdcr_min": 25
+  },
+  "predeclared_design": {
+    "difficulty_variants": [
+      "QB-and-season-excluded bucket (primary)",
+      "season-excluded bucket",
+      "season-excluded nonlinear spline"
+    ],
+    "shrinkage_variants": [
+      "empirical-Bayes fitted sigma (primary)",
+      "half primary sigma",
+      "double primary sigma"
+    ],
+    "reference_variants": [
+      "pooled qualifying opportunities",
+      "equal-QB weighted opportunities",
+      "2020-2026 modern-era opportunities"
+    ],
+    "validation": "Leave one QB-season out of the QB-effect estimate; compare held-out predictions with globally calibrated xCDCR."
+  },
+  "primary_model": {
+    "mu": 0.11723088157279309,
+    "sigma": 0.1825342621216818,
+    "reference_n": 1893
+  },
+  "variant_comparisons": {
+    "season_only_bucket_eb": {
+      "rank_spearman": 0.9997252747252745,
+      "mean_abs_rank_delta": 0.1875,
+      "median_abs_rank_delta": 0.0,
+      "max_abs_rank_delta": 1,
+      "top10_overlap": 10,
+      "top10_union": 10
+    },
+    "season_only_spline_eb": {
+      "rank_spearman": 0.990613553113553,
+      "mean_abs_rank_delta": 1.8125,
+      "median_abs_rank_delta": 1.0,
+      "max_abs_rank_delta": 7,
+      "top10_overlap": 9,
+      "top10_union": 11
+    },
+    "primary_half_sigma": {
+      "rank_spearman": 0.9988553113553114,
+      "mean_abs_rank_delta": 0.4375,
+      "median_abs_rank_delta": 0.0,
+      "max_abs_rank_delta": 4,
+      "top10_overlap": 9,
+      "top10_union": 11
+    },
+    "primary_double_sigma": {
+      "rank_spearman": 0.9967032967032966,
+      "mean_abs_rank_delta": 0.9375,
+      "median_abs_rank_delta": 1.0,
+      "max_abs_rank_delta": 4,
+      "top10_overlap": 10,
+      "top10_union": 10
+    }
+  },
+  "reference_sensitivity": {
+    "pooled": {
+      "rank_spearman_vs_pooled": 0.9999999999999998,
+      "mean_abs_sdcr_shift_pp": 0.0,
+      "max_abs_sdcr_shift_pp": 0.0
+    },
+    "equal_qb": {
+      "rank_spearman_vs_pooled": 0.9999999999999998,
+      "mean_abs_sdcr_shift_pp": 0.3072079066759655,
+      "max_abs_sdcr_shift_pp": 0.3204048807833644
+    },
+    "modern_2020_2026": {
+      "rank_spearman_vs_pooled": 0.9999999999999998,
+      "mean_abs_sdcr_shift_pp": 3.279857128302773,
+      "max_abs_sdcr_shift_pp": 3.411811199016789
+    }
+  },
+  "heldout_prediction": {
+    "n": 1893,
+    "raw_xcdcr": {
+      "brier": 0.18355368686884627,
+      "log_loss": 0.5432546038110188
+    },
+    "globally_calibrated_xcdcr": {
+      "brier": 0.18286958198934292,
+      "log_loss": 0.541716534626507
+    },
+    "hierarchical_qb_effect": {
+      "brier": 0.18284634976469732,
+      "log_loss": 0.5417601767221488
+    },
+    "qb_vs_calibrated_brier_change_pct": -0.012704258626754956,
+    "qb_vs_calibrated_logloss_change_pct": 0.008056260581352245
+  },
+  "focal_qbs": {
+    "burrow": {
+      "primary_qbx_bucket_eb": {
+        "rank": 36,
+        "sdcr_pct": 34.0845121384911
+      },
+      "season_only_bucket_eb": {
+        "rank": 36,
+        "sdcr_pct": 34.11420141092602
+      },
+      "season_only_spline_eb": {
+        "rank": 31,
+        "sdcr_pct": 34.22547398289563
+      },
+      "primary_half_sigma": {
+        "rank": 36,
+        "sdcr_pct": 34.185624807406754
+      },
+      "primary_double_sigma": {
+        "rank": 36,
+        "sdcr_pct": 33.95522096415651
+      },
+      "reference_values": {
+        "pooled": {
+          "rank": 36,
+          "sdcr_pct": 34.08451213849111
+        },
+        "equal_qb": {
+          "rank": 36,
+          "sdcr_pct": 33.77709583519538
+        },
+        "modern_2020_2026": {
+          "rank": 36,
+          "sdcr_pct": 37.36691828021021
+        }
+      }
+    },
+    "hurts": {
+      "primary_qbx_bucket_eb": {
+        "rank": null,
+        "sdcr_pct": null,
+        "status": "not_in_corrected_scope_or_cohort"
+      },
+      "season_only_bucket_eb": {
+        "rank": null,
+        "sdcr_pct": null,
+        "status": "not_in_corrected_scope_or_cohort"
+      },
+      "season_only_spline_eb": {
+        "rank": null,
+        "sdcr_pct": null,
+        "status": "not_in_corrected_scope_or_cohort"
+      },
+      "primary_half_sigma": {
+        "rank": null,
+        "sdcr_pct": null,
+        "status": "not_in_corrected_scope_or_cohort"
+      },
+      "primary_double_sigma": {
+        "rank": null,
+        "sdcr_pct": null,
+        "status": "not_in_corrected_scope_or_cohort"
+      },
+      "reference_values": {
+        "pooled": {
+          "rank": null,
+          "sdcr_pct": null,
+          "status": "not_in_corrected_scope_or_cohort"
+        },
+        "equal_qb": {
+          "rank": null,
+          "sdcr_pct": null,
+          "status": "not_in_corrected_scope_or_cohort"
+        },
+        "modern_2020_2026": {
+          "rank": null,
+          "sdcr_pct": null,
+          "status": "not_in_corrected_scope_or_cohort"
+        }
+      }
+    },
+    "brady": {
+      "primary_qbx_bucket_eb": {
+        "rank": 3,
+        "sdcr_pct": 36.562985052398545
+      },
+      "season_only_bucket_eb": {
+        "rank": 3,
+        "sdcr_pct": 36.19784627276742
+      },
+      "season_only_spline_eb": {
+        "rank": 3,
+        "sdcr_pct": 36.38925184420534
+      },
+      "primary_half_sigma": {
+        "rank": 3,
+        "sdcr_pct": 34.95026304552586
+      },
+      "primary_double_sigma": {
+        "rank": 3,
+        "sdcr_pct": 39.541648126624594
+      },
+      "reference_values": {
+        "pooled": {
+          "rank": 3,
+          "sdcr_pct": 36.56298505239855
+        },
+        "equal_qb": {
+          "rank": 3,
+          "sdcr_pct": 36.24554298795917
+        },
+        "modern_2020_2026": {
+          "rank": 3,
+          "sdcr_pct": 39.94659623000767
+        }
+      }
+    },
+    "mahomes": {
+      "primary_qbx_bucket_eb": {
+        "rank": 12,
+        "sdcr_pct": 35.15900544332027
+      },
+      "season_only_bucket_eb": {
+        "rank": 12,
+        "sdcr_pct": 34.98186507709346
+      },
+      "season_only_spline_eb": {
+        "rank": 12,
+        "sdcr_pct": 34.97501717889363
+      },
+      "primary_half_sigma": {
+        "rank": 12,
+        "sdcr_pct": 34.48198496034089
+      },
+      "primary_double_sigma": {
+        "rank": 12,
+        "sdcr_pct": 37.06816894988137
+      },
+      "reference_values": {
+        "pooled": {
+          "rank": 12,
+          "sdcr_pct": 35.15900544332028
+        },
+        "equal_qb": {
+          "rank": 12,
+          "sdcr_pct": 34.847129491302795
+        },
+        "modern_2020_2026": {
+          "rank": 12,
+          "sdcr_pct": 38.48693982173839
+        }
+      }
+    },
+    "allen": {
+      "primary_qbx_bucket_eb": {
+        "rank": 22,
+        "sdcr_pct": 34.518644275923954
+      },
+      "season_only_bucket_eb": {
+        "rank": 22,
+        "sdcr_pct": 34.4549922779848
+      },
+      "season_only_spline_eb": {
+        "rank": 22,
+        "sdcr_pct": 34.565102060350156
+      },
+      "primary_half_sigma": {
+        "rank": 22,
+        "sdcr_pct": 34.307008436338585
+      },
+      "primary_double_sigma": {
+        "rank": 23,
+        "sdcr_pct": 35.15299749810466
+      },
+      "reference_values": {
+        "pooled": {
+          "rank": 22,
+          "sdcr_pct": 34.518644275923954
+        },
+        "equal_qb": {
+          "rank": 22,
+          "sdcr_pct": 34.20932982104803
+        },
+        "modern_2020_2026": {
+          "rank": 22,
+          "sdcr_pct": 37.82085019452164
+        }
+      }
+    }
+  },
+  "readiness_flags": {
+    "bucket_rank_spearman_ge_0_90": true,
+    "spline_rank_spearman_ge_0_90": true,
+    "half_sigma_rank_spearman_ge_0_90": true,
+    "double_sigma_rank_spearman_ge_0_90": true,
+    "all_variant_top10_overlap_ge_7": true,
+    "reference_rank_invariant": true,
+    "heldout_qb_effect_brier_not_worse": true,
+    "heldout_qb_effect_logloss_not_worse": false,
+    "all_pass": false
+  },
+  "publication_interpretation": {
+    "rank_stability_pass": true,
+    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
+    "predictive_claim_allowed": false,
+    "recommended_role": "descriptive_standardization_with_uncertainty",
+    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.012704258626754956,
+    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.008056260581352245,
+    "decision_rule": "Preserve the predeclared predictive checks exactly as specified. Do not retune sCDCR to make both held-out scores pass. If the two scores disagree, do not claim predictive improvement over globally calibrated xCDCR."
+  },
+  "interpretation_guardrail": "Robust rank stability does not imply precise individual ranks. sCDCR remains a model-based standardization and shrinkage estimate and should be published with observed CDCR and uncertainty. Because the held-out Brier and log-loss checks do not both improve versus globally calibrated xCDCR in this freeze, sCDCR must not be described as a demonstrated predictive enhancement."
+}

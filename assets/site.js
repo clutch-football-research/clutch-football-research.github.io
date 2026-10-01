@@ -158,7 +158,10 @@ async function initPlayers(){
 
     // v1 display rule: keep every as-of snapshot in the downloadable audit
     // data, but stop the visible trajectory at the final season in which the
-    // QB added a new qualifying opportunity in the selected scope.
+    // QB added a new qualifying opportunity in the selected scope. This
+    // prevents retired/inactive players from showing flat ghost extensions
+    // through later league seasons. A trailing-only trajectory can therefore
+    // end earlier than the overall trajectory.
     let lastGrowthIndex=0;
     for(let i=1;i<allRows.length;i++){
       if(allRows[i].n>allRows[i-1].n)lastGrowthIndex=i;

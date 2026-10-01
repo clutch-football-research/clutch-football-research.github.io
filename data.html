@@ -4,9 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex, nofollow">
-  <title>Data & Downloads | Clutch Football Research</title>
-  <meta name="description" content="Public decision-level and player-level data behind Clutch Football Research methodology v1.2.">
+  <title>Data &amp; downloads | Clutch Football Research</title>
+  <meta name="description" content="What 4,531 NFL late-game opportunities tell us about quarterback performance under pressure — and why no single statistic can answer the question by itself.">
   <link rel="stylesheet" href="assets/styles.css">
+  
 </head>
 <body>
 <header class="site-header">
@@ -16,6 +17,7 @@
   </div>
 </header>
 <main>
+
 <section class="page-hero compact">
   <div class="shell">
     <div class="eyebrow">Data & downloads</div>
@@ -46,38 +48,50 @@
       <p><a class="button small" href="downloads/clutch_response_events.csv">CSV</a></p>
     </article>
     <article>
-      <h2>Article results summary</h2>
-      <p>The exact counts and focal-quarterback values used in the long-form article, including Burrow's same-game comparison, crosswalk movement, sCDCR validation and terminal-regime diagnostics.</p>
-      <p><a class="button small" href="downloads/article_results_summary.json">JSON</a></p>
+      <h2>External-framework crosswalk</h2>
+      <p>Quarterback-by-quarterback comparison between the raw game-outcome framework, the supplemental adjusted variant, all-drive conversion and CDCR.</p>
+      <p><a class="button small" href="downloads/cdcr_vs_kacsmar_crosswalk.csv">Crosswalk CSV</a> <a class="button small" href="downloads/rank_movement_analysis.csv">Rank movement CSV</a></p>
     </article>
     <article>
-      <h2>Methodology v1.2</h2>
-      <p>The readable locked specification that defines the opportunity, viability rule, conversion logic, QB attribution and companion measures.</p>
-      <p><a class="button small" href="downloads/methodology.md">Markdown</a></p>
+      <h2>Burrow game crosswalk</h2>
+      <p>Game-level reconciliation used to show exactly where the broader game-outcome framework and the final-opportunity framework agree or disagree for Joe Burrow.</p>
+      <p><a class="button small" href="downloads/burrow_game_crosswalk.csv">CSV</a></p>
+    </article>
+    <article>
+      <h2>sCDCR validation</h2>
+      <p>Predeclared sensitivity variants, reference-distribution checks and held-out Brier/log-loss validation behind the standardized-CDCR interpretation.</p>
+      <p><a class="button small" href="downloads/sdcr_sensitivity_summary.json">JSON</a></p>
+    </article>
+    <article>
+      <h2>Publication freeze</h2>
+      <p>The locked methodology v1.2 counts, viability rule, validation status, terminal-regime evidence, response-event counts and publication guardrails.</p>
+      <p><a class="button small" href="downloads/publication_freeze_summary.json">JSON</a> <a class="button small" href="downloads/rank_movement_summary.json">Rank summary JSON</a></p>
     </article>
   </div>
 
   <div class="download-panel">
     <div>
-      <h2>Prefer to inspect in the browser?</h2>
-      <p>The Results, Player trajectories and Explore pages are interactive views of the downloadable files above.</p>
+      <h2>Methodology v1.2</h2>
+      <p>The complete readable specification used to produce the public data.</p>
     </div>
-    <a class="button primary" href="explore.html">Explore every decision</a>
+    <a class="button primary" href="downloads/methodology.md">Download methodology</a>
   </div>
 
   <aside class="transparency-box">
     <h2>What “underlying data” means here</h2>
-    <p>The site publishes the derived decision-level and player-level datasets that directly support the article and leaderboards. Raw nflverse play-by-play is not duplicated inside this site; the source is publicly available from nflverse, and the decision ledger identifies every selected game and opportunity used by CDCR.</p>
+    <p>The site publishes the derived decision-level and player-level datasets that directly support the article and leaderboards. Raw nflverse play-by-play is not duplicated inside this site; the source is publicly available from nflverse and the published decision ledger identifies every selected game and opportunity needed to trace the analysis.</p>
   </aside>
 </section>
+
 </main>
 <footer class="site-footer">
   <div class="shell footer-grid">
     <div><strong>Clutch Football Research</strong><br><span>Measure the opportunity. Separate the outcome.</span></div>
     <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 3 of the 2026 season.</div>
-    <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>.</div>
+    <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>. Prior-work comparison includes <a href="https://www.365scores.com/news/justin-herbert-more-clutch-nfl-quarterback" rel="noopener">Scott Kacsmar's clutch research</a>.</div>
   </div>
 </footer>
 <script src="assets/site.js"></script>
+
 </body>
 </html>
