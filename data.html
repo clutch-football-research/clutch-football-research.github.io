@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Data & Downloads | Clutch Football Research</title>
+  <meta name="description" content="Public decision-level and player-level data behind Clutch Football Research methodology v1.2.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">CFR</span><span>Clutch Football Research</span></a>
+    <nav><a class="nav-link " href="index.html">Article</a><a class="nav-link " href="results.html">Results</a><a class="nav-link " href="players.html">Player trajectories</a><a class="nav-link " href="explore.html">Explore every decision</a><a class="nav-link active" href="data.html">Data</a><a class="nav-link " href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-hero compact">
+  <div class="shell">
+    <div class="eyebrow">Data & downloads</div>
+    <h1>Audit the result, row by row.</h1>
+    <p class="dek">The public research data behind the article are available here in machine-readable form. The interactive pages are views of these same files, not separate hand-selected datasets.</p>
+  </div>
+</section>
+<section class="shell section">
+  <div class="method-grid">
+    <article>
+      <h2>CDCR decision ledger</h2>
+      <p><strong>4,531 selected team-game opportunities.</strong> Game, date, quarterback, score state, field position, required result, classification, team outcome, xCDCR and audit note.</p>
+      <p><a class="button small" href="downloads/cdcr_decisions.csv">CSV</a> <a class="button small" href="data/decisions.json">JSON</a></p>
+    </article>
+    <article>
+      <h2>Quarterback results</h2>
+      <p><strong>64 qualified quarterbacks.</strong> CDCR, xCDCR, CAE, sCDCR, uncertainty, outcome-framework crosswalk ranks and response-event counts.</p>
+      <p><a class="button small" href="downloads/qb_results.csv">CSV</a> <a class="button small" href="data/qb_results.json">JSON</a></p>
+    </article>
+    <article>
+      <h2>Player trajectories</h2>
+      <p><strong>9,597 true as-of season-end snapshots.</strong> Observed CDCR, xCDCR, CAE, sCDCR, uncertainty, eligibility and rank through each historical season.</p>
+      <p><a class="button small" href="downloads/player_asof_trajectory.csv">CSV</a> <a class="button small" href="data/player_trajectories.json">JSON</a></p>
+    </article>
+    <article>
+      <h2>Clutch Response Events</h2>
+      <p><strong>4,168 successful qualifying responses.</strong> Includes earlier successful late-game responses even when a later possession becomes the team's final CDCR opportunity.</p>
+      <p><a class="button small" href="downloads/clutch_response_events.csv">CSV</a></p>
+    </article>
+    <article>
+      <h2>Article results summary</h2>
+      <p>The exact counts and focal-quarterback values used in the long-form article, including Burrow's same-game comparison, crosswalk movement, sCDCR validation and terminal-regime diagnostics.</p>
+      <p><a class="button small" href="downloads/article_results_summary.json">JSON</a></p>
+    </article>
+    <article>
+      <h2>Methodology v1.2</h2>
+      <p>The readable locked specification that defines the opportunity, viability rule, conversion logic, QB attribution and companion measures.</p>
+      <p><a class="button small" href="downloads/methodology.md">Markdown</a></p>
+    </article>
+  </div>
+
+  <div class="download-panel">
+    <div>
+      <h2>Prefer to inspect in the browser?</h2>
+      <p>The Results, Player trajectories and Explore pages are interactive views of the downloadable files above.</p>
+    </div>
+    <a class="button primary" href="explore.html">Explore every decision</a>
+  </div>
+
+  <aside class="transparency-box">
+    <h2>What “underlying data” means here</h2>
+    <p>The site publishes the derived decision-level and player-level datasets that directly support the article and leaderboards. Raw nflverse play-by-play is not duplicated inside this site; the source is publicly available from nflverse, and the decision ledger identifies every selected game and opportunity used by CDCR.</p>
+  </aside>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div><strong>Clutch Football Research</strong><br><span>Measure the opportunity. Separate the outcome.</span></div>
+    <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 3 of the 2026 season.</div>
+    <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>.</div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>

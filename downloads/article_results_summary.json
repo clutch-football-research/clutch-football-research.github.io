@@ -1,0 +1,93 @@
+{
+  "methodology_version": "1.2",
+  "study_window": "1999 through the completion of Week 3 of the 2026 season",
+  "dataset": {
+    "final_viable_opportunities": 4531,
+    "conversions": 1794,
+    "failures": 2565,
+    "nd_k": 92,
+    "manual_review": 80,
+    "qualified_qbs": 64,
+    "clutch_response_events": 4168
+  },
+  "burrow": {
+    "resolved_opportunities": 25,
+    "conversions": 14,
+    "failures": 11,
+    "cdcr_pct": 56,
+    "cdcr_rank": 7,
+    "final_trailing_opportunities": 13,
+    "final_trailing_conversions": 6,
+    "final_trailing_failures": 7,
+    "same_games_bengals_record": "1-12",
+    "successful_trailing_conversions_ending_in_loss": 5,
+    "trailing_cdcr_pct": 46.153846,
+    "trailing_xcdcr_pct": 43.262953,
+    "trailing_cae_pp": 2.890893,
+    "trailing_cae_rank": 34,
+    "raw_game_outcome_rank": 49,
+    "adjusted_game_outcome_rank": 5,
+    "all_drive_conversion_rank": 17,
+    "sdcr_pct": 43.636354,
+    "sdcr_rank": 38,
+    "sdcr_95_low_pct": 35.312682,
+    "sdcr_95_high_pct": 50.550071
+  },
+  "rank_movement": {
+    "qbs_abs_move_10_plus": 31,
+    "qbs_abs_move_20_plus": 14,
+    "qbs_abs_move_30_plus": 6,
+    "mean_absolute_move": 12.094
+  },
+  "hurts_provisional": {
+    "resolved_opportunities": 20,
+    "trailing_opportunities": 17,
+    "trailing_conversions": 7,
+    "trailing_cdcr_pct": 41.176471,
+    "trailing_xcdcr_pct": 29.630578,
+    "trailing_cae_pp": 11.545892,
+    "trailing_sdcr_pct": 34.789185,
+    "status": "PROVISIONAL"
+  },
+  "brady": {
+    "resolved_opportunities": 83,
+    "cdcr_pct": 56.627,
+    "cdcr_rank": 6,
+    "xcdcr_pct": 41.879,
+    "cae_pp": 14.748,
+    "cae_rank": 3,
+    "sdcr_pct": 49.821743,
+    "sdcr_rank": 1
+  },
+  "mahomes": {
+    "resolved_opportunities": 40,
+    "cdcr_pct": 65,
+    "cdcr_rank": 1,
+    "sdcr_pct": 47.55097,
+    "sdcr_rank": 7
+  },
+  "sdcr_validation": {
+    "min_variant_rank_spearman": 0.9906135531,
+    "min_top10_overlap": 9,
+    "globally_calibrated_brier": 0.1828695817,
+    "hierarchical_brier": 0.1828463484,
+    "globally_calibrated_log_loss": 0.5417165342,
+    "hierarchical_log_loss": 0.5417601728,
+    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN"
+  },
+  "terminal_regime": {
+    "paired_clusters": 3314,
+    "go_rate_terminal_pct": 56.932021,
+    "go_rate_earlier_q4_pct": 17.66315,
+    "punt_rate_terminal_pct": 17.710197,
+    "punt_rate_earlier_q4_pct": 61.215318,
+    "paired_fourth_go_diff_pp": 13.41301,
+    "paired_required_score_conversion_diff_pp": 9.334282
+  },
+  "response_events": {
+    "events": 4168,
+    "dual_team_response_games": 1063,
+    "games_with_selected_cdcr_opportunity": 3201,
+    "dual_team_response_game_pct": 33.208372
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "analysis": "Clutch Football Research detailed results site for locked methodology v1.2",
+  "status": "READY_FOR_PUBLIC_HOSTING",
+  "methodology_version": "1.2",
+  "public_study_window": "1999 through the completion of Week 3 of the 2026 season",
+  "source_latest_game_date": "2026-09-28",
+  "source_latest_week": 3,
+  "final_team_game_opportunities": 4531,
+  "brand": "Clutch Football Research",
+  "conference_neutral": true,
+  "pages": [
+    "index.html",
+    "results.html",
+    "players.html",
+    "explore.html",
+    "data.html",
+    "methodology.html"
+  ],
+  "public_decision_rows": 4531,
+  "qualified_qb_rows": 64,
+  "player_trajectory_rows": 9597,
+  "player_trajectories_true_asof": true,
+  "standardized_cdcr_integrated": true,
+  "sdcr_validation": {
+    "rank_stability_pass": true,
+    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
+    "predictive_claim_allowed": false,
+    "recommended_role": "descriptive_standardization_with_uncertainty",
+    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.01270486608900619,
+    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.008055617426687017,
+    "predeclared_all_flags_pass": false,
+    "publication_rule": "sCDCR may be published as a descriptive standardization and shrinkage estimate with uncertainty, but not as a demonstrated predictive enhancement over calibrated xCDCR unless both predeclared held-out scoring rules pass."
+  },
+  "downloads": [
+    "cdcr_decisions.csv",
+    "qb_results.csv",
+    "player_asof_trajectory.csv",
+    "clutch_response_events.csv",
+    "article_results_summary.json",
+    "methodology.md"
+  ],
+  "recommended_github_org": "clutch-football-research",
+  "recommended_org_pages_repo": "clutch-football-research.github.io",
+  "recommended_site_url_if_available": "https://clutch-football-research.github.io/",
+  "note": "Exact GitHub organization availability must be confirmed at creation time.",
+  "article_format": "long_form_results_driven",
+  "public_data_page": true
+}

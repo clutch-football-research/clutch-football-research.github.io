@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Results | Clutch Football Research</title>
+  <meta name="description" content="Team wins can mislead, and raw conversion rates can mislead too. Clutch Football Research separates the final realistic opportunity, its difficulty, the observed conversion, and the eventual team outcome.">
+  <link rel="stylesheet" href="assets/styles.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">CFR</span><span>Clutch Football Research</span></a>
+    <nav><a class="nav-link " href="index.html">Article</a><a class="nav-link active" href="results.html">Results</a><a class="nav-link " href="players.html">Player trajectories</a><a class="nav-link " href="explore.html">Explore every decision</a><a class="nav-link " href="data.html">Data</a><a class="nav-link " href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero compact">
+  <div class="shell">
+    <div class="eyebrow">Results · Methodology v1.2</div>
+    <h1>Let the measures disagree.</h1>
+    <p class="dek">CDCR tells you what happened. xCDCR estimates the difficulty. CAE compares observed and expected conversion. sCDCR standardizes the partially pooled estimate onto common opportunity footing.</p>
+  </div>
+</section>
+<section class="shell section">
+  <div class="spotlight-grid">
+    <article class="spotlight">
+      <span class="kicker">Observed result</span>
+      <h2>Burrow: 56.0%</h2>
+      <p>14 conversions in 25 resolved career opportunities; observed CDCR rank #7 in the 25+ cohort.</p>
+    </article>
+    <article class="spotlight">
+      <span class="kicker">Large-sample comparison</span>
+      <h2>Brady: 56.6%</h2>
+      <p>83 resolved opportunities; sCDCR point estimate 49.8%.</p>
+    </article>
+  </div>
+
+  <div class="transparency-box">
+    <h2>sCDCR validation status</h2>
+    <p>Rank stability passed across the predeclared model variants. The held-out predictive comparison is <strong>mixed, with no clear predictive gain</strong>: Brier score is trivially better and log loss trivially worse than globally calibrated xCDCR. The site therefore does not claim that sCDCR improves prediction.</p>
+  </div>
+
+  <div class="table-toolbar">
+    <input id="qb-search" type="search" placeholder="Search quarterback…">
+    <span id="qb-count"></span>
+    <a class="button small" href="downloads/qb_results.csv">Download QB results CSV</a>
+  </div>
+  <div class="table-wrap">
+    <table id="qb-table" class="data-table">
+      <thead>
+        <tr>
+          <th data-key="rank">CDCR rank</th>
+          <th data-key="qb">Quarterback</th>
+          <th data-key="opportunities">Opps</th>
+          <th data-key="cdcr_pct">CDCR</th>
+          <th data-key="xcdcr_pct">xCDCR</th>
+          <th data-key="cae_pp">CAE</th>
+          <th data-key="cae_rank">CAE rank</th>
+          <th data-key="sdcr_pct">sCDCR</th>
+          <th data-key="sdcr_rank">sCDCR rank</th>
+          <th data-key="trailing_cdcr_rank">Trailing raw rank</th>
+          <th data-key="trailing_sdcr_rank">Trailing sCDCR rank</th>
+          <th data-key="raw_outcome_rank">Raw outcome rank</th>
+          <th data-key="adjusted_outcome_rank">Adjusted rank</th>
+          <th data-key="clutch_response_events">Response events</th>
+          <th data-key="conversion_nonwin_pct">Conv. → non-win</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <p class="fineprint">Career leaderboard threshold: at least 25 resolved CDCR opportunities. sCDCR is a model-based standardization/shrinkage estimate and should be interpreted with observed CDCR and uncertainty; it is not presented as a demonstrated predictive enhancement.</p>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div><strong>Clutch Football Research</strong><br><span>Measure the opportunity. Separate the outcome.</span></div>
+    <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 3 of the 2026 season.</div>
+    <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>. Prior-work comparison includes <a href="https://www.365scores.com/news/justin-herbert-more-clutch-nfl-quarterback" rel="noopener">Scott Kacsmar's clutch research</a>.</div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>window.CFR_PAGE="results";</script>
+</body>
+</html>

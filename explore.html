@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Explore every decision | Clutch Football Research</title>
+  <meta name="description" content="Team wins can mislead, and raw conversion rates can mislead too. Clutch Football Research separates the final realistic opportunity, its difficulty, the observed conversion, and the eventual team outcome.">
+  <link rel="stylesheet" href="assets/styles.css">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">CFR</span><span>Clutch Football Research</span></a>
+    <nav><a class="nav-link " href="index.html">Article</a><a class="nav-link " href="results.html">Results</a><a class="nav-link " href="players.html">Player trajectories</a><a class="nav-link active" href="explore.html">Explore every decision</a><a class="nav-link " href="data.html">Data</a><a class="nav-link " href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero compact">
+  <div class="shell">
+    <div class="eyebrow">Explore every decision</div>
+    <h1>4,531 rows. Nothing selected for the story.</h1>
+    <p class="dek">This is the public decision ledger behind CDCR. It exposes the start state, required result, classification, team outcome and xCDCR context without publishing raw play-by-play or internal research diagnostics.</p>
+  </div>
+</section>
+<section class="shell section">
+  <div class="filters">
+    <input id="decision-search" type="search" placeholder="Search QB, team, opponent or game ID…">
+    <select id="decision-class">
+      <option value="">All decisions</option>
+      <option value="CONVERSION">Conversion</option>
+      <option value="FAILURE">Failure</option>
+      <option value="ND-K">ND-K</option>
+      <option value="MANUAL_REVIEW">Manual review</option>
+    </select>
+    <select id="decision-result">
+      <option value="">All team results</option>
+      <option value="W">Win</option>
+      <option value="L">Loss</option>
+      <option value="T">Tie</option>
+    </select>
+    <input id="decision-season" inputmode="numeric" placeholder="Season">
+    <a class="button small" href="downloads/cdcr_decisions.csv">Download decision ledger CSV</a>
+  </div>
+
+  <div class="ledger-summary">
+    <strong id="decision-count">4,531</strong> matching decisions
+    <span id="decision-page-note"></span>
+  </div>
+
+  <div class="table-wrap ledger">
+    <table class="data-table" id="decision-table">
+      <thead>
+        <tr>
+          <th>Date</th>
+          <th>QB</th>
+          <th>Game</th>
+          <th>Start</th>
+          <th>Score</th>
+          <th>Field position</th>
+          <th>Required result</th>
+          <th>Decision</th>
+          <th>Team result</th>
+          <th>xCDCR</th>
+          <th>Decision note</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+  <div class="pager">
+    <button id="prev-page" class="button small">Previous</button>
+    <span id="page-number"></span>
+    <button id="next-page" class="button small">Next</button>
+  </div>
+
+  <aside class="transparency-box">
+    <h2>What is intentionally not here?</h2>
+    <p>Raw play descriptions, private development history, Power BI files, model plumbing and internal diagnostics. The public ledger is designed to show every <em>decision that determines CDCR</em> while keeping the site readable and focused.</p>
+  </aside>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div><strong>Clutch Football Research</strong><br><span>Measure the opportunity. Separate the outcome.</span></div>
+    <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 3 of the 2026 season.</div>
+    <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>. Prior-work comparison includes <a href="https://www.365scores.com/news/justin-herbert-more-clutch-nfl-quarterback" rel="noopener">Scott Kacsmar's clutch research</a>.</div>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script>window.CFR_PAGE="explore";</script>
+</body>
+</html>
