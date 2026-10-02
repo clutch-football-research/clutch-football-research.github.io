@@ -11,44 +11,11 @@ async function initResults(){
   const search=document.querySelector("#qb-search");
   const count=document.querySelector("#qb-count");
   const wrap=document.querySelector("#qb-results-wrap");
-  const viewLabel=document.querySelector("#qb-view-label");
-  const viewButtons=[...document.querySelectorAll("[data-result-view]")];
-  const scrollLeft=document.querySelector("#qb-scroll-left");
-  const scrollRight=document.querySelector("#qb-scroll-right");
   const topScroll=document.querySelector("#qb-top-scroll");
   const topScrollInner=document.querySelector("#qb-top-scroll-inner");
+  let sortKey="rank",dir=1;
 
-  const views={
-    core:{
-      label:"Core results",
-      columns:["rank","qb","opportunities","cdcr_pct","clutch_response_events"]
-    },
-    adjusted:{
-      label:"Adjusted metrics",
-      columns:["rank","qb","opportunities","xcdcr_pct","cae_pp","cae_rank","sdcr_pct","sdcr_rank"]
-    },
-    outcomes:{
-      label:"Outcomes & responses",
-      columns:["rank","qb","opportunities","cdcr_pct","clutch_response_events","trailing_cdcr_rank","trailing_sdcr_rank","raw_outcome_rank","adjusted_outcome_rank","conversion_nonwin_pct"]
-    },
-    all:{
-      label:"All columns",
-      columns:["rank","qb","opportunities","cdcr_pct","clutch_response_events","xcdcr_pct","cae_pp","cae_rank","sdcr_pct","sdcr_rank","trailing_cdcr_rank","trailing_sdcr_rank","raw_outcome_rank","adjusted_outcome_rank","conversion_nonwin_pct"]
-    }
-  };
-
-  let sortKey="rank",dir=1,activeView="core";
-
-  function applyView(){
-    const visible=new Set(views[activeView].columns);
-    table.querySelectorAll("[data-col]").forEach(el=>{
-      el.hidden=!visible.has(el.dataset.col);
-    });
-    viewButtons.forEach(btn=>btn.classList.toggle("active",btn.dataset.resultView===activeView));
-    viewLabel.textContent=views[activeView].label;
-  }
-
-  function syncTopScrollbarWidth(){
+  function sizeTopScrollbar(){
     topScrollInner.style.width=table.scrollWidth+"px";
   }
 
@@ -63,37 +30,16 @@ async function initResults(){
     });
     count.textContent=rows.length+" quarterbacks";
     tbody.innerHTML=rows.map(r=>`<tr>
-      <td data-col="rank">${r.rank}</td>
-      <td data-col="qb"><strong><a href="players.html?qb=${encodeURIComponent(r.qb_id)}">${esc(r.qb)}</a></strong><br><span class="fineprint">${esc(r.teams)}</span></td>
-      <td data-col="opportunities">${r.opportunities}</td>
-      <td data-col="cdcr_pct">${fmtPct(r.cdcr_pct)}</td>
-      <td data-col="clutch_response_events">${r.clutch_response_events}</td>
-      <td data-col="xcdcr_pct">${fmtPct(r.xcdcr_pct)}</td>
-      <td data-col="cae_pp" class="${r.cae_pp>0?"positive":r.cae_pp<0?"negative":""}">${fmtPP(r.cae_pp)}</td>
-      <td data-col="cae_rank">${r.cae_rank??"—"}</td>
-      <td data-col="sdcr_pct">${fmtPct(r.sdcr_pct)}</td>
-      <td data-col="sdcr_rank">${r.sdcr_rank??"—"}</td>
-      <td data-col="trailing_cdcr_rank">${r.trailing_cdcr_rank??"—"}</td>
-      <td data-col="trailing_sdcr_rank">${r.trailing_sdcr_rank??"—"}</td>
-      <td data-col="raw_outcome_rank">${r.raw_outcome_rank??"—"}</td>
-      <td data-col="adjusted_outcome_rank">${r.adjusted_outcome_rank??"—"}</td>
-      <td data-col="conversion_nonwin_pct">${fmtPct(r.conversion_nonwin_pct)}</td>
+      <td>${r.rank}</td><td><strong><a href="players.html?qb=${encodeURIComponent(r.qb_id)}">${esc(r.qb)}</a></strong><br><span class="fineprint">${esc(r.teams)}</span></td>
+      <td>${r.opportunities}</td><td>${fmtPct(r.cdcr_pct)}</td><td>${fmtPct(r.xcdcr_pct)}</td>
+      <td class="${r.cae_pp>0?"positive":r.cae_pp<0?"negative":""}">${fmtPP(r.cae_pp)}</td>
+      <td>${r.cae_rank??"—"}</td><td>${fmtPct(r.sdcr_pct)}</td><td>${r.sdcr_rank??"—"}</td>
+      <td>${r.trailing_cdcr_rank??"—"}</td><td>${r.trailing_sdcr_rank??"—"}</td>
+      <td>${r.raw_outcome_rank??"—"}</td><td>${r.adjusted_outcome_rank??"—"}</td>
+      <td>${r.clutch_response_events}</td><td>${fmtPct(r.conversion_nonwin_pct)}</td>
     </tr>`).join("");
-    applyView();
-    requestAnimationFrame(syncTopScrollbarWidth);
+    requestAnimationFrame(sizeTopScrollbar);
   }
-
-  search.addEventListener("input",render);
-  table.querySelectorAll("th[data-key]").forEach(th=>th.addEventListener("click",()=>{
-    const k=th.dataset.key;if(sortKey===k)dir*=-1;else{sortKey=k;dir=1}render();
-  }));
-  viewButtons.forEach(btn=>btn.addEventListener("click",()=>{
-    activeView=btn.dataset.resultView;
-    wrap.scrollLeft=0;
-    topScroll.scrollLeft=0;
-    applyView();
-    requestAnimationFrame(syncTopScrollbarWidth);
-  }));
 
   let syncing=false;
   topScroll.addEventListener("scroll",()=>{
@@ -108,11 +54,12 @@ async function initResults(){
     topScroll.scrollLeft=wrap.scrollLeft;
     requestAnimationFrame(()=>{syncing=false});
   });
+  window.addEventListener("resize",sizeTopScrollbar);
 
-  scrollLeft.addEventListener("click",()=>wrap.scrollBy({left:-Math.max(320,wrap.clientWidth*.7),behavior:"smooth"}));
-  scrollRight.addEventListener("click",()=>wrap.scrollBy({left:Math.max(320,wrap.clientWidth*.7),behavior:"smooth"}));
-  window.addEventListener("resize",syncTopScrollbarWidth);
-
+  search.addEventListener("input",render);
+  table.querySelectorAll("th[data-key]").forEach(th=>th.addEventListener("click",()=>{
+    const k=th.dataset.key;if(sortKey===k)dir*=-1;else{sortKey=k;dir=1}render();
+  }));
   render();
 }
 
