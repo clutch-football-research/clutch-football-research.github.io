@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Compare players | Clutch Football Research</title>
+  <meta name="description" content="What 4,531 NFL late-game opportunities tell us about quarterback performance under pressure — and why no single statistic can answer the question by itself.">
+  <link rel="stylesheet" href="assets/styles.css?v=20261002-compare-careers-1">
+  
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">CFR</span><span>Clutch Football Research</span></a>
+    <nav><a class="nav-link " href="index.html">Article</a><a class="nav-link " href="results.html">Results</a><a class="nav-link " href="players.html">Player trajectories</a><a class="nav-link active" href="compare.html">Compare players</a><a class="nav-link " href="explore.html">Explore every decision</a><a class="nav-link " href="data.html">Data</a><a class="nav-link " href="methodology.html">Methodology</a></nav>
+  </div>
+</header>
+<main>
+
+<section class="page-hero compact">
+  <div class="shell">
+    <div class="eyebrow">Career comparison</div>
+    <h1>Compare careers by <em>opportunity</em>, not by year.</h1>
+    <p class="dek">Line up two to four quarterbacks by the number of resolved clutch opportunities they had reached at that point in their careers. The chart shows cumulative observed CDCR only—no sCDCR or season alignment.</p>
+  </div>
+</section>
+<section class="shell section">
+  <div class="compare-controls">
+    <div class="compare-player-grid">
+      <label><span>Player 1</span><select class="compare-player" data-player-slot="0"></select></label>
+      <label><span>Player 2</span><select class="compare-player" data-player-slot="1"></select></label>
+      <label><span>Player 3</span><select class="compare-player" data-player-slot="2"></select></label>
+      <label><span>Player 4</span><select class="compare-player" data-player-slot="3"></select></label>
+    </div>
+    <div class="scope-toggle compare-scope" role="group" aria-label="Comparison scope">
+      <button class="button small active" data-compare-scope="overall">Overall</button>
+      <button class="button small" data-compare-scope="trailing">Trailing</button>
+      <button class="button small" data-compare-scope="tied">Tied</button>
+    </div>
+  </div>
+
+  <div class="compare-summary" id="compare-summary"></div>
+
+  <article class="compare-card">
+    <div class="compare-card-head">
+      <div>
+        <span class="kicker">Career clutch progression</span>
+        <h2 id="compare-title">Cumulative CDCR by career opportunity</h2>
+      </div>
+      <div class="compare-legend" id="compare-legend"></div>
+    </div>
+    <div id="compare-chart" class="compare-chart" aria-label="Quarterback cumulative CDCR by career clutch opportunity"></div>
+    <p class="fineprint">Each line begins with that quarterback's first resolved qualifying opportunity in the selected scope. Opportunity #10 therefore means the tenth qualifying opportunity of that quarterback's career—not the same season or calendar year. Only resolved CONVERSION and FAILURE opportunities are included.</p>
+  </article>
+
+  <div class="compare-table-wrap">
+    <table class="data-table" id="compare-table">
+      <thead>
+        <tr>
+          <th>Opportunity</th>
+          <th id="compare-col-1">Player 1</th>
+          <th id="compare-col-2">Player 2</th>
+          <th id="compare-col-3">Player 3</th>
+          <th id="compare-col-4">Player 4</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <aside class="transparency-box">
+    <h2>Why align by opportunity?</h2>
+    <p>This view compares quarterbacks at the same point in their accumulated clutch experience. It avoids treating calendar year or season number as if every quarterback received the same number of late-game opportunities.</p>
+  </aside>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div><strong>Clutch Football Research</strong><br><span>Measure the opportunity. Separate the outcome.</span></div>
+    <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 3 of the 2026 season.</div>
+    <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>. Prior-work comparison includes <a href="https://www.365scores.com/news/justin-herbert-more-clutch-nfl-quarterback" rel="noopener">Scott Kacsmar's clutch research</a>.</div>
+    <div>Questions, methodology feedback, or data corrections? Contact us at <a href="mailto:clutchfootballresearch@gmail.com">clutchfootballresearch@gmail.com</a>.</div>
+  </div>
+</footer>
+<script src="assets/site.js?v=20261002-compare-careers-1"></script>
+<script>window.CFR_PAGE="compare";</script>
+</body>
+</html>

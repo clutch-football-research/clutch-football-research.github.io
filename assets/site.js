@@ -245,9 +245,162 @@ async function initPlayers(){
   render();
 }
 
+async function initCompare(){
+  const data=await loadJSON("data/decisions.json");
+  const selectors=[...document.querySelectorAll(".compare-player")];
+  const scopeButtons=[...document.querySelectorAll("[data-compare-scope]")];
+  const chart=document.querySelector("#compare-chart");
+  const summary=document.querySelector("#compare-summary");
+  const legend=document.querySelector("#compare-legend");
+  const tbody=document.querySelector("#compare-table tbody");
+  const title=document.querySelector("#compare-title");
+  let scope="overall";
+
+  const resolved=data.filter(r=>r.qb_id&&(r.classification==="CONVERSION"||r.classification==="FAILURE"));
+  const playerMap=new Map();
+  resolved.forEach(r=>{
+    if(!playerMap.has(r.qb_id))playerMap.set(r.qb_id,{qb_id:r.qb_id,qb:r.qb,count:0});
+    playerMap.get(r.qb_id).count++;
+  });
+  const players=[...playerMap.values()].sort((a,b)=>a.qb.localeCompare(b.qb));
+  const none='<option value="">— None —</option>';
+  selectors.forEach((sel,i)=>{
+    sel.innerHTML=(i<2?"":none)+players.map(p=>`<option value="${esc(p.qb_id)}">${esc(p.qb)}</option>`).join("");
+  });
+
+  const byName=name=>players.find(p=>p.qb===name)?.qb_id||"";
+  selectors[0].value=byName("Patrick Mahomes")||players[0]?.qb_id||"";
+  selectors[1].value=byName("Joe Burrow")||players[1]?.qb_id||"";
+  selectors[2].value="";
+  selectors[3].value="";
+
+  const seriesColors=["#184b43","#a5482d","#4a5e94","#8a6b2f"];
+
+  function selectedIds(){
+    const out=[];
+    selectors.forEach(sel=>{if(sel.value&&!out.includes(sel.value))out.push(sel.value)});
+    return out.slice(0,4);
+  }
+
+  function inScope(r){
+    if(scope==="trailing")return Number(r.score_diff)<0;
+    if(scope==="tied")return Number(r.score_diff)===0;
+    return true;
+  }
+
+  function careerSeries(qid){
+    const rows=resolved.filter(r=>r.qb_id===qid&&inScope(r)).sort((a,b)=>{
+      const d=String(a.game_date).localeCompare(String(b.game_date));
+      return d||String(a.game_id).localeCompare(String(b.game_id));
+    });
+    let conversions=0;
+    return rows.map((r,i)=>{
+      if(r.classification==="CONVERSION")conversions++;
+      return {
+        opportunity:i+1,
+        conversions,
+        cdcr:100*conversions/(i+1),
+        game_date:r.game_date,
+        opponent:r.opponent,
+        classification:r.classification
+      };
+    });
+  }
+
+  function render(){
+    scopeButtons.forEach(b=>b.classList.toggle("active",b.dataset.compareScope===scope));
+    const ids=selectedIds();
+    const rows=ids.map((id,i)=>({
+      id,
+      player:playerMap.get(id),
+      color:seriesColors[i],
+      points:careerSeries(id)
+    })).filter(x=>x.player&&x.points.length);
+
+    if(rows.length<2){
+      chart.innerHTML='<p class="fineprint">Choose at least two different quarterbacks.</p>';
+      summary.innerHTML="";
+      legend.innerHTML="";
+      tbody.innerHTML="";
+      return;
+    }
+
+    title.textContent="Cumulative CDCR by career opportunity · "+(scope==="overall"?"overall":scope);
+    legend.innerHTML=rows.map(r=>`<span style="color:${r.color}"><i></i><b style="color:var(--ink)">${esc(r.player.qb)}</b></span>`).join("");
+    summary.innerHTML=rows.map(r=>{
+      const last=r.points[r.points.length-1];
+      return `<div><span>${esc(r.player.qb)}</span><strong>${fmtPct(last.cdcr)}</strong><small>${last.conversions} of ${last.opportunity} converted · ${scope}</small></div>`;
+    }).join("");
+
+    const W=1040,H=500,m={l:62,r:28,t:28,b:58};
+    const maxOpp=Math.max(...rows.map(r=>r.points.length));
+    const x=n=>m.l+(n-1)/Math.max(1,maxOpp-1)*(W-m.l-m.r);
+    const y=v=>m.t+(100-v)/100*(H-m.t-m.b);
+    const yticks=[0,20,40,60,80,100];
+    const xtickStep=maxOpp<=20?5:maxOpp<=50?10:20;
+    const xticks=[];
+    for(let n=1;n<=maxOpp;n++){
+      if(n===1||n===maxOpp||n%xtickStep===0)xticks.push(n);
+    }
+
+    const grid=yticks.map(v=>`<g><line x1="${m.l}" y1="${y(v)}" x2="${W-m.r}" y2="${y(v)}" class="chart-grid"/><text x="${m.l-10}" y="${y(v)+4}" text-anchor="end" class="chart-axis">${v}%</text></g>`).join("");
+    const xlabels=xticks.map(v=>`<text x="${x(v)}" y="${H-24}" text-anchor="middle" class="chart-axis">${v}</text>`).join("");
+
+    const paths=rows.map(r=>{
+      const d=r.points.map((p,i)=>(i?"L":"M")+x(p.opportunity).toFixed(1)+","+y(p.cdcr).toFixed(1)).join(" ");
+      const dots=r.points.map(p=>`<circle cx="${x(p.opportunity)}" cy="${y(p.cdcr)}" r="3" class="compare-point" fill="${r.color}"><title>${esc(r.player.qb)} · opportunity #${p.opportunity}: ${p.cdcr.toFixed(1)}% (${p.conversions}/${p.opportunity}) · ${esc(p.game_date)} vs ${esc(p.opponent)} · ${esc(p.classification)}</title></circle>`).join("");
+      return `<path d="${d}" class="compare-line" stroke="${r.color}"/>${dots}`;
+    }).join("");
+
+    chart.innerHTML=`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Cumulative CDCR by career clutch opportunity">
+      ${grid}${xlabels}${paths}
+      <text x="${(m.l+W-m.r)/2}" y="${H-6}" text-anchor="middle" class="scatter-title">Career clutch opportunity number</text>
+      <text x="18" y="${(m.t+H-m.b)/2}" text-anchor="middle" class="scatter-title" transform="rotate(-90 18 ${(m.t+H-m.b)/2})">Cumulative CDCR</text>
+    </svg>`;
+
+    const commonMax=Math.min(...rows.map(r=>r.points.length));
+    const milestones=[];
+    for(let n=5;n<=commonMax;n+=5)milestones.push(n);
+    if(commonMax&&!milestones.includes(commonMax))milestones.push(commonMax);
+
+    selectors.forEach((sel,i)=>{
+      const th=document.querySelector("#compare-col-"+(i+1));
+      const id=sel.value;
+      th.textContent=id&&playerMap.get(id)?playerMap.get(id).qb:"—";
+    });
+
+    tbody.innerHTML=milestones.map(n=>`<tr><td>#${n}</td>${selectors.map(sel=>{
+      const row=rows.find(r=>r.id===sel.value);
+      if(!row||row.points.length<n)return "<td>—</td>";
+      const p=row.points[n-1];
+      return `<td><strong>${fmtPct(p.cdcr)}</strong><br><span class="fineprint">${p.conversions}/${n}</span></td>`;
+    }).join("")}</tr>`).join("");
+
+    const u=new URL(location.href);
+    u.searchParams.set("scope",scope);
+    ids.forEach((id,i)=>u.searchParams.set("p"+(i+1),id));
+    for(let i=ids.length;i<4;i++)u.searchParams.delete("p"+(i+1));
+    history.replaceState(null,"",u);
+  }
+
+  const params=new URLSearchParams(location.search);
+  const requestedScope=params.get("scope");
+  if(["overall","trailing","tied"].includes(requestedScope))scope=requestedScope;
+  for(let i=0;i<4;i++){
+    const id=params.get("p"+(i+1));
+    if(id&&playerMap.has(id))selectors[i].value=id;
+  }
+
+  selectors.forEach(sel=>sel.addEventListener("change",render));
+  scopeButtons.forEach(b=>b.addEventListener("click",()=>{scope=b.dataset.compareScope;render()}));
+  render();
+}
+
+
 function initInteractivePages(){
   if(document.querySelector("#qb-table")) initResults();
   if(document.querySelector("#trajectory-table")) initPlayers();
+  if(document.querySelector("#compare-chart")) initCompare();
   if(document.querySelector("#decision-table")) initExplore();
 }
 if(document.readyState==="loading"){
