@@ -120,6 +120,7 @@ async function initPlayers(){
   const select=document.querySelector("#trajectory-qb");
   const chart=document.querySelector("#trajectory-chart");
   const title=document.querySelector("#trajectory-title");
+  const breakdown=document.querySelector("#clutch-breakdown");
   const summary=document.querySelector("#trajectory-summary");
   const tbody=document.querySelector("#trajectory-table tbody");
   const buttons=[...document.querySelectorAll("[data-scope]")];
@@ -137,6 +138,33 @@ async function initPlayers(){
   select.value=latestByQB.has(requested)?requested:(latestByQB.has("00-0036442")?"00-0036442":qbs[0].qb_id);
 
   const fmtRank=(v,n)=>v?`#${v} of ${n}`:"Provisional";
+
+  function latestScopeRow(qid,scopeName){
+    const rows=data.filter(r=>r.qb_id===qid&&r.scope===scopeName);
+    return rows.reduce((latest,r)=>!latest||r.snapshot_season>latest.snapshot_season?r:latest,null);
+  }
+
+  function renderBreakdown(qid){
+    const overall=latestScopeRow(qid,"overall");
+    const trailing=latestScopeRow(qid,"trailing");
+    if(!overall||!trailing){
+      breakdown.innerHTML="";
+      return;
+    }
+    const tiedOpps=overall.n-trailing.n;
+    const tiedConversions=overall.conversions-trailing.conversions;
+    const tiedPct=tiedOpps?100*tiedConversions/tiedOpps:null;
+    const card=(label,conversions,opps,pct,detail)=>`<div>
+      <span>${label}</span>
+      <strong>${fmtPct(pct)}</strong>
+      <div class="formula-line">${conversions} of ${opps} converted</div>
+      <small>${detail}</small>
+    </div>`;
+    breakdown.innerHTML=
+      card("Overall",overall.conversions,overall.n,overall.raw_cdcr_pct,"Tied + trailing qualifying opportunities")+
+      card("Trailing",trailing.conversions,trailing.n,trailing.raw_cdcr_pct,"Opportunity began with the offense behind")+
+      card("Tied",tiedConversions,tiedOpps,tiedPct,"Opportunity began with the score tied");
+  }
 
   function linePath(rows,key,x,y){
     return rows.map((r,i)=>(i?"L":"M")+x(r.snapshot_season).toFixed(1)+","+y(r[key]).toFixed(1)).join(" ");
@@ -179,6 +207,7 @@ async function initPlayers(){
   function render(){
     buttons.forEach(b=>b.classList.toggle("active",b.dataset.scope===scope));
     const qid=select.value;
+    renderBreakdown(qid);
     const allRows=data.filter(r=>r.qb_id===qid&&r.scope===scope).sort((a,b)=>a.snapshot_season-b.snapshot_season);
     if(!allRows.length)return;
 
