@@ -63,27 +63,27 @@
       <button class="button small" id="qb-scroll-right" type="button" aria-label="Scroll table right">Columns →</button>
     </div>
   </div>
-  <p class="table-help">Quarterback and CDCR rank stay pinned while you scroll. Use the views above for a focused table, or choose <strong>All columns</strong> and use the column arrows.</p>
+  <p class="table-help">Quarterback and CDCR rank stay pinned while you scroll. Use the views above for a focused table, or choose <strong>All columns</strong> and use the column arrows. <strong>Hover over any column heading for its definition.</strong></p>
 
   <div class="table-wrap qb-results-wrap" id="qb-results-wrap">
     <table id="qb-table" class="data-table">
       <thead>
         <tr>
-          <th data-key="rank" data-col="rank">CDCR rank</th>
-          <th data-key="qb" data-col="qb">Quarterback</th>
-          <th data-key="opportunities" data-col="opportunities">Opps</th>
-          <th data-key="cdcr_pct" data-col="cdcr_pct">CDCR</th>
-          <th data-key="clutch_response_events" data-col="clutch_response_events">Clutch Response Events</th>
-          <th data-key="xcdcr_pct" data-col="xcdcr_pct">xCDCR</th>
-          <th data-key="cae_pp" data-col="cae_pp">CAE</th>
-          <th data-key="cae_rank" data-col="cae_rank">CAE rank</th>
-          <th data-key="sdcr_pct" data-col="sdcr_pct">sCDCR</th>
-          <th data-key="sdcr_rank" data-col="sdcr_rank">sCDCR rank</th>
-          <th data-key="trailing_cdcr_rank" data-col="trailing_cdcr_rank">Trailing raw rank</th>
-          <th data-key="trailing_sdcr_rank" data-col="trailing_sdcr_rank">Trailing sCDCR rank</th>
-          <th data-key="raw_outcome_rank" data-col="raw_outcome_rank">Raw outcome rank</th>
-          <th data-key="adjusted_outcome_rank" data-col="adjusted_outcome_rank">Adjusted rank</th>
-          <th data-key="conversion_nonwin_pct" data-col="conversion_nonwin_pct">Conv. → non-win</th>
+          <th data-key="rank" data-col="rank" title="Rank among qualified quarterbacks by observed Clutch Drive Conversion Rate (CDCR). The published career leaderboard requires at least 25 resolved CDCR opportunities.">CDCR rank</th>
+          <th data-key="qb" data-col="qb" title="Quarterback credited with the selected clutch opportunity. Team abbreviations shown beneath the name reflect teams represented in the study window.">Quarterback</th>
+          <th data-key="opportunities" data-col="opportunities" title="Resolved final qualifying CDCR opportunities for the quarterback. Unresolved manual-review or non-decision cases are excluded from the rate denominator.">Opps</th>
+          <th data-key="cdcr_pct" data-col="cdcr_pct" title="Clutch Drive Conversion Rate: the percentage of resolved final qualifying opportunities in which the offense achieved the required result before the selected possession ended.">CDCR</th>
+          <th data-key="clutch_response_events" data-col="clutch_response_events" title="Count of all successful qualifying late-game responses, including earlier successful responses that may be followed by a later final CDCR opportunity. This is a count, not a second success rate.">Clutch Response Events</th>
+          <th data-key="xcdcr_pct" data-col="xcdcr_pct" title="Expected CDCR: modeled conversion probability based on the opportunity's starting context, including score state, time remaining, field position, and era.">xCDCR</th>
+          <th data-key="cae_pp" data-col="cae_pp" title="Conversions Above Expected: observed CDCR minus xCDCR, expressed in percentage points. Positive values indicate conversion above the modeled expectation.">CAE</th>
+          <th data-key="cae_rank" data-col="cae_rank" title="Rank among qualified quarterbacks by Conversions Above Expected (CAE).">CAE rank</th>
+          <th data-key="sdcr_pct" data-col="sdcr_pct" title="Standardized CDCR: a partially pooled estimate that adjusts for opportunity context and evaluates quarterbacks on a common reference opportunity distribution. It is descriptive, not claimed as a proven predictive improvement.">sCDCR</th>
+          <th data-key="sdcr_rank" data-col="sdcr_rank" title="Rank among qualified quarterbacks by the sCDCR point estimate.">sCDCR rank</th>
+          <th data-key="trailing_cdcr_rank" data-col="trailing_cdcr_rank" title="Observed CDCR rank using only qualifying opportunities that began with the offense trailing, excluding tied starts.">Trailing raw rank</th>
+          <th data-key="trailing_sdcr_rank" data-col="trailing_sdcr_rank" title="sCDCR rank using only qualifying opportunities that began with the offense trailing.">Trailing sCDCR rank</th>
+          <th data-key="raw_outcome_rank" data-col="raw_outcome_rank" title="Rank under the reconstructed raw game-outcome framework used for comparison with prior clutch research. Unlike CDCR, this framework can depend on the eventual game outcome.">Raw outcome rank</th>
+          <th data-key="adjusted_outcome_rank" data-col="adjusted_outcome_rank" title="Rank under the study's supplemental adjusted game-outcome comparison framework, which attempts to account for selected attribution edge cases.">Adjusted rank</th>
+          <th data-key="conversion_nonwin_pct" data-col="conversion_nonwin_pct" title="Percentage of the quarterback's successful CDCR conversions in which the team ultimately did not win the game. This illustrates why CDCR separates the offensive opportunity result from the final team outcome.">Conv. → non-win</th>
         </tr>
       </thead>
       <tbody></tbody>
