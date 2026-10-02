@@ -15,6 +15,8 @@ async function initResults(){
   const viewButtons=[...document.querySelectorAll("[data-result-view]")];
   const scrollLeft=document.querySelector("#qb-scroll-left");
   const scrollRight=document.querySelector("#qb-scroll-right");
+  const topScroll=document.querySelector("#qb-top-scroll");
+  const topScrollInner=document.querySelector("#qb-top-scroll-inner");
 
   const views={
     core:{
@@ -46,6 +48,10 @@ async function initResults(){
     viewLabel.textContent=views[activeView].label;
   }
 
+  function syncTopScrollbarWidth(){
+    topScrollInner.style.width=table.scrollWidth+"px";
+  }
+
   function render(){
     const q=(search.value||"").toLowerCase();
     let rows=data.filter(r=>!q||r.qb.toLowerCase().includes(q)||r.teams.toLowerCase().includes(q));
@@ -74,6 +80,7 @@ async function initResults(){
       <td data-col="conversion_nonwin_pct">${fmtPct(r.conversion_nonwin_pct)}</td>
     </tr>`).join("");
     applyView();
+    requestAnimationFrame(syncTopScrollbarWidth);
   }
 
   search.addEventListener("input",render);
@@ -82,11 +89,29 @@ async function initResults(){
   }));
   viewButtons.forEach(btn=>btn.addEventListener("click",()=>{
     activeView=btn.dataset.resultView;
-    wrap.scrollTo({left:0,behavior:"smooth"});
+    wrap.scrollLeft=0;
+    topScroll.scrollLeft=0;
     applyView();
+    requestAnimationFrame(syncTopScrollbarWidth);
   }));
+
+  let syncing=false;
+  topScroll.addEventListener("scroll",()=>{
+    if(syncing)return;
+    syncing=true;
+    wrap.scrollLeft=topScroll.scrollLeft;
+    requestAnimationFrame(()=>{syncing=false});
+  });
+  wrap.addEventListener("scroll",()=>{
+    if(syncing)return;
+    syncing=true;
+    topScroll.scrollLeft=wrap.scrollLeft;
+    requestAnimationFrame(()=>{syncing=false});
+  });
+
   scrollLeft.addEventListener("click",()=>wrap.scrollBy({left:-Math.max(320,wrap.clientWidth*.7),behavior:"smooth"}));
   scrollRight.addEventListener("click",()=>wrap.scrollBy({left:Math.max(320,wrap.clientWidth*.7),behavior:"smooth"}));
+  window.addEventListener("resize",syncTopScrollbarWidth);
 
   render();
 }
