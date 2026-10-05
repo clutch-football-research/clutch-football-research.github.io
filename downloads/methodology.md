@@ -286,16 +286,6 @@ Clutch Response Events remain descriptive counts rather than a success-rate deno
 
 ### sCDCR validation interpretation
 
-The sCDCR sensitivity analysis preserves its predeclared held-out predictive
-checks without retuning. In the locked v1.2 rebuild, the hierarchical QB-effect
-model is trivially better than globally calibrated xCDCR on Brier score and
-trivially worse on log loss. Because the two predeclared predictive scores do
-not both improve, sCDCR is **not** presented as a demonstrated predictive
-enhancement over calibrated xCDCR.
+Trailing sCDCR is exploratory: the exact reference-rank invariance check failed; the aggregate scientific rank-stability result remains false. All other required rank-stability and core checks passed. Independently validated core outputs are publishable under a policy adopted after review of Classifier #156. This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot. Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims. Predictive improvement claims are prohibited. The site therefore does not claim that sCDCR improves prediction. Modern-era versus pooled trailing rank Spearman: 0.9999542124542123.
 
-The rank-stability checks across alternate difficulty models, shrinkage
-strengths, and reference distributions pass. sCDCR may therefore be reported as
-a descriptive standardization and partial-pooling estimate, alongside observed
-CDCR and its uncertainty, with the predictive limitation disclosed.
-
-Any publication artifact, website, leaderboard, trajectory, crosswalk, or submission package must identify methodology v1.2 after the corrected full rerun is accepted.
+Scientific flags are retained in sdcr_sensitivity_summary.json and publication_policy.json. This separately versioned publication policy does not change methodology v1.2.

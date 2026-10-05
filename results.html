@@ -17,6 +17,7 @@
   </div>
 </header>
 <main>
+<aside class="shell transparency-box" aria-label="sCDCR publication status"><h2>sCDCR publication status</h2><p>Trailing sCDCR is exploratory: the exact reference-rank invariance check failed; the aggregate scientific rank-stability result remains false. All other required rank-stability and core checks passed. Independently validated core outputs are publishable under a policy adopted after review of Classifier #156. This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot. Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims. Predictive improvement claims are prohibited. The site therefore does not claim that sCDCR improves prediction. Modern-era versus pooled trailing rank Spearman: 0.9999542124542123.</p><p><a href="downloads/publication_policy.json">Policy and scientific results (JSON)</a></p></aside>
 
 <section class="page-hero compact">
   <div class="shell">
@@ -29,8 +30,8 @@
   <div class="spotlight-grid">
     <article class="spotlight">
       <span class="kicker">Observed result</span>
-      <h2>Burrow: 56.0%</h2>
-      <p>14 conversions in 25 resolved career opportunities; observed CDCR rank #7 in the 25+ cohort.</p>
+      <h2>Burrow: 53.8%</h2>
+      <p>14 conversions in 26 resolved career opportunities; observed CDCR rank #9 in the 25+ cohort.</p>
     </article>
     <article class="spotlight">
       <span class="kicker">Large-sample comparison</span>
@@ -41,7 +42,7 @@
 
   <div class="transparency-box">
     <h2>sCDCR validation status</h2>
-    <p>Rank stability passed across the predeclared model variants. The held-out predictive comparison is <strong>mixed, with no clear predictive gain</strong>: Brier score is trivially better and log loss trivially worse than globally calibrated xCDCR. The site therefore does not claim that sCDCR improves prediction.</p>
+    <p>Trailing sCDCR is exploratory: the exact reference-rank invariance check failed; the aggregate scientific rank-stability result remains false. All other required rank-stability and core checks passed. Independently validated core outputs are publishable under a policy adopted after review of Classifier #156. This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot. Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims. Predictive improvement claims are prohibited. The site therefore does not claim that sCDCR improves prediction. Modern-era versus pooled trailing rank Spearman: 0.9999542124542123.</p>
   </div>
 
   <div class="table-toolbar">
@@ -64,10 +65,10 @@
           <th data-key="xcdcr_pct" title="Expected CDCR: modeled conversion probability based on the opportunity's starting context, including score state, time remaining, field position, and era.">xCDCR</th>
           <th data-key="cae_pp" title="Conversions Above Expected: observed CDCR minus xCDCR, expressed in percentage points. Positive values indicate conversion above the modeled expectation.">CAE</th>
           <th data-key="cae_rank" title="Rank among qualified quarterbacks by Conversions Above Expected (CAE).">CAE rank</th>
-          <th data-key="sdcr_pct" title="Standardized CDCR: a partially pooled estimate that adjusts for opportunity context and evaluates quarterbacks on a common reference opportunity distribution. It is descriptive, not claimed as a proven predictive improvement.">sCDCR</th>
+          <th data-key="sdcr_pct" title="Standardized CDCR: a partially pooled estimate that adjusts for opportunity context and evaluates quarterbacks on a common reference opportunity distribution. Overall reference stability is not assessed by the trailing audit; retain uncertainty and consult publication metadata.">sCDCR</th>
           <th data-key="sdcr_rank" title="Rank among qualified quarterbacks by the sCDCR point estimate.">sCDCR rank</th>
           <th data-key="trailing_cdcr_rank" title="Observed CDCR rank using only qualifying opportunities that began with the offense trailing, excluding tied starts.">Trailing raw rank</th>
-          <th data-key="trailing_sdcr_rank" title="sCDCR rank using only qualifying opportunities that began with the offense trailing.">Trailing sCDCR rank</th>
+          <th data-key="trailing_sdcr_rank" title="Trailing sCDCR point-estimate rank. Consult the displayed scoped publication status and uncertainty; reference sensitivity can change its ordering.">Trailing sCDCR rank</th>
           <th data-key="raw_outcome_rank" title="Rank under the reconstructed raw game-outcome framework used for comparison with prior clutch research. Unlike CDCR, this framework can depend on the eventual game outcome.">Raw outcome rank</th>
           <th data-key="adjusted_outcome_rank" title="Rank under the study's supplemental adjusted game-outcome comparison framework, which attempts to account for selected attribution edge cases.">Adjusted rank</th>
           <th data-key="clutch_response_events" title="Count of all successful qualifying late-game responses, including earlier successful responses that may be followed by a later final CDCR opportunity. This is a count, not a second success rate.">Clutch Response Events</th>
@@ -84,7 +85,7 @@
 <footer class="site-footer">
   <div class="shell footer-grid">
     <div><strong>Clutch Football Research</strong><br><span>Measure the opportunity. Separate the outcome.</span></div>
-    <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 3 of the 2026 season.</div>
+    <div>Research snapshot: NFL play-by-play, 1999 through the completion of Week 4 of the 2026 season.</div>
     <div>Primary data source: <a href="https://www.nflverse.com/" rel="noopener">nflverse</a>. Prior-work comparison includes <a href="https://www.365scores.com/news/justin-herbert-more-clutch-nfl-quarterback" rel="noopener">Scott Kacsmar's clutch research</a>.</div>
     <div>Questions, methodology feedback, or data corrections? Contact us at <a href="mailto:clutchfootballresearch@gmail.com">clutchfootballresearch@gmail.com</a>.</div>
   </div>

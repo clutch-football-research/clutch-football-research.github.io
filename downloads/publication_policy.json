@@ -1,66 +1,37 @@
 {
-  "analysis": "sCDCR sensitivity and out-of-season validation",
-  "scope": "trailing",
-  "cohort": {
-    "qualified_qbs": 64,
-    "career_resolved_cdcr_min": 25
+  "policy_version": "CFR-PUBLICATION-1.1",
+  "adopted_after_run": {
+    "run_id": 37307284048,
+    "run_attempt": 1,
+    "run_number": 156,
+    "conclusion": "failure"
   },
-  "predeclared_design": {
-    "difficulty_variants": [
-      "QB-and-season-excluded bucket (primary)",
-      "season-excluded bucket",
-      "season-excluded nonlinear spline"
-    ],
-    "shrinkage_variants": [
-      "empirical-Bayes fitted sigma (primary)",
-      "half primary sigma",
-      "double primary sigma"
-    ],
-    "reference_variants": [
-      "pooled qualifying opportunities",
-      "equal-QB weighted opportunities",
-      "2020-2026 modern-era opportunities"
-    ],
-    "validation": "Leave one QB-season out of the QB-effect estimate; compare held-out predictions with globally calibrated xCDCR."
+  "approval_date": "2026-10-05",
+  "post_result_policy_amendment": true,
+  "core_publication_allowed": true,
+  "reference_sensitivity_exception_applied": true,
+  "failed_rank_criteria": [
+    "reference_rank_invariant"
+  ],
+  "scientific_readiness_flags": {
+    "bucket_rank_spearman_ge_0_90": true,
+    "spline_rank_spearman_ge_0_90": true,
+    "half_sigma_rank_spearman_ge_0_90": true,
+    "double_sigma_rank_spearman_ge_0_90": true,
+    "all_variant_top10_overlap_ge_7": true,
+    "reference_rank_invariant": false,
+    "heldout_qb_effect_brier_not_worse": true,
+    "heldout_qb_effect_logloss_not_worse": false,
+    "all_pass": false
   },
-  "primary_model": {
-    "mu": 0.11741353060437265,
-    "sigma": 0.18287607053187915,
-    "reference_n": 1902
-  },
-  "variant_comparisons": {
-    "season_only_bucket_eb": {
-      "rank_spearman": 0.9992216117216116,
-      "mean_abs_rank_delta": 0.375,
-      "median_abs_rank_delta": 0.0,
-      "max_abs_rank_delta": 3,
-      "top10_overlap": 10,
-      "top10_union": 10
-    },
-    "season_only_spline_eb": {
-      "rank_spearman": 0.9910714285714285,
-      "mean_abs_rank_delta": 1.71875,
-      "median_abs_rank_delta": 1.0,
-      "max_abs_rank_delta": 7,
-      "top10_overlap": 9,
-      "top10_union": 11
-    },
-    "primary_half_sigma": {
-      "rank_spearman": 0.9988095238095237,
-      "mean_abs_rank_delta": 0.53125,
-      "median_abs_rank_delta": 0.0,
-      "max_abs_rank_delta": 4,
-      "top10_overlap": 10,
-      "top10_union": 10
-    },
-    "primary_double_sigma": {
-      "rank_spearman": 0.99757326007326,
-      "mean_abs_rank_delta": 0.8125,
-      "median_abs_rank_delta": 1.0,
-      "max_abs_rank_delta": 4,
-      "top10_overlap": 10,
-      "top10_union": 10
-    }
+  "scientific_rank_stability_pass": false,
+  "scientific_all_flags_pass": false,
+  "predictive_claim_allowed": false,
+  "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
+  "assessment_scope": "trailing",
+  "sdcr_roles": {
+    "trailing": "exploratory",
+    "overall": "reference_sensitivity_not_assessed_by_trailing_audit"
   },
   "reference_sensitivity": {
     "pooled": {
@@ -1047,232 +1018,7 @@
       }
     ]
   },
-  "heldout_prediction": {
-    "n": 1902,
-    "raw_xcdcr": {
-      "brier": 0.18318522404720955,
-      "log_loss": 0.5424527133105423
-    },
-    "globally_calibrated_xcdcr": {
-      "brier": 0.18250008705207008,
-      "log_loss": 0.5409067621512701
-    },
-    "hierarchical_qb_effect": {
-      "brier": 0.18246882448066254,
-      "log_loss": 0.5409440679712988
-    },
-    "qb_vs_calibrated_brier_change_pct": -0.01713016794266889,
-    "qb_vs_calibrated_logloss_change_pct": 0.006896903984030085
-  },
-  "focal_qbs": {
-    "burrow": {
-      "primary_qbx_bucket_eb": {
-        "rank": 36,
-        "sdcr_pct": 33.95294080545066
-      },
-      "season_only_bucket_eb": {
-        "rank": 36,
-        "sdcr_pct": 33.99671925146856
-      },
-      "season_only_spline_eb": {
-        "rank": 35,
-        "sdcr_pct": 34.07617671422395
-      },
-      "primary_half_sigma": {
-        "rank": 37,
-        "sdcr_pct": 34.1085449988394
-      },
-      "primary_double_sigma": {
-        "rank": 36,
-        "sdcr_pct": 33.66423832852303
-      },
-      "reference_values": {
-        "pooled": {
-          "rank": 36,
-          "sdcr_pct": 33.95294080545065
-        },
-        "equal_qb": {
-          "rank": 36,
-          "sdcr_pct": 33.59274038540565
-        },
-        "modern_2020_2026": {
-          "rank": 36,
-          "sdcr_pct": 37.05268916377834
-        }
-      }
-    },
-    "hurts": {
-      "primary_qbx_bucket_eb": {
-        "rank": null,
-        "sdcr_pct": null,
-        "status": "not_in_corrected_scope_or_cohort"
-      },
-      "season_only_bucket_eb": {
-        "rank": null,
-        "sdcr_pct": null,
-        "status": "not_in_corrected_scope_or_cohort"
-      },
-      "season_only_spline_eb": {
-        "rank": null,
-        "sdcr_pct": null,
-        "status": "not_in_corrected_scope_or_cohort"
-      },
-      "primary_half_sigma": {
-        "rank": null,
-        "sdcr_pct": null,
-        "status": "not_in_corrected_scope_or_cohort"
-      },
-      "primary_double_sigma": {
-        "rank": null,
-        "sdcr_pct": null,
-        "status": "not_in_corrected_scope_or_cohort"
-      },
-      "reference_values": {
-        "pooled": {
-          "rank": null,
-          "sdcr_pct": null,
-          "status": "not_in_corrected_scope_or_cohort"
-        },
-        "equal_qb": {
-          "rank": null,
-          "sdcr_pct": null,
-          "status": "not_in_corrected_scope_or_cohort"
-        },
-        "modern_2020_2026": {
-          "rank": null,
-          "sdcr_pct": null,
-          "status": "not_in_corrected_scope_or_cohort"
-        }
-      }
-    },
-    "brady": {
-      "primary_qbx_bucket_eb": {
-        "rank": 3,
-        "sdcr_pct": 36.52326495734174
-      },
-      "season_only_bucket_eb": {
-        "rank": 3,
-        "sdcr_pct": 36.149325208520175
-      },
-      "season_only_spline_eb": {
-        "rank": 3,
-        "sdcr_pct": 36.344049395476155
-      },
-      "primary_half_sigma": {
-        "rank": 3,
-        "sdcr_pct": 34.89888029938745
-      },
-      "primary_double_sigma": {
-        "rank": 3,
-        "sdcr_pct": 39.520948609420806
-      },
-      "reference_values": {
-        "pooled": {
-          "rank": 3,
-          "sdcr_pct": 36.52326495734174
-        },
-        "equal_qb": {
-          "rank": 3,
-          "sdcr_pct": 36.15092540739982
-        },
-        "modern_2020_2026": {
-          "rank": 3,
-          "sdcr_pct": 39.72533972352272
-        }
-      }
-    },
-    "mahomes": {
-      "primary_qbx_bucket_eb": {
-        "rank": 12,
-        "sdcr_pct": 35.11998672698909
-      },
-      "season_only_bucket_eb": {
-        "rank": 12,
-        "sdcr_pct": 34.937361341400866
-      },
-      "season_only_spline_eb": {
-        "rank": 12,
-        "sdcr_pct": 34.931742892836844
-      },
-      "primary_half_sigma": {
-        "rank": 12,
-        "sdcr_pct": 34.429871355702154
-      },
-      "primary_double_sigma": {
-        "rank": 11,
-        "sdcr_pct": 37.06663827967657
-      },
-      "reference_values": {
-        "pooled": {
-          "rank": 12,
-          "sdcr_pct": 35.11998672698908
-        },
-        "equal_qb": {
-          "rank": 12,
-          "sdcr_pct": 34.75412739677399
-        },
-        "modern_2020_2026": {
-          "rank": 12,
-          "sdcr_pct": 38.26784296178288
-        }
-      }
-    },
-    "allen": {
-      "primary_qbx_bucket_eb": {
-        "rank": 30,
-        "sdcr_pct": 34.23108301986742
-      },
-      "season_only_bucket_eb": {
-        "rank": 29,
-        "sdcr_pct": 34.21042010558054
-      },
-      "season_only_spline_eb": {
-        "rank": 26,
-        "sdcr_pct": 34.29469485834014
-      },
-      "primary_half_sigma": {
-        "rank": 30,
-        "sdcr_pct": 34.1844891593693
-      },
-      "primary_double_sigma": {
-        "rank": 30,
-        "sdcr_pct": 34.46988131406072
-      },
-      "reference_values": {
-        "pooled": {
-          "rank": 30,
-          "sdcr_pct": 34.23108301986741
-        },
-        "equal_qb": {
-          "rank": 30,
-          "sdcr_pct": 33.869403519794915
-        },
-        "modern_2020_2026": {
-          "rank": 30,
-          "sdcr_pct": 37.34375480309674
-        }
-      }
-    }
-  },
-  "readiness_flags": {
-    "bucket_rank_spearman_ge_0_90": true,
-    "spline_rank_spearman_ge_0_90": true,
-    "half_sigma_rank_spearman_ge_0_90": true,
-    "double_sigma_rank_spearman_ge_0_90": true,
-    "all_variant_top10_overlap_ge_7": true,
-    "reference_rank_invariant": false,
-    "heldout_qb_effect_brier_not_worse": true,
-    "heldout_qb_effect_logloss_not_worse": false,
-    "all_pass": false
-  },
-  "publication_interpretation": {
-    "rank_stability_pass": false,
-    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
-    "predictive_claim_allowed": false,
-    "recommended_role": "exploratory_only",
-    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.01713016794266889,
-    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.006896903984030085,
-    "decision_rule": "Preserve the predeclared predictive checks exactly as specified. Do not retune sCDCR to make both held-out scores pass. If the two scores disagree, do not claim predictive improvement over globally calibrated xCDCR."
-  },
-  "interpretation_guardrail": "Scientific rank-stability pass for trailing scope: False. Predictive status: MIXED_NO_CLEAR_PREDICTIVE_GAIN. Rank stability does not imply precise individual ranks. sCDCR remains a model-based standardization and shrinkage estimate and should be published with observed CDCR and uncertainty. Mixed held-out scores do not establish predictive enhancement. This trailing audit does not assess overall reference-rank stability."
+  "disclosure": "Trailing sCDCR is exploratory: the exact reference-rank invariance check failed; the aggregate scientific rank-stability result remains false. All other required rank-stability and core checks passed. Independently validated core outputs are publishable under a policy adopted after review of Classifier #156.",
+  "scope_guardrail": "This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot.",
+  "uncertainty_guardrail": "Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims."
 }
