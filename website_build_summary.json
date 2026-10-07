@@ -22,6 +22,9 @@
   "player_trajectory_rows": 9597,
   "player_trajectories_true_asof": true,
   "standardized_cdcr_integrated": true,
+  "situational_qb_integrated": false,
+  "situational_release_candidate": false,
+  "situational_public_deployment_authorized": false,
   "sdcr_validation": {
     "rank_stability_pass": false,
     "assessment_scope": "trailing",
