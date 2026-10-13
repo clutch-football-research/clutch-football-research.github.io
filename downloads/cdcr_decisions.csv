@@ -1,7 +1,6 @@
 game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,start_score_diff,start_field_position,required_result,classification,decision_note,team_result,xcdcr_pct,difficulty,manual_override,methodology_version
 1999_01_ARI_PHI,1999,1,REG,1999-09-12,Jake Plummer,ARI,PHI,4,1:49,-2,PHI 43,Tie or take lead,CONVERSION,Offense reached required score state,W,47.963,AVERAGE,no,1.2
 1999_01_CIN_TEN,1999,1,REG,1999-09-12,Akili Smith,CIN,TEN,4,0:08,-1,CIN 40,Tie or take lead,FAILURE,End of game,L,25.711,DIFFICULT,no,1.2
-1999_01_CIN_TEN,1999,1,REG,1999-09-12,Unresolved,TEN,CIN,4,2:24,-2,CIN 49,Tie or take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 1999_01_DAL_WAS,1999,1,REG,1999-09-12,Troy Aikman,DAL,WAS,5,12:47,0,DAL 5,Take lead,CONVERSION,Offense reached required score state,W,40.584,AVERAGE,no,1.2
 1999_01_DAL_WAS,1999,1,REG,1999-09-12,Brad Johnson,WAS,DAL,5,15:00,0,WAS 24,Take lead,FAILURE,Punt,L,55.39,FAVORABLE,no,1.2
 1999_01_DET_SEA,1999,1,REG,1999-09-12,Jon Kitna,SEA,DET,4,2:10,-8,SEA 25,TD + 2-point conversion,FAILURE,Turnover on downs,L,8.284,VERY_DIFFICULT,no,1.2
@@ -83,7 +82,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 1999_08_STL_TEN,1999,8,REG,1999-10-31,Kurt Warner,LA,TEN,4,2:14,-3,LA 42,Tie or take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,66.634,FAVORABLE,no,1.2
 1999_09_ARI_NYJ,1999,9,REG,1999-11-07,Dave Brown,ARI,NYJ,4,2:50,-5,ARI 35,Tie or take lead,FAILURE,Punt,L,29.603,DIFFICULT,no,1.2
 1999_09_CHI_GB,1999,9,REG,1999-11-07,Brett Favre,GB,CHI,4,3:19,-1,GB 17,Tie or take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,39.017,AVERAGE,no,1.2
-1999_09_KC_IND,1999,9,REG,1999-11-07,Unresolved,KC,IND,4,1:10,-8,KC 30,TD + 2-point conversion,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 1999_09_STL_DET,1999,9,REG,1999-11-07,Gus Frerotte,DET,LA,4,2:42,-3,DET 23,Tie or take lead,CONVERSION,Offense reached required score state,W,53.769,AVERAGE,no,1.2
 1999_09_STL_DET,1999,9,REG,1999-11-07,Kurt Warner,LA,DET,4,0:28,-4,LA 23,Tie or take lead,FAILURE,Interception,L,6.792,VERY_DIFFICULT,no,1.2
 1999_10_BAL_JAX,1999,10,REG,1999-11-14,Tony Banks,BAL,JAX,4,7:56,-3,BAL 32,Tie or take lead,FAILURE,Turnover on downs,L,61.388,FAVORABLE,no,1.2
@@ -127,7 +125,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 1999_14_CAR_GB,1999,14,REG,1999-12-12,Steve Beuerlein,CAR,GB,4,4:00,-4,CAR 37,Tie or take lead,CONVERSION,Offense reached required score state,W,29.603,DIFFICULT,no,1.2
 1999_14_CAR_GB,1999,14,REG,1999-12-12,Brett Favre,GB,CAR,4,7:48,-3,GB 48,Tie or take lead,CONVERSION,Offense reached required score state,L,73.19,VERY_FAVORABLE,no,1.2
 1999_14_DEN_JAX,1999,14,REG,1999-12-13,Brian Griese,DEN,JAX,4,2:35,-7,DEN 20,Touchdown,CONVERSION,Touchdown down 7 kicker neutral,L,20.947,DIFFICULT,no,1.2
-1999_14_DEN_JAX,1999,14,REG,1999-12-13,Unresolved,JAX,DEN,4,1:43,0,JAX 27,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 1999_14_DET_TB,1999,14,REG,1999-12-12,Gus Frerotte,DET,TB,4,4:18,-7,DET 13,Touchdown,FAILURE,Turnover on downs,L,12.722,VERY_DIFFICULT,no,1.2
 1999_14_MIN_KC,1999,14,REG,1999-12-12,Elvis Grbac,KC,MIN,4,1:38,0,KC 33,Take lead,CONVERSION,Offense reached required score state,W,58.715,FAVORABLE,no,1.2
 1999_14_MIN_KC,1999,14,REG,1999-12-12,Jeff George,MIN,KC,4,8:01,-7,MIN 48,Touchdown,FAILURE,Fumble lost,L,38.345,AVERAGE,no,1.2
@@ -192,12 +189,10 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2000_04_NYJ_TB,2000,4,REG,2000-09-24,Vinny Testaverde,NYJ,TB,4,1:39,-3,TB 24,Tie or take lead,CONVERSION,active qb verified; Testaverde remained primary QB for halfback-option winning drive,W,70.328,VERY_FAVORABLE,yes,1.2
 2000_04_NYJ_TB,2000,4,REG,2000-09-24,Shaun King,TB,NYJ,4,0:52,-4,TB 20,Tie or take lead,FAILURE,Fumble lost,L,7.299,VERY_DIFFICULT,no,1.2
 2000_04_SEA_SD,2000,4,REG,2000-09-24,Jim Harbaugh,LAC,SEA,4,7:26,-8,LAC 24,TD + 2-point conversion,FAILURE,Turnover on downs,L,12.579,VERY_DIFFICULT,no,1.2
-2000_04_TEN_PIT,2000,4,REG,2000-09-24,Unresolved,PIT,TEN,4,1:25,-3,PIT 26,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2000_05_CHI_GB,2000,5,REG,2000-10-01,Brett Favre,GB,CHI,4,1:19,-3,GB 18,Tie or take lead,FAILURE,Turnover on downs,L,24.953,DIFFICULT,no,1.2
 2000_05_DAL_CAR,2000,5,REG,2000-10-01,Steve Beuerlein,CAR,DAL,4,1:02,0,CAR 35,Take lead,FAILURE,Punt,L,61.122,FAVORABLE,no,1.2
 2000_05_DAL_CAR,2000,5,REG,2000-10-01,Troy Aikman,DAL,CAR,5,15:00,0,DAL 26,Take lead,CONVERSION,Offense reached required score state,W,56.258,FAVORABLE,no,1.2
 2000_05_IND_BUF,2000,5,REG,2000-10-01,Rob Johnson,BUF,IND,4,2:05,-6,BUF 20,Tie or take lead,CONVERSION,Offense reached required score state,L,31.197,DIFFICULT,no,1.2
-2000_05_IND_BUF,2000,5,REG,2000-10-01,Unresolved,IND,BUF,4,1:08,-1,IND 31,Tie or take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2000_05_SEA_KC,2000,5,REG,2000-10-02,Jon Kitna,SEA,KC,4,0:40,-7,SEA 30,Touchdown,FAILURE,Interception,L,4.691,VERY_DIFFICULT,no,1.2
 2000_05_TB_WAS,2000,5,REG,2000-10-01,Shaun King,TB,WAS,5,14:00,0,TB 14,Take lead,FAILURE,Punt,L,40.988,AVERAGE,no,1.2
 2000_05_TB_WAS,2000,5,REG,2000-10-01,Brad Johnson,WAS,TB,5,12:55,0,TB 8,Take lead,CONVERSION,Offense reached required score state,W,84.503,VERY_FAVORABLE,no,1.2
@@ -244,8 +239,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2000_10_DEN_NYJ,2000,10,REG,2000-11-05,Vinny Testaverde,NYJ,DEN,4,1:53,-7,NYJ 34,Touchdown,FAILURE,Turnover on downs,L,11.904,VERY_DIFFICULT,no,1.2
 2000_10_IND_CHI,2000,10,REG,2000-11-05,Peyton Manning,IND,CHI,4,1:36,-3,IND 42,Tie or take lead,FAILURE,Fumble lost,L,51.836,AVERAGE,no,1.2
 2000_10_MIN_GB,2000,10,REG,2000-11-06,Brett Favre,GB,MIN,5,15:00,0,GB 18,Take lead,CONVERSION,Offense reached required score state,W,40.988,AVERAGE,no,1.2
-2000_10_MIN_GB,2000,10,REG,2000-11-06,Unresolved,MIN,GB,4,0:52,0,GB 48,Take lead,MANUAL_REVIEW,Qb attribution unresolved,L,,,no,1.2
-2000_10_PIT_TEN,2000,10,REG,2000-11-05,Unresolved,TEN,PIT,4,3:42,-1,TEN 26,Tie or take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2000_10_SD_SEA,2000,10,REG,2000-11-05,Moses Moreno,LAC,SEA,4,14:48,-2,LAC 17,Tie or take lead,CONVERSION,Offense reached required score state,L,50.846,AVERAGE,no,1.2
 2000_10_SD_SEA,2000,10,REG,2000-11-05,Jon Kitna,SEA,LAC,4,5:36,-1,SEA 34,Tie or take lead,CONVERSION,Offense reached required score state,W,64.753,FAVORABLE,no,1.2
 2000_10_WAS_ARI,2000,10,REG,2000-11-05,Jeff George,WAS,ARI,4,2:13,-1,WAS 10,Tie or take lead,FAILURE,Turnover on downs,L,41.085,AVERAGE,no,1.2
@@ -285,7 +278,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2000_16_BAL_ARI,2000,16,REG,2000-12-17,Jake Plummer,ARI,BAL,4,7:46,-6,ARI 40,Tie or take lead,FAILURE,Turnover on downs,L,52.998,AVERAGE,no,1.2
 2000_16_DET_NYJ,2000,16,REG,2000-12-17,Vinny Testaverde,NYJ,DET,4,2:26,-3,NYJ 31,Tie or take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,56.358,FAVORABLE,no,1.2
 2000_16_IND_MIA,2000,16,REG,2000-12-17,Jay Fiedler,MIA,IND,4,0:24,-7,MIA 24,Touchdown,FAILURE,End of game,L,4.691,VERY_DIFFICULT,no,1.2
-2000_16_JAX_CIN,2000,16,REG,2000-12-17,Unresolved,CIN,JAX,4,1:07,0,JAX 34,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2000_16_NE_BUF,2000,16,REG,2000-12-17,Doug Flutie,BUF,NE,5,13:11,0,BUF 28,Take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,56.258,FAVORABLE,no,1.2
 2000_16_NE_BUF,2000,16,REG,2000-12-17,Drew Bledsoe,NE,BUF,5,6:15,0,NE 11,Take lead,CONVERSION,Offense reached required score state,W,40.988,AVERAGE,no,1.2
 2000_16_NYG_DAL,2000,16,REG,2000-12-17,Anthony Wright,DAL,NYG,4,1:49,-4,DAL 32,Tie or take lead,FAILURE,Turnover on downs,L,17.776,VERY_DIFFICULT,no,1.2
@@ -296,7 +288,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2000_17_CHI_DET,2000,17,REG,2000-12-24,Cade McNown,CHI,DET,4,0:39,0,CHI 45,Take lead,CONVERSION,Offense reached required score state,W,50.024,AVERAGE,no,1.2
 2000_17_CHI_DET,2000,17,REG,2000-12-24,Stoney Case,DET,CHI,4,1:29,0,DET 39,Take lead,FAILURE,Fumble lost,L,61.122,FAVORABLE,no,1.2
 2000_17_MIA_NE,2000,17,REG,2000-12-24,Jay Fiedler,MIA,NE,4,3:44,0,MIA 24,Take lead,CONVERSION,Offense reached required score state,W,76.73,VERY_FAVORABLE,no,1.2
-2000_17_MIA_NE,2000,17,REG,2000-12-24,Unresolved,NE,MIA,4,0:09,-3,NE 40,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2000_17_TB_GB,2000,17,REG,2000-12-24,Brett Favre,GB,TB,5,15:00,0,GB 38,Take lead,CONVERSION,Offense reached required score state,W,56.258,FAVORABLE,no,1.2
 2000_17_TB_GB,2000,17,REG,2000-12-24,Shaun King,TB,GB,4,1:45,0,TB 43,Take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,73.32,VERY_FAVORABLE,no,1.2
 2000_18_IND_MIA,2000,18,POST,2000-12-30,Peyton Manning,IND,MIA,5,12:04,0,IND 18,Take lead,ND-K,Missed or blocked fg 46 to 55,L,,,no,1.2
@@ -391,7 +382,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2001_11_TB_STL,2001,11,REG,2001-11-26,Kurt Warner,LA,TB,4,02:36,-7,LA 44,Touchdown,FAILURE,Interception,L,33.192,DIFFICULT,no,1.2
 2001_12_ARI_OAK,2001,12,REG,2001-12-02,Jake Plummer,ARI,LV,5,08:42,0,LV 25,Take lead,CONVERSION,Offense reached required score state,W,85.284,VERY_FAVORABLE,no,1.2
 2001_12_ARI_OAK,2001,12,REG,2001-12-02,Rich Gannon,LV,ARI,5,15:00,0,LV 20,Take lead,FAILURE,Punt,L,57.082,FAVORABLE,no,1.2
-2001_12_CAR_NO,2001,12,REG,2001-12-02,Unresolved,CAR,NO,4,01:31,-4,CAR 23,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2001_12_CAR_NO,2001,12,REG,2001-12-02,Aaron Brooks,NO,CAR,4,02:40,-3,NO 26,Tie or take lead,CONVERSION,Offense reached required score state,W,56.358,FAVORABLE,no,1.2
 2001_12_DET_CHI,2001,12,REG,2001-12-02,Mike McMahon,DET,CHI,4,02:18,-3,DET 30,Tie or take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,56.358,FAVORABLE,no,1.2
 2001_12_MIN_PIT,2001,12,REG,2001-12-02,Todd Bouman,MIN,PIT,4,02:13,-5,PIT 10,Tie or take lead,FAILURE,Turnover on downs,L,70.716,VERY_FAVORABLE,no,1.2
@@ -399,7 +389,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2001_12_SD_SEA,2001,12,REG,2001-12-02,Doug Flutie,LAC,SEA,4,04:25,0,LAC 34,Take lead,FAILURE,Punt,L,77.236,VERY_FAVORABLE,no,1.2
 2001_12_SD_SEA,2001,12,REG,2001-12-02,Matt Hasselbeck,SEA,LAC,5,15:00,0,SEA 32,Take lead,CONVERSION,Offense reached required score state,W,57.082,FAVORABLE,no,1.2
 2001_12_TB_CIN,2001,12,REG,2001-12-02,Jon Kitna,CIN,TB,5,10:04,0,CIN 4,Take lead,FAILURE,Fumble lost,L,41.82,AVERAGE,no,1.2
-2001_12_TB_CIN,2001,12,REG,2001-12-02,Unresolved,TB,CIN,5,09:58,0,CIN 3,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2001_13_CAR_BUF,2001,13,REG,2001-12-09,Chris Weinke,CAR,BUF,4,04:59,-1,CAR 34,Tie or take lead,FAILURE,Turnover on downs,L,56.358,FAVORABLE,no,1.2
 2001_13_JAX_CIN,2001,13,REG,2001-12-09,Jon Kitna,CIN,JAX,4,07:14,-4,CIN 46,Tie or take lead,FAILURE,Turnover on downs,L,53.894,AVERAGE,no,1.2
 2001_13_KC_OAK,2001,13,REG,2001-12-09,Trent Green,KC,LV,4,01:49,-8,LV 27,TD + 2-point conversion,FAILURE,Two point conversion failed,L,16.17,VERY_DIFFICULT,no,1.2
@@ -434,7 +423,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2001_16_PIT_CIN,2001,16,REG,2001-12-30,Jon Kitna,CIN,PIT,5,09:44,0,CIN 1,Take lead,CONVERSION,Offense reached required score state,W,41.82,AVERAGE,no,1.2
 2001_16_PIT_CIN,2001,16,REG,2001-12-30,Kordell Stewart,PIT,CIN,5,15:00,0,PIT 38,Take lead,FAILURE,Punt,L,57.082,FAVORABLE,no,1.2
 2001_16_SEA_SD,2001,16,REG,2001-12-30,Doug Flutie,LAC,SEA,4,02:37,-3,LAC 38,Tie or take lead,CONVERSION,Offense reached required score state,L,56.358,FAVORABLE,no,1.2
-2001_16_SEA_SD,2001,16,REG,2001-12-30,Unresolved,SEA,LAC,4,00:16,0,LAC 36,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2001_17_ARI_WAS,2001,17,REG,2002-01-06,Jake Plummer,ARI,WAS,4,03:11,-3,ARI 41,Tie or take lead,FAILURE,Turnover on downs,L,69.38,FAVORABLE,no,1.2
 2001_17_CIN_TEN,2001,17,REG,2002-01-06,Jon Kitna,CIN,TEN,4,01:52,-1,CIN 30,Tie or take lead,CONVERSION,Offense reached required score state,W,37.198,AVERAGE,no,1.2
 2001_17_CIN_TEN,2001,17,REG,2002-01-06,Neil O'Donnell,TEN,CIN,4,00:20,-2,TEN 20,Tie or take lead,FAILURE,End of half,L,18.372,VERY_DIFFICULT,no,1.2
@@ -524,7 +512,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2002_08_SEA_DAL,2002,8,REG,2002-10-27,Chad Hutchinson,DAL,SEA,4,00:25,-3,DAL 26,Tie or take lead,FAILURE,End of half,L,17.866,VERY_DIFFICULT,no,1.2
 2002_08_SEA_DAL,2002,8,REG,2002-10-27,Matt Hasselbeck,SEA,DAL,4,05:35,0,SEA 26,Take lead,CONVERSION,Offense reached required score state,W,81.862,VERY_FAVORABLE,no,1.2
 2002_08_TB_CAR,2002,8,REG,2002-10-27,Randy Fasani,CAR,TB,4,01:55,0,CAR 24,Take lead,FAILURE,Punt,L,60.894,FAVORABLE,no,1.2
-2002_08_TB_CAR,2002,8,REG,2002-10-27,Unresolved,TB,CAR,4,01:20,0,TB 28,Take lead,MANUAL_REVIEW,Multi qb material participation,W,,,no,1.2
 2002_08_TEN_CIN,2002,8,REG,2002-10-27,Jon Kitna,CIN,TEN,4,08:04,-6,CIN 32,Tie or take lead,FAILURE,Turnover on downs,L,37.963,AVERAGE,no,1.2
 2002_09_BAL_ATL,2002,9,REG,2002-11-03,Jeff Blake,BAL,ATL,4,06:23,-3,BAL 18,Tie or take lead,FAILURE,Punt,L,48.609,AVERAGE,no,1.2
 2002_09_DAL_DET,2002,9,REG,2002-11-03,Chad Hutchinson,DAL,DET,4,00:48,-2,DAL 20,Tie or take lead,FAILURE,End of half,L,17.866,VERY_DIFFICULT,no,1.2
@@ -573,7 +560,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2002_13_STL_PHI,2002,13,REG,2002-12-01,Kurt Warner,LA,PHI,4,00:19,-7,LA 30,Touchdown,FAILURE,End of half,L,4.626,VERY_DIFFICULT,no,1.2
 2002_13_TEN_NYG,2002,13,REG,2002-12-01,Kerry Collins,NYG,TEN,5,15:00,0,NYG 40,Take lead,FAILURE,Punt,L,69.11,FAVORABLE,no,1.2
 2002_13_TEN_NYG,2002,13,REG,2002-12-01,Steve McNair,TEN,NYG,5,12:48,0,TEN 20,Take lead,CONVERSION,Offense reached required score state,W,55.773,FAVORABLE,no,1.2
-2002_13_WAS_DAL,2002,13,REG,2002-11-28,Unresolved,WAS,DAL,4,00:44,-7,WAS 16,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2002_14_DEN_NYJ,2002,14,REG,2002-12-08,Brian Griese,DEN,NYJ,4,05:56,-6,DEN 21,Tie or take lead,FAILURE,Interception,L,37.963,AVERAGE,no,1.2
 2002_14_DET_ARI,2002,14,REG,2002-12-08,Jake Plummer,ARI,DET,5,15:00,0,ARI 30,Take lead,CONVERSION,Offense reached required score state,W,55.773,FAVORABLE,no,1.2
 2002_14_DET_ARI,2002,14,REG,2002-12-08,Joey Harrington,DET,ARI,4,01:05,0,DET 19,Take lead,FAILURE,Punt,L,46.076,AVERAGE,no,1.2
@@ -739,7 +725,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2003_12_OAK_KC,2003,12,REG,2003-11-23,Rick Mirer,LV,KC,4,03:51,-3,KC 41,Tie or take lead,CONVERSION,Offense reached required score state,L,69.426,FAVORABLE,no,1.2
 2003_12_PIT_CLE,2003,12,REG,2003-11-23,Kelly Holcomb,CLE,PIT,4,03:05,-7,CLE 20,Touchdown,FAILURE,Interception,L,22.64,DIFFICULT,no,1.2
 2003_12_SEA_BAL,2003,12,REG,2003-11-23,Anthony Wright,BAL,SEA,5,13:16,0,BAL 21,Take lead,CONVERSION,Offense reached required score state,W,57.627,FAVORABLE,no,1.2
-2003_12_SEA_BAL,2003,12,REG,2003-11-23,Unresolved,SEA,BAL,5,15:00,0,SEA 27,Take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2003_12_STL_ARI,2003,12,REG,2003-11-23,Marc Bulger,LA,ARI,5,15:00,0,LA 14,Take lead,CONVERSION,Offense reached required score state,W,41.58,AVERAGE,no,1.2
 2003_12_TEN_ATL,2003,12,REG,2003-11-23,Doug Johnson,ATL,TEN,4,02:21,-7,ATL 2,Touchdown,FAILURE,Turnover on downs,L,13.282,VERY_DIFFICULT,no,1.2
 2003_12_WAS_MIA,2003,12,REG,2003-11-23,Tim Hasselbeck,WAS,MIA,4,04:19,-1,WAS 43,Tie or take lead,FAILURE,Interception,L,69.426,FAVORABLE,no,1.2
@@ -782,7 +767,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2003_17_JAX_ATL,2003,17,REG,2003-12-28,Byron Leftwich,JAX,ATL,4,04:16,-7,JAX 12,Touchdown,FAILURE,Turnover on downs,L,13.282,VERY_DIFFICULT,no,1.2
 2003_17_MIN_ARI,2003,17,REG,2003-12-28,Josh McCown,ARI,MIN,4,01:54,-5,ARI 39,Tie or take lead,CONVERSION,Offense reached required score state,W,17.953,VERY_DIFFICULT,no,1.2
 2003_17_NYJ_MIA,2003,17,REG,2003-12-28,Jay Fiedler,MIA,NYJ,4,02:56,-1,NYJ 49,Tie or take lead,CONVERSION,Offense reached required score state,W,69.426,FAVORABLE,no,1.2
-2003_17_OAK_SD,2003,17,REG,2003-12-28,Unresolved,LV,LAC,4,02:32,-7,LV 3,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2003_17_PIT_BAL,2003,17,REG,2003-12-28,Anthony Wright,BAL,PIT,5,13:49,0,BAL 36,Take lead,CONVERSION,Offense reached required score state,W,57.627,FAVORABLE,no,1.2
 2003_17_PIT_BAL,2003,17,REG,2003-12-28,Tommy Maddox,PIT,BAL,5,15:00,0,PIT 20,Take lead,FAILURE,Punt,L,57.627,FAVORABLE,no,1.2
 2003_17_SEA_SF,2003,17,REG,2003-12-27,Jeff Garcia,SF,SEA,4,01:56,-7,SF 30,Touchdown,FAILURE,Turnover on downs,L,12.187,VERY_DIFFICULT,no,1.2
@@ -827,7 +811,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2004_04_DEN_TB,2004,4,REG,2004-10-03,Brad Johnson,TB,DEN,4,09:03,-3,TB 45,Tie or take lead,FAILURE,Punt,L,76.1,VERY_FAVORABLE,no,1.2
 2004_04_IND_JAX,2004,4,REG,2004-10-03,Byron Leftwich,JAX,IND,4,03:33,-7,JAX 20,Touchdown,FAILURE,Turnover on downs,L,22.255,DIFFICULT,no,1.2
 2004_04_KC_BAL,2004,4,REG,2004-10-04,Kyle Boller,BAL,KC,4,02:33,-3,BAL 27,Tie or take lead,FAILURE,Turnover on downs,L,56.56,FAVORABLE,no,1.2
-2004_04_NYG_GB,2004,4,REG,2004-10-03,Unresolved,GB,NYG,4,00:25,-7,GB 24,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2004_04_NYJ_MIA,2004,4,REG,2004-10-03,Jay Fiedler,MIA,NYJ,4,02:23,-8,MIA 2,TD + 2-point conversion,FAILURE,Fumble lost,L,4.961,VERY_DIFFICULT,no,1.2
 2004_04_WAS_CLE,2004,4,REG,2004-10-03,Mark Brunell,WAS,CLE,4,02:15,-4,WAS 27,Tie or take lead,FAILURE,Fumble lost,L,31.167,DIFFICULT,no,1.2
 2004_05_ARI_SF,2004,5,REG,2004-10-10,Josh McCown,ARI,SF,4,01:07,0,ARI 39,Take lead,FAILURE,Punt,L,60.34,FAVORABLE,no,1.2
@@ -963,7 +946,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2005_01_NO_CAR,2005,1,REG,2005-09-11,Aaron Brooks,NO,CAR,4,01:04,0,NO 22,Take lead,CONVERSION,Offense reached required score state,W,60.21,FAVORABLE,no,1.2
 2005_01_PHI_ATL,2005,1,REG,2005-09-12,Donovan McNabb,PHI,ATL,4,03:54,-4,PHI 24,Tie or take lead,FAILURE,Turnover on downs,L,31.281,DIFFICULT,no,1.2
 2005_01_STL_SF,2005,1,REG,2005-09-11,Marc Bulger,LA,SF,4,00:59,-3,SF 38,Tie or take lead,FAILURE,Interception,L,46.518,AVERAGE,no,1.2
-2005_02_ATL_SEA,2005,2,REG,2005-09-18,Unresolved,ATL,SEA,4,02:39,-3,ATL 27,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2005_02_JAX_IND,2005,2,REG,2005-09-18,Byron Leftwich,JAX,IND,4,01:50,-7,JAX 28,Touchdown,FAILURE,End game,L,11.269,VERY_DIFFICULT,no,1.2
 2005_02_KC_OAK,2005,2,REG,2005-09-18,Kerry Collins,LV,KC,4,04:52,-6,LV 49,Tie or take lead,FAILURE,Turnover on downs,L,44.436,AVERAGE,no,1.2
 2005_02_SD_DEN,2005,2,REG,2005-09-18,Jake Plummer,DEN,LAC,4,05:21,0,DEN 20,Take lead,CONVERSION,Offense reached required score state,W,82.086,VERY_FAVORABLE,no,1.2
@@ -1000,7 +982,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2005_05_WAS_DEN,2005,5,REG,2005-10-09,Mark Brunell,WAS,DEN,4,01:09,-8,WAS 44,TD + 2-point conversion,FAILURE,Two point conversion failed,L,6.695,VERY_DIFFICULT,no,1.2
 2005_06_ATL_NO,2005,6,REG,2005-10-16,Mike Vick,ATL,NO,4,00:46,0,ATL 32,Take lead,CONVERSION,Offense reached required score state,W,35.552,AVERAGE,no,1.2
 2005_06_ATL_NO,2005,6,REG,2005-10-16,Aaron Brooks,NO,ATL,4,04:37,-7,NO 15,Touchdown,CONVERSION,Touchdown down 7 kicker neutral,L,12.913,VERY_DIFFICULT,no,1.2
-2005_06_CAR_DET,2005,6,REG,2005-10-16,Unresolved,CAR,DET,4,03:13,-6,CAR 21,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,W,,,no,1.2
 2005_06_CAR_DET,2005,6,REG,2005-10-16,Joey Harrington,DET,CAR,4,00:32,-1,DET 49,Tie or take lead,FAILURE,Turnover on downs,L,27.24,DIFFICULT,no,1.2
 2005_06_JAX_PIT,2005,6,REG,2005-10-16,Byron Leftwich,JAX,PIT,5,13:31,0,JAX 36,Take lead,FAILURE,Punt,W,56.459,FAVORABLE,no,1.2
 2005_06_JAX_PIT,2005,6,REG,2005-10-16,Tommy Maddox,PIT,JAX,5,11:39,0,PIT 35,Take lead,FAILURE,Opp touchdown,L,56.459,FAVORABLE,no,1.2
@@ -1010,7 +991,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2005_06_WAS_KC,2005,6,REG,2005-10-16,Mark Brunell,WAS,KC,4,01:46,-7,WAS 22,Touchdown,FAILURE,Turnover on downs,L,11.269,VERY_DIFFICULT,no,1.2
 2005_07_BAL_CHI,2005,7,REG,2005-10-23,Anthony Wright,BAL,CHI,4,04:11,-4,BAL 34,Tie or take lead,FAILURE,Punt,L,31.281,DIFFICULT,no,1.2
 2005_07_DAL_SEA,2005,7,REG,2005-10-23,Drew Bledsoe,DAL,SEA,4,00:40,0,DAL 41,Take lead,FAILURE,Interception,L,49.217,AVERAGE,no,1.2
-2005_07_DAL_SEA,2005,7,REG,2005-10-23,Unresolved,SEA,DAL,4,00:05,0,DAL 32,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2005_07_DEN_NYG,2005,7,REG,2005-10-23,Eli Manning,NYG,DEN,4,03:29,-6,NYG 17,Tie or take lead,CONVERSION,Offense reached required score state,W,19.959,VERY_DIFFICULT,no,1.2
 2005_07_DET_CLE,2005,7,REG,2005-10-23,Trent Dilfer,CLE,DET,4,02:09,-3,CLE 28,Tie or take lead,FAILURE,Punt,L,55.473,FAVORABLE,no,1.2
 2005_07_GB_MIN,2005,7,REG,2005-10-23,Brett Favre,GB,MIN,4,03:10,-3,GB 23,Tie or take lead,CONVERSION,Offense reached required score state,L,55.473,FAVORABLE,no,1.2
@@ -1085,7 +1065,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2005_14_CLE_CIN,2005,14,REG,2005-12-11,Charlie Frye,CLE,CIN,4,09:46,-3,CLE 47,Tie or take lead,CONVERSION,Offense reached required score state,L,75.668,VERY_FAVORABLE,no,1.2
 2005_14_DET_GB,2005,14,REG,2005-12-11,Jeff Garcia,DET,GB,4,01:02,0,DET 20,Take lead,FAILURE,Punt,L,60.21,FAVORABLE,no,1.2
 2005_14_DET_GB,2005,14,REG,2005-12-11,Brett Favre,GB,DET,5,15:00,0,GB 35,Take lead,CONVERSION,Offense reached required score state,W,56.459,FAVORABLE,no,1.2
-2005_14_HOU_TEN,2005,14,REG,2005-12-11,Unresolved,HOU,TEN,4,00:10,-3,TEN 13,Tie or take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,,,no,1.2
 2005_14_HOU_TEN,2005,14,REG,2005-12-11,Steve McNair,TEN,HOU,4,03:47,0,TEN 27,Take lead,CONVERSION,Offense reached required score state,W,76.332,VERY_FAVORABLE,no,1.2
 2005_14_KC_DAL,2005,14,REG,2005-12-11,Drew Bledsoe,DAL,KC,4,03:55,-4,DAL 32,Tie or take lead,CONVERSION,Offense reached required score state,W,31.281,DIFFICULT,no,1.2
 2005_14_KC_DAL,2005,14,REG,2005-12-11,Trent Green,KC,DAL,4,00:22,-3,KC 28,Tie or take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,17.566,VERY_DIFFICULT,no,1.2
@@ -1190,7 +1169,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2006_08_SEA_KC,2006,8,REG,2006-10-29,Seneca Wallace,SEA,KC,4,01:58,-7,SEA 24,Touchdown,FAILURE,Turnover on downs,L,12.134,VERY_DIFFICULT,no,1.2
 2006_09_CIN_BAL,2006,9,REG,2006-11-05,Carson Palmer,CIN,BAL,4,00:18,-6,CIN 28,Tie or take lead,FAILURE,Interception,L,7.532,VERY_DIFFICULT,no,1.2
 2006_09_DAL_WAS,2006,9,REG,2006-11-05,Tony Romo,DAL,WAS,4,00:31,0,DAL 39,Take lead,CONVERSION,Missed or blocked fg 45 or shorter,L,37.289,AVERAGE,no,1.2
-2006_09_DAL_WAS,2006,9,REG,2006-11-05,Unresolved,WAS,DAL,4,00:00,0,DAL 29,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2006_09_HOU_NYG,2006,9,REG,2006-11-05,David Carr,HOU,NYG,4,07:49,-4,HOU 30,Tie or take lead,FAILURE,Fumble lost,L,39.861,AVERAGE,no,1.2
 2006_09_IND_NE,2006,9,REG,2006-11-05,Tom Brady,NE,IND,4,01:55,-7,NE 36,Touchdown,FAILURE,Interception,L,12.134,VERY_DIFFICULT,no,1.2
 2006_09_MIN_SF,2006,9,REG,2006-11-05,Brad Johnson,MIN,SF,4,04:09,-6,MIN 39,Tie or take lead,FAILURE,Turnover on downs,L,32.285,DIFFICULT,no,1.2
@@ -1209,7 +1187,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2006_11_BUF_HOU,2006,11,REG,2006-11-19,J.P. Losman,BUF,HOU,4,01:44,-4,BUF 45,Tie or take lead,CONVERSION,Offense reached required score state,W,28.654,DIFFICULT,no,1.2
 2006_11_IND_DAL,2006,11,REG,2006-11-19,Peyton Manning,IND,DAL,4,06:00,-7,IND 31,Touchdown,FAILURE,Turnover on downs,L,28.948,DIFFICULT,no,1.2
 2006_11_OAK_KC,2006,11,REG,2006-11-19,Trent Green,KC,LV,4,04:53,-3,KC 20,Tie or take lead,CONVERSION,Offense reached required score state,W,57.634,FAVORABLE,no,1.2
-2006_11_OAK_KC,2006,11,REG,2006-11-19,Unresolved,LV,KC,4,01:32,-4,LV 26,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2006_11_PIT_CLE,2006,11,REG,2006-11-19,Charlie Frye,CLE,PIT,4,00:32,-4,CLE 43,Tie or take lead,FAILURE,End game,L,12.711,VERY_DIFFICULT,no,1.2
 2006_11_PIT_CLE,2006,11,REG,2006-11-19,Ben Roethlisberger,PIT,CLE,4,03:06,-3,PIT 23,Tie or take lead,CONVERSION,Offense reached required score state,W,57.634,FAVORABLE,no,1.2
 2006_11_SD_DEN,2006,11,REG,2006-11-19,Jake Plummer,DEN,LAC,4,01:14,-8,DEN 2,TD + 2-point conversion,FAILURE,End game,L,2.655,VERY_DIFFICULT,no,1.2
@@ -1293,7 +1270,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2007_02_CIN_CLE,2007,2,REG,2007-09-16,Carson Palmer,CIN,CLE,4,01:03,-6,CIN 9,Tie or take lead,FAILURE,Interception,L,10.981,VERY_DIFFICULT,no,1.2
 2007_02_IND_TEN,2007,2,REG,2007-09-16,Vince Young,TEN,IND,4,01:37,-2,TEN 20,Tie or take lead,FAILURE,Fumble lost,L,39.789,AVERAGE,no,1.2
 2007_02_MIN_DET,2007,2,REG,2007-09-16,Jon Kitna,DET,MIN,5,11:35,0,50,Take lead,CONVERSION,Offense reached required score state,W,71.359,VERY_FAVORABLE,no,1.2
-2007_02_MIN_DET,2007,2,REG,2007-09-16,Unresolved,MIN,DET,5,15:00,0,MIN 20,Take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2007_02_NYJ_BAL,2007,2,REG,2007-09-16,Kellen Clemens,NYJ,BAL,4,02:38,-7,NYJ 20,Touchdown,FAILURE,Interception,L,24.481,DIFFICULT,no,1.2
 2007_02_OAK_DEN,2007,2,REG,2007-09-16,Jay Cutler,DEN,LV,5,11:09,0,DEN 42,Take lead,CONVERSION,Offense reached required score state,W,71.359,VERY_FAVORABLE,no,1.2
 2007_02_OAK_DEN,2007,2,REG,2007-09-16,Josh McCown,LV,DEN,5,13:24,0,LV 27,Take lead,ND-K,Missed or blocked fg 46 to 55,L,,,no,1.2
@@ -1350,7 +1326,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2007_09_WAS_NYJ,2007,9,REG,2007-11-04,Kellen Clemens,NYJ,WAS,5,15:00,0,NYJ 19,Take lead,FAILURE,Punt,L,43.179,AVERAGE,no,1.2
 2007_09_WAS_NYJ,2007,9,REG,2007-11-04,Jason Campbell,WAS,NYJ,5,13:11,0,WAS 10,Take lead,CONVERSION,Offense reached required score state,W,43.179,AVERAGE,no,1.2
 2007_10_ATL_CAR,2007,10,REG,2007-11-11,Joey Harrington,ATL,CAR,4,00:53,0,CAR 45,Take lead,CONVERSION,Offense reached required score state,W,52.005,AVERAGE,no,1.2
-2007_10_ATL_CAR,2007,10,REG,2007-11-11,Unresolved,CAR,ATL,4,00:20,-7,CAR 41,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2007_10_BUF_MIA,2007,10,REG,2007-11-11,J.P. Losman,BUF,MIA,4,04:37,0,50,Take lead,CONVERSION,Offense reached required score state,W,86.494,VERY_FAVORABLE,no,1.2
 2007_10_BUF_MIA,2007,10,REG,2007-11-11,Cleo Lemon,MIA,BUF,4,00:46,-3,MIA 45,Tie or take lead,FAILURE,Turnover on downs,L,29.188,DIFFICULT,no,1.2
 2007_10_CLE_PIT,2007,10,REG,2007-11-11,Derek Anderson,CLE,PIT,4,01:04,-3,CLE 33,Tie or take lead,ND-K,Missed or blocked fg 46 to 55,L,,,no,1.2
@@ -1412,7 +1387,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2007_17_CAR_TB,2007,17,REG,2007-12-30,Luke McCown,TB,CAR,4,01:52,-8,TB 43,TD + 2-point conversion,FAILURE,Turnover on downs,L,8.156,VERY_DIFFICULT,no,1.2
 2007_17_KC_NYJ,2007,17,REG,2007-12-30,Brodie Croyle,KC,NYJ,4,01:15,0,KC 15,Take lead,FAILURE,Punt,L,47.603,AVERAGE,no,1.2
 2007_17_KC_NYJ,2007,17,REG,2007-12-30,Kellen Clemens,NYJ,KC,5,15:00,0,NYJ 30,Take lead,CONVERSION,Offense reached required score state,W,59.235,FAVORABLE,no,1.2
-2007_17_MIN_DEN,2007,17,REG,2007-12-30,Unresolved,DEN,MIN,5,14:12,0,MIN 12,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2007_17_MIN_DEN,2007,17,REG,2007-12-30,Tarvaris Jackson,MIN,DEN,5,15:00,0,MIN 20,Take lead,FAILURE,Fumble lost,L,59.235,FAVORABLE,no,1.2
 2007_17_PIT_BAL,2007,17,REG,2007-12-30,Charlie Batch,PIT,BAL,4,01:36,-6,PIT 11,Tie or take lead,FAILURE,Interception,L,10.981,VERY_DIFFICULT,no,1.2
 2007_17_TEN_IND,2007,17,REG,2007-12-30,Jim Sorgi,IND,TEN,4,02:56,-6,IND 25,Tie or take lead,FAILURE,Turnover on downs,L,33.649,DIFFICULT,no,1.2
@@ -1527,7 +1501,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2008_12_WAS_SEA,2008,12,REG,2008-11-23,Matt Hasselbeck,SEA,WAS,4,01:28,-3,SEA 22,Tie or take lead,FAILURE,Interception,L,38.123,AVERAGE,no,1.2
 2008_13_ATL_SD,2008,13,REG,2008-11-30,Philip Rivers,LAC,ATL,4,02:46,-6,LAC 19,Tie or take lead,FAILURE,Punt,L,21.078,DIFFICULT,no,1.2
 2008_13_CAR_GB,2008,13,REG,2008-11-30,Aaron Rodgers,GB,CAR,4,01:30,-4,GB 17,Tie or take lead,FAILURE,Interception,L,11.207,VERY_DIFFICULT,no,1.2
-2008_13_IND_CLE,2008,13,REG,2008-11-30,Unresolved,CLE,IND,4,01:50,-4,CLE 30,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2008_13_MIA_STL,2008,13,REG,2008-11-30,Marc Bulger,LA,MIA,4,01:50,-4,LA 25,Tie or take lead,FAILURE,Interception,L,18.548,VERY_DIFFICULT,no,1.2
 2008_13_NO_TB,2008,13,REG,2008-11-30,Drew Brees,NO,TB,4,01:55,-3,NO 27,Tie or take lead,FAILURE,Interception,L,38.123,AVERAGE,no,1.2
 2008_13_SF_BUF,2008,13,REG,2008-11-30,J.P. Losman,BUF,SF,4,01:47,-7,BUF 19,Touchdown,FAILURE,Turnover on downs,L,7.373,VERY_DIFFICULT,no,1.2
@@ -1536,7 +1509,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2008_14_HOU_GB,2008,14,REG,2008-12-07,Aaron Rodgers,GB,HOU,4,04:37,0,GB 16,Take lead,FAILURE,Punt,L,66.291,FAVORABLE,no,1.2
 2008_14_HOU_GB,2008,14,REG,2008-12-07,Matt Schaub,HOU,GB,4,01:49,0,HOU 3,Take lead,CONVERSION,Offense reached required score state,W,48.171,AVERAGE,no,1.2
 2008_14_KC_DEN,2008,14,REG,2008-12-07,Tyler Thigpen,KC,DEN,4,10:10,-7,KC 24,Touchdown,FAILURE,Turnover on downs,L,33.14,DIFFICULT,no,1.2
-2008_14_MIN_DET,2008,14,REG,2008-12-07,Unresolved,DET,MIN,4,00:22,-4,DET 29,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2008_14_NE_SEA,2008,14,REG,2008-12-07,Matt Cassel,NE,SEA,4,08:47,-5,NE 29,Tie or take lead,CONVERSION,Offense reached required score state,W,40.045,AVERAGE,no,1.2
 2008_14_NE_SEA,2008,14,REG,2008-12-07,Seneca Wallace,SEA,NE,4,02:44,-3,SEA 34,Tie or take lead,FAILURE,Fumble lost,L,56.59,FAVORABLE,no,1.2
 2008_15_BUF_NYJ,2008,15,REG,2008-12-14,J.P. Losman,BUF,NYJ,4,01:17,-4,BUF 26,Tie or take lead,FAILURE,Interception,L,18.548,VERY_DIFFICULT,no,1.2
@@ -1680,7 +1652,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2009_11_MIA_CAR,2009,11,REG,2009-11-19,Jake Delhomme,CAR,MIA,4,00:39,-7,CAR 28,Touchdown,FAILURE,End game,L,5.152,VERY_DIFFICULT,no,1.2
 2009_11_PHI_CHI,2009,11,REG,2009-11-22,Jay Cutler,CHI,PHI,4,01:51,-4,CHI 21,Tie or take lead,FAILURE,Interception,L,18.008,VERY_DIFFICULT,no,1.2
 2009_11_PIT_KC,2009,11,REG,2009-11-22,Matt Cassel,KC,PIT,5,10:00,0,KC 20,Take lead,CONVERSION,Offense reached required score state,W,58.671,FAVORABLE,no,1.2
-2009_11_PIT_KC,2009,11,REG,2009-11-22,Unresolved,PIT,KC,5,15:00,0,PIT 20,Take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2009_11_TEN_HOU,2009,11,REG,2009-11-23,Matt Schaub,HOU,TEN,4,00:47,-3,HOU 38,Tie or take lead,ND-K,Missed or blocked fg 46 to 55,L,,,no,1.2
 2009_11_TEN_HOU,2009,11,REG,2009-11-23,Vince Young,TEN,HOU,4,02:52,0,TEN 6,Take lead,CONVERSION,Offense reached required score state,W,65.613,FAVORABLE,no,1.2
 2009_11_WAS_DAL,2009,11,REG,2009-11-22,Jason Campbell,WAS,DAL,4,02:41,-1,WAS 8,Tie or take lead,FAILURE,Interception,L,42.392,AVERAGE,no,1.2
@@ -1722,7 +1693,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2009_15_MIA_TEN,2009,15,REG,2009-12-20,Chad Henne,MIA,TEN,5,15:00,0,MIA 23,Take lead,FAILURE,Interception,L,58.671,FAVORABLE,no,1.2
 2009_15_MIA_TEN,2009,15,REG,2009-12-20,Vince Young,TEN,MIA,5,13:39,0,MIA 27,Take lead,CONVERSION,Offense reached required score state,W,83.845,VERY_FAVORABLE,no,1.2
 2009_15_OAK_DEN,2009,15,REG,2009-12-20,Kyle Orton,DEN,LV,4,00:35,-1,DEN 22,Tie or take lead,FAILURE,End game,L,19.249,VERY_DIFFICULT,no,1.2
-2009_15_OAK_DEN,2009,15,REG,2009-12-20,Unresolved,LV,DEN,4,03:29,-6,LV 38,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,W,,,no,1.2
 2009_16_BAL_PIT,2009,16,REG,2009-12-27,Joe Flacco,BAL,PIT,4,05:25,-3,PIT 49,Tie or take lead,FAILURE,Fumble lost,L,77.016,VERY_FAVORABLE,no,1.2
 2009_16_DEN_PHI,2009,16,REG,2009-12-27,Kyle Orton,DEN,PHI,4,03:00,0,DEN 9,Take lead,FAILURE,Punt,L,65.613,FAVORABLE,no,1.2
 2009_16_DEN_PHI,2009,16,REG,2009-12-27,Donovan McNabb,PHI,DEN,4,01:41,0,DEN 42,Take lead,CONVERSION,Offense reached required score state,W,74.442,VERY_FAVORABLE,no,1.2
@@ -2070,7 +2040,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2011_17_PIT_CLE,2011,17,REG,2012-01-01,Seneca Wallace,CLE,PIT,4,01:46,-4,CLE 24,Tie or take lead,FAILURE,End game,L,19.692,VERY_DIFFICULT,no,1.2
 2011_17_SEA_ARI,2011,17,REG,2012-01-01,John Skelton,ARI,SEA,5,13:55,0,ARI 19,Take lead,CONVERSION,Offense reached required score state,W,43.448,AVERAGE,no,1.2
 2011_17_SEA_ARI,2011,17,REG,2012-01-01,Tarvaris Jackson,SEA,ARI,5,15:00,0,SEA 40,Take lead,FAILURE,Punt,L,71.492,VERY_FAVORABLE,no,1.2
-2011_17_SF_STL,2011,17,REG,2012-01-01,Unresolved,LA,SF,4,03:37,-7,LA 46,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2011_17_TEN_HOU,2011,17,REG,2012-01-01,Jake Delhomme,HOU,TEN,4,01:49,-7,TEN 36,Touchdown,CONVERSION,Touchdown down 7 kicker neutral,L,35.545,AVERAGE,no,1.2
 2011_18_PIT_DEN,2011,18,POST,2012-01-08,Tim Tebow,DEN,PIT,5,15:00,0,DEN 20,Take lead,CONVERSION,Offense reached required score state,W,59.743,FAVORABLE,no,1.2
 2011_18_PIT_DEN,2011,18,POST,2012-01-08,Ben Roethlisberger,PIT,DEN,4,01:37,0,PIT 24,Take lead,FAILURE,Turnover on downs,L,64.306,FAVORABLE,no,1.2
@@ -2086,7 +2055,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2012_01_JAX_MIN,2012,1,REG,2012-09-09,Christian Ponder,MIN,JAX,5,15:00,0,MIN 25,Take lead,CONVERSION,Offense reached required score state,W,58.872,FAVORABLE,no,1.2
 2012_01_PHI_CLE,2012,1,REG,2012-09-09,Brandon Weeden,CLE,PHI,4,01:18,-1,CLE 30,Tie or take lead,FAILURE,Interception,L,38.784,AVERAGE,no,1.2
 2012_01_PHI_CLE,2012,1,REG,2012-09-09,Mike Vick,PHI,CLE,4,06:25,-6,PHI 9,Tie or take lead,CONVERSION,Offense reached required score state,W,27.537,DIFFICULT,no,1.2
-2012_01_SEA_ARI,2012,1,REG,2012-09-09,Unresolved,ARI,SEA,4,09:20,-3,ARI 20,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,W,,,no,1.2
 2012_01_SEA_ARI,2012,1,REG,2012-09-09,Russell Wilson,SEA,ARI,4,04:59,-4,SEA 20,Tie or take lead,FAILURE,Turnover on downs,L,32.822,DIFFICULT,no,1.2
 2012_01_SF_GB,2012,1,REG,2012-09-09,Aaron Rodgers,GB,SF,4,03:37,-8,GB 16,TD + 2-point conversion,FAILURE,Turnover on downs,L,5.398,VERY_DIFFICULT,no,1.2
 2012_01_STL_DET,2012,1,REG,2012-09-09,Matthew Stafford,DET,LA,4,01:55,-3,DET 20,Tie or take lead,CONVERSION,Offense reached required score state,W,38.784,AVERAGE,no,1.2
@@ -2127,7 +2095,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2012_04_WAS_TB,2012,4,REG,2012-09-30,Josh Freeman,TB,WAS,4,03:38,-2,TB 36,Tie or take lead,CONVERSION,Offense reached required score state,L,57.731,FAVORABLE,no,1.2
 2012_04_WAS_TB,2012,4,REG,2012-09-30,Robert Griffin III,WAS,TB,4,01:42,-1,WAS 20,Tie or take lead,CONVERSION,Offense reached required score state,W,38.784,AVERAGE,no,1.2
 2012_05_ATL_WAS,2012,5,REG,2012-10-07,Kirk Cousins,WAS,ATL,4,01:21,-7,WAS 20,Touchdown,FAILURE,Interception,L,12.35,VERY_DIFFICULT,no,1.2
-2012_05_BAL_KC,2012,5,REG,2012-10-07,Unresolved,KC,BAL,4,10:15,-6,KC 30,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2012_05_GB_IND,2012,5,REG,2012-10-07,Aaron Rodgers,GB,IND,4,00:35,-3,GB 20,Tie or take lead,ND-K,Missed or blocked fg 46 to 55,L,,,no,1.2
 2012_05_GB_IND,2012,5,REG,2012-10-07,Andrew Luck,IND,GB,4,04:30,-5,IND 20,Tie or take lead,CONVERSION,Offense reached required score state,W,32.822,DIFFICULT,no,1.2
 2012_05_HOU_NYJ,2012,5,REG,2012-10-08,Mark Sanchez,NYJ,HOU,4,03:28,-6,NYJ 16,Tie or take lead,FAILURE,Interception,L,21.072,DIFFICULT,no,1.2
@@ -2205,7 +2172,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2012_13_CIN_SD,2012,13,REG,2012-12-02,Philip Rivers,LAC,CIN,4,02:47,-7,LAC 20,Touchdown,FAILURE,Interception,L,23.298,DIFFICULT,no,1.2
 2012_13_IND_DET,2012,13,REG,2012-12-02,Andrew Luck,IND,DET,4,01:07,-5,IND 25,Tie or take lead,CONVERSION,Offense reached required score state,W,18.476,VERY_DIFFICULT,no,1.2
 2012_13_NYG_WAS,2012,13,REG,2012-12-03,Eli Manning,NYG,WAS,4,06:06,-1,NYG 20,Tie or take lead,FAILURE,Punt,L,66.034,FAVORABLE,no,1.2
-2012_13_PHI_DAL,2012,13,REG,2012-12-02,Unresolved,PHI,DAL,4,00:31,-5,DAL 2,Tie or take lead,MANUAL_REVIEW,Qb attribution unresolved,L,,,no,1.2
 2012_13_PIT_BAL,2012,13,REG,2012-12-02,Joe Flacco,BAL,PIT,4,07:24,0,BAL 20,Take lead,FAILURE,Punt,L,83.614,VERY_FAVORABLE,no,1.2
 2012_13_PIT_BAL,2012,13,REG,2012-12-02,Charlie Batch,PIT,BAL,4,06:14,0,PIT 15,Take lead,CONVERSION,Offense reached required score state,W,73.603,VERY_FAVORABLE,no,1.2
 2012_13_SEA_CHI,2012,13,REG,2012-12-02,Jay Cutler,CHI,SEA,4,00:24,-3,CHI 14,Tie or take lead,CONVERSION,Offense reached required score state,L,10.807,VERY_DIFFICULT,no,1.2
@@ -2268,7 +2234,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2013_02_NO_TB,2013,2,REG,2013-09-15,Drew Brees,NO,TB,4,01:06,-1,NO 37,Tie or take lead,CONVERSION,Offense reached required score state,W,42.386,AVERAGE,no,1.2
 2013_02_NYJ_NE,2013,2,REG,2013-09-12,Geno Smith,NYJ,NE,4,00:56,-3,NYJ 29,Tie or take lead,FAILURE,Interception,L,21.231,DIFFICULT,no,1.2
 2013_02_SD_PHI,2013,2,REG,2013-09-15,Philip Rivers,LAC,PHI,4,01:51,0,LAC 21,Take lead,CONVERSION,Offense reached required score state,W,66.073,FAVORABLE,no,1.2
-2013_02_SD_PHI,2013,2,REG,2013-09-15,Unresolved,PHI,LAC,4,03:11,-3,PHI 29,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2013_02_TEN_HOU,2013,2,REG,2013-09-15,Matt Schaub,HOU,TEN,5,15:00,0,HOU 22,Take lead,CONVERSION,Offense reached required score state,W,62.558,FAVORABLE,no,1.2
 2013_02_TEN_HOU,2013,2,REG,2013-09-15,Jake Locker,TEN,HOU,4,01:53,0,TEN 20,Take lead,FAILURE,Punt,L,66.073,FAVORABLE,no,1.2
 2013_03_ATL_MIA,2013,3,REG,2013-09-22,Matt Ryan,ATL,MIA,4,00:38,-4,ATL 20,Tie or take lead,FAILURE,Interception,L,8.685,VERY_DIFFICULT,no,1.2
@@ -2434,7 +2399,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2014_02_CHI_SF,2014,2,REG,2014-09-14,Colin Kaepernick,SF,CHI,4,06:55,-8,SF 20,TD + 2-point conversion,FAILURE,Turnover on downs,L,14.465,VERY_DIFFICULT,no,1.2
 2014_02_KC_DEN,2014,2,REG,2014-09-14,Alex Smith,KC,DEN,4,03:27,-7,KC 34,Touchdown,FAILURE,Turnover on downs,L,26.26,DIFFICULT,no,1.2
 2014_02_NO_CLE,2014,2,REG,2014-09-14,Brian Hoyer,CLE,NO,4,02:46,-1,CLE 4,Tie or take lead,CONVERSION,Offense reached required score state,W,46.58,AVERAGE,no,1.2
-2014_02_NYJ_GB,2014,2,REG,2014-09-14,Unresolved,NYJ,GB,4,09:23,-7,NYJ 33,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2014_02_PHI_IND,2014,2,REG,2014-09-15,Andrew Luck,IND,PHI,4,03:25,0,IND 20,Take lead,FAILURE,Punt,L,80.961,VERY_FAVORABLE,no,1.2
 2014_02_PHI_IND,2014,2,REG,2014-09-15,Nick Foles,PHI,IND,4,01:56,0,PHI 40,Take lead,CONVERSION,Offense reached required score state,W,77.296,VERY_FAVORABLE,no,1.2
 2014_02_STL_TB,2014,2,REG,2014-09-14,Austin Davis,LA,TB,4,05:15,-1,LA 9,Tie or take lead,CONVERSION,Offense reached required score state,W,55.225,FAVORABLE,no,1.2
@@ -2496,7 +2460,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2014_10_MIA_DET,2014,10,REG,2014-11-09,Matthew Stafford,DET,MIA,4,03:13,-3,DET 26,Tie or take lead,CONVERSION,Offense reached required score state,W,61.425,FAVORABLE,no,1.2
 2014_10_MIA_DET,2014,10,REG,2014-11-09,Ryan Tannehill,MIA,DET,4,00:29,-4,MIA 20,Tie or take lead,FAILURE,End game,L,8.672,VERY_DIFFICULT,no,1.2
 2014_10_SF_NO,2014,10,REG,2014-11-09,Drew Brees,NO,SF,5,07:43,0,NO 9,Take lead,FAILURE,Fumble lost,L,47.475,AVERAGE,no,1.2
-2014_10_SF_NO,2014,10,REG,2014-11-09,Unresolved,SF,NO,5,05:18,0,NO 17,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2014_11_ATL_CAR,2014,11,REG,2014-11-16,Cam Newton,CAR,ATL,4,00:22,-2,CAR 16,Tie or take lead,MANUAL_REVIEW,Missed or blocked fg 56 plus,L,,,no,1.2
 2014_11_DET_ARI,2014,11,REG,2014-11-16,Matthew Stafford,DET,ARI,4,04:34,-8,DET 11,TD + 2-point conversion,FAILURE,Punt,L,6.144,VERY_DIFFICULT,no,1.2
 2014_11_MIN_CHI,2014,11,REG,2014-11-16,Teddy Bridgewater,MIN,CHI,4,02:03,-8,MIN 34,TD + 2-point conversion,FAILURE,Interception,L,10.679,VERY_DIFFICULT,no,1.2
@@ -2633,7 +2596,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2015_08_IND_CAR,2015,8,REG,2015-11-02,Andrew Luck,IND,CAR,5,07:50,0,IND 29,Take lead,FAILURE,Interception,L,61.964,FAVORABLE,no,1.2
 2015_08_MIN_CHI,2015,8,REG,2015-11-01,Jay Cutler,CHI,MIN,4,01:49,0,CHI 20,Take lead,FAILURE,Punt,L,65.285,FAVORABLE,no,1.2
 2015_08_MIN_CHI,2015,8,REG,2015-11-01,Teddy Bridgewater,MIN,CHI,4,01:00,0,MIN 34,Take lead,CONVERSION,Offense reached required score state,W,40.735,AVERAGE,no,1.2
-2015_08_NYG_NO,2015,8,REG,2015-11-01,Unresolved,NO,NYG,4,00:05,0,NYG 32,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2015_08_NYG_NO,2015,8,REG,2015-11-01,Eli Manning,NYG,NO,4,00:36,0,NYG 20,Take lead,FAILURE,Punt,L,40.735,AVERAGE,no,1.2
 2015_08_SD_BAL,2015,8,REG,2015-11-01,Joe Flacco,BAL,LAC,4,02:27,0,BAL 20,Take lead,CONVERSION,Offense reached required score state,W,80.063,VERY_FAVORABLE,no,1.2
 2015_08_SD_BAL,2015,8,REG,2015-11-01,Philip Rivers,LAC,BAL,4,04:34,-3,LAC 20,Tie or take lead,CONVERSION,Offense reached required score state,L,61.629,FAVORABLE,no,1.2
@@ -2781,7 +2743,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2016_03_WAS_NYG,2016,3,REG,2016-09-25,Eli Manning,NYG,WAS,4,01:51,-2,NYG 25,Tie or take lead,FAILURE,Interception,L,43.041,AVERAGE,no,1.2
 2016_03_WAS_NYG,2016,3,REG,2016-09-25,Kirk Cousins,WAS,NYG,4,07:53,-1,WAS 25,Tie or take lead,CONVERSION,Offense reached required score state,W,68.332,FAVORABLE,no,1.2
 2016_04_DAL_SF,2016,4,REG,2016-10-02,Blaine Gabbert,SF,DAL,4,04:11,-7,SF 25,Touchdown,FAILURE,Turnover on downs,L,26.09,DIFFICULT,no,1.2
-2016_04_DET_CHI,2016,4,REG,2016-10-02,Unresolved,DET,CHI,4,01:52,-5,CHI 2,Tie or take lead,MANUAL_REVIEW,Qb attribution unresolved,L,,,no,1.2
 2016_04_IND_JAX,2016,4,REG,2016-10-02,Andrew Luck,IND,JAX,4,00:26,-3,IND 18,Tie or take lead,FAILURE,Turnover on downs,L,12.723,VERY_DIFFICULT,no,1.2
 2016_04_LA_ARI,2016,4,REG,2016-10-02,Drew Stanton,ARI,LA,4,01:01,-4,ARI 31,Tie or take lead,FAILURE,Turnover,L,21.135,DIFFICULT,no,1.2
 2016_04_NO_SD,2016,4,REG,2016-10-02,Philip Rivers,LAC,NO,4,01:57,-1,LAC 25,Tie or take lead,FAILURE,Interception,L,43.041,AVERAGE,no,1.2
@@ -3068,7 +3029,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2017_17_KC_DEN,2017,17,REG,2017-12-31,Patrick Mahomes,KC,DEN,4,02:53,0,KC 21,Take lead,CONVERSION,Offense reached required score state,W,81.256,VERY_FAVORABLE,no,1.2
 2017_17_NO_TB,2017,17,REG,2017-12-31,Jameis Winston,TB,NO,4,01:58,-1,TB 5,Tie or take lead,CONVERSION,Offense reached required score state,W,28.543,DIFFICULT,no,1.2
 2017_17_WAS_NYG,2017,17,REG,2017-12-31,Kirk Cousins,WAS,NYG,4,03:11,-8,WAS 27,TD + 2-point conversion,FAILURE,Interception,L,11.106,VERY_DIFFICULT,no,1.2
-2017_18_BUF_JAX,2017,18,POST,2018-01-07,Unresolved,BUF,JAX,4,01:51,-7,BUF 37,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2017_18_CAR_NO,2017,18,POST,2018-01-07,Cam Newton,CAR,NO,4,01:51,-5,CAR 31,Tie or take lead,FAILURE,Turnover on downs,L,21.383,DIFFICULT,no,1.2
 2017_18_TEN_KC,2017,18,POST,2018-01-06,Alex Smith,KC,TEN,4,06:06,-1,KC 27,Tie or take lead,FAILURE,Turnover on downs,L,68.991,FAVORABLE,no,1.2
 2017_19_ATL_PHI,2017,19,POST,2018-01-13,Matt Ryan,ATL,PHI,4,06:02,-5,ATL 24,Tie or take lead,FAILURE,Turnover on downs,L,44.98,AVERAGE,no,1.2
@@ -3097,7 +3057,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2018_02_OAK_DEN,2018,2,REG,2018-09-16,Case Keenum,DEN,LV,4,01:58,-2,DEN 20,Tie or take lead,CONVERSION,Offense reached required score state,W,41.437,AVERAGE,no,1.2
 2018_02_PHI_TB,2018,2,REG,2018-09-16,Nick Foles,PHI,TB,4,00:19,-6,PHI 10,Tie or take lead,FAILURE,Fumble lost,L,4.634,VERY_DIFFICULT,no,1.2
 2018_03_CHI_ARI,2018,3,REG,2018-09-23,Josh Rosen,ARI,CHI,4,00:43,-2,ARI 20,Tie or take lead,FAILURE,End game,L,20.207,DIFFICULT,no,1.2
-2018_03_IND_PHI,2018,3,REG,2018-09-23,Unresolved,IND,PHI,4,00:43,-4,IND 11,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2018_03_NO_ATL,2018,3,REG,2018-09-23,Matt Ryan,ATL,NO,4,01:15,0,ATL 26,Take lead,FAILURE,Punt,L,64.784,FAVORABLE,no,1.2
 2018_03_NO_ATL,2018,3,REG,2018-09-23,Drew Brees,NO,ATL,5,10:00,0,NO 20,Take lead,CONVERSION,Offense reached required score state,W,60.548,FAVORABLE,no,1.2
 2018_03_NYJ_CLE,2018,3,REG,2018-09-20,Sam Darnold,NYJ,CLE,4,00:56,-4,NYJ 6,Tie or take lead,FAILURE,Interception,L,4.634,VERY_DIFFICULT,no,1.2
@@ -3183,7 +3142,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2018_13_ARI_GB,2018,13,REG,2018-12-02,Josh Rosen,ARI,GB,4,05:26,0,ARI 25,Take lead,CONVERSION,Offense reached required score state,W,84.733,VERY_FAVORABLE,no,1.2
 2018_13_ARI_GB,2018,13,REG,2018-12-02,Aaron Rodgers,GB,ARI,4,01:41,-3,GB 25,Tie or take lead,ND-K,Missed or blocked fg 46 to 55,L,,,no,1.2
 2018_13_BUF_MIA,2018,13,REG,2018-12-02,Josh Allen,BUF,MIA,4,02:33,-4,BUF 10,Tie or take lead,FAILURE,Turnover on downs,L,21.94,DIFFICULT,no,1.2
-2018_13_CAR_TB,2018,13,REG,2018-12-02,Unresolved,CAR,TB,4,01:05,-7,CAR 26,Touchdown,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2018_13_CHI_NYG,2018,13,REG,2018-12-02,Chase Daniel,CHI,NYG,5,05:57,-3,CHI 25,Tie or take lead,FAILURE,Turnover on downs,L,37.118,AVERAGE,no,1.2
 2018_13_CHI_NYG,2018,13,REG,2018-12-02,Eli Manning,NYG,CHI,5,10:00,0,NYG 25,Take lead,CONVERSION,Offense reached required score state,W,60.548,FAVORABLE,no,1.2
 2018_13_IND_JAX,2018,13,REG,2018-12-02,Andrew Luck,IND,JAX,4,01:53,-6,IND 15,Tie or take lead,FAILURE,End game,L,11.954,VERY_DIFFICULT,no,1.2
@@ -3192,7 +3150,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2018_13_NO_DAL,2018,13,REG,2018-11-29,Drew Brees,NO,DAL,4,02:35,-3,NO 15,Tie or take lead,FAILURE,Interception,L,44.425,AVERAGE,no,1.2
 2018_13_NYJ_TEN,2018,13,REG,2018-12-02,Josh McCown,NYJ,TEN,4,00:36,-4,NYJ 25,Tie or take lead,FAILURE,Interception,L,8.176,VERY_DIFFICULT,no,1.2
 2018_13_NYJ_TEN,2018,13,REG,2018-12-02,Marcus Mariota,TEN,NYJ,4,01:46,-3,TEN 14,Tie or take lead,CONVERSION,Offense reached required score state,W,27.857,DIFFICULT,no,1.2
-2018_14_BAL_KC,2018,14,REG,2018-12-09,Unresolved,BAL,KC,5,04:42,-3,BAL 25,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2018_14_BAL_KC,2018,14,REG,2018-12-09,Patrick Mahomes,KC,BAL,5,10:00,0,KC 25,Take lead,CONVERSION,Offense reached required score state,W,60.548,FAVORABLE,no,1.2
 2018_14_CAR_CLE,2018,14,REG,2018-12-09,Cam Newton,CAR,CLE,4,01:04,-6,CAR 35,Tie or take lead,FAILURE,Interception,L,19.923,VERY_DIFFICULT,no,1.2
 2018_14_CIN_LAC,2018,14,REG,2018-12-09,Jeff Driskel,CIN,LAC,4,00:49,-5,CIN 23,Tie or take lead,FAILURE,End game,L,8.176,VERY_DIFFICULT,no,1.2
@@ -3219,7 +3176,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2018_16_GB_NYJ,2018,16,REG,2018-12-23,Aaron Rodgers,GB,NYJ,5,10:00,0,GB 25,Take lead,CONVERSION,Offense reached required score state,W,60.548,FAVORABLE,no,1.2
 2018_16_GB_NYJ,2018,16,REG,2018-12-23,Sam Darnold,NYJ,GB,4,01:12,-3,GB 38,Tie or take lead,CONVERSION,Offense reached required score state,L,73.257,VERY_FAVORABLE,no,1.2
 2018_16_HOU_PHI,2018,16,REG,2018-12-23,Deshaun Watson,HOU,PHI,4,04:06,-6,HOU 20,Tie or take lead,CONVERSION,Offense reached required score state,L,33.995,DIFFICULT,no,1.2
-2018_16_HOU_PHI,2018,16,REG,2018-12-23,Unresolved,PHI,HOU,4,02:04,-1,PHI 11,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,W,,,no,1.2
 2018_16_NYG_IND,2018,16,REG,2018-12-23,Andrew Luck,IND,NYG,4,03:43,-6,IND 47,Tie or take lead,CONVERSION,Offense reached required score state,W,47.452,AVERAGE,no,1.2
 2018_16_NYG_IND,2018,16,REG,2018-12-23,Eli Manning,NYG,IND,4,00:55,-1,NYG 25,Tie or take lead,FAILURE,Interception,L,20.207,DIFFICULT,no,1.2
 2018_16_PIT_NO,2018,16,REG,2018-12-23,Drew Brees,NO,PIT,4,04:06,-4,PIT 46,Tie or take lead,CONVERSION,Offense reached required score state,W,47.452,AVERAGE,no,1.2
@@ -3344,7 +3300,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2019_13_CHI_DET,2019,13,REG,2019-11-28,Mitchell Trubisky,CHI,DET,4,06:40,-3,CHI 10,Tie or take lead,CONVERSION,Offense reached required score state,W,53.87,AVERAGE,no,1.2
 2019_13_CHI_DET,2019,13,REG,2019-11-28,David Blough,DET,CHI,4,02:17,-4,DET 17,Tie or take lead,FAILURE,Interception,L,22.886,DIFFICULT,no,1.2
 2019_13_CLE_PIT,2019,13,REG,2019-12-01,Baker Mayfield,CLE,PIT,4,01:45,-7,CLE 20,Touchdown,FAILURE,Interception,L,13.365,VERY_DIFFICULT,no,1.2
-2019_13_LAC_DEN,2019,13,REG,2019-12-01,Unresolved,DEN,LAC,4,00:14,0,DEN 28,Take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2019_13_LAC_DEN,2019,13,REG,2019-12-01,Philip Rivers,LAC,DEN,4,04:26,-3,LAC 25,Tie or take lead,CONVERSION,Offense reached required score state,L,60.175,FAVORABLE,no,1.2
 2019_13_MIN_SEA,2019,13,REG,2019-12-02,Kirk Cousins,MIN,SEA,4,03:27,-4,MIN 16,Tie or take lead,FAILURE,Turnover on downs,L,22.886,DIFFICULT,no,1.2
 2019_13_NO_ATL,2019,13,REG,2019-11-28,Matt Ryan,ATL,NO,4,01:56,-8,ATL 47,TD + 2-point conversion,FAILURE,Turnover on downs,L,8.735,VERY_DIFFICULT,no,1.2
@@ -3479,7 +3434,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2020_10_BUF_ARI,2020,10,REG,2020-11-15,Kyler Murray,ARI,BUF,4,00:34,-4,ARI 25,Tie or take lead,CONVERSION,Offense reached required score state,W,9.277,VERY_DIFFICULT,no,1.2
 2020_10_BUF_ARI,2020,10,REG,2020-11-15,Josh Allen,BUF,ARI,4,03:35,-3,BUF 22,Tie or take lead,CONVERSION,Offense reached required score state,L,63.276,FAVORABLE,no,1.2
 2020_10_JAX_GB,2020,10,REG,2020-11-15,Jake Luton,JAX,GB,4,02:25,-4,JAX 47,Tie or take lead,FAILURE,Turnover on downs,L,52.374,AVERAGE,no,1.2
-2020_10_MIN_CHI,2020,10,REG,2020-11-16,Unresolved,CHI,MIN,4,00:44,-6,CHI 20,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2020_10_WAS_DET,2020,10,REG,2020-11-15,Matthew Stafford,DET,WAS,4,00:16,0,DET 25,Take lead,CONVERSION,Offense reached required score state,W,42.971,AVERAGE,no,1.2
 2020_10_WAS_DET,2020,10,REG,2020-11-15,Alex Smith,WAS,DET,4,02:37,-3,WAS 11,Tie or take lead,CONVERSION,Offense reached required score state,L,48.167,AVERAGE,no,1.2
 2020_11_ARI_SEA,2020,11,REG,2020-11-19,Kyler Murray,ARI,SEA,4,02:19,-7,ARI 21,Touchdown,FAILURE,Turnover on downs,L,27.668,DIFFICULT,no,1.2
@@ -3545,7 +3499,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2020_17_LV_DEN,2020,17,REG,2021-01-03,Drew Lock,DEN,LV,4,00:24,-1,DEN 25,Tie or take lead,MANUAL_REVIEW,Missed or blocked fg 56 plus,L,,,no,1.2
 2020_17_LV_DEN,2020,17,REG,2021-01-03,Derek Carr,LV,DEN,4,01:47,-7,LV 23,Touchdown,CONVERSION,Touchdown down 7 kicker neutral,W,15.058,VERY_DIFFICULT,no,1.2
 2020_17_MIN_DET,2020,17,REG,2021-01-03,Matthew Stafford,DET,MIN,4,10:32,-8,DET 25,TD + 2-point conversion,FAILURE,Two point conversion failed,L,18.273,VERY_DIFFICULT,no,1.2
-2020_17_PIT_CLE,2020,17,REG,2021-01-03,Unresolved,PIT,CLE,4,03:37,-8,PIT 35,TD + 2-point conversion,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2020_17_TEN_HOU,2020,17,REG,2021-01-03,Deshaun Watson,HOU,TEN,4,01:42,-3,HOU 9,Tie or take lead,CONVERSION,Offense reached required score state,L,30.102,DIFFICULT,no,1.2
 2020_17_TEN_HOU,2020,17,REG,2021-01-03,Ryan Tannehill,TEN,HOU,4,00:18,0,TEN 25,Take lead,CONVERSION,Offense reached required score state,W,42.971,AVERAGE,no,1.2
 2020_17_WAS_PHI,2020,17,REG,2021-01-03,Nate Sudfeld,PHI,WAS,4,00:56,-6,PHI 8,Tie or take lead,FAILURE,End game,L,5.227,VERY_DIFFICULT,no,1.2
@@ -4123,7 +4076,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2023_22_SF_KC,2023,22,POST,2024-02-11,Brock Purdy,SF,KC,5,15:00,0,SF 25,Take lead,CONVERSION,Offense reached required score state,L,63.923,FAVORABLE,no,1.2
 2024_01_ARI_BUF,2024,1,REG,2024-09-08,Kyler Murray,ARI,BUF,4,01:56,-6,ARI 40,Tie or take lead,FAILURE,Turnover on downs,L,32.139,DIFFICULT,no,1.2
 2024_01_BAL_KC,2024,1,REG,2024-09-05,Lamar Jackson,BAL,KC,4,01:50,-7,BAL 13,Touchdown,FAILURE,End game,L,8.566,VERY_DIFFICULT,no,1.2
-2024_01_GB_PHI,2024,1,REG,2024-09-06,Unresolved,GB,PHI,4,00:27,-5,GB 16,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2024_01_JAX_MIA,2024,1,REG,2024-09-08,Trevor Lawrence,JAX,MIA,4,04:22,0,JAX 30,Take lead,FAILURE,Punt,L,80.876,VERY_FAVORABLE,no,1.2
 2024_01_JAX_MIA,2024,1,REG,2024-09-08,Tua Tagovailoa,MIA,JAX,4,02:09,0,MIA 35,Take lead,CONVERSION,Offense reached required score state,W,80.876,VERY_FAVORABLE,no,1.2
 2024_01_LA_DET,2024,1,REG,2024-09-08,Jared Goff,DET,LA,5,10:00,0,DET 30,Take lead,CONVERSION,Offense reached required score state,W,63.213,FAVORABLE,no,1.2
@@ -4442,11 +4394,9 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2025_15_ATL_TB,2025,15,REG,2025-12-11,Kirk Cousins,ATL,TB,4,01:49,-2,ATL 30,Tie or take lead,CONVERSION,Offense reached required score state,W,43.471,AVERAGE,no,1.2
 2025_15_BUF_NE,2025,15,REG,2025-12-14,Drake Maye,NE,BUF,4,02:43,-4,NE 17,Tie or take lead,FAILURE,Turnover on downs,L,24.132,DIFFICULT,no,1.2
 2025_15_CAR_NO,2025,15,REG,2025-12-14,Bryce Young,CAR,NO,4,02:29,0,CAR 29,Take lead,FAILURE,Punt,L,81.995,VERY_FAVORABLE,no,1.2
-2025_15_CAR_NO,2025,15,REG,2025-12-14,Unresolved,NO,CAR,4,00:57,0,NO 9,Take lead,MANUAL_REVIEW,Multi qb material participation,W,,,no,1.2
 2025_15_GB_DEN,2025,15,REG,2025-12-14,Jordan Love,GB,DEN,4,01:07,-8,GB 38,TD + 2-point conversion,FAILURE,Turnover on downs,L,5.827,VERY_DIFFICULT,no,1.2
 2025_15_IND_SEA,2025,15,REG,2025-12-14,Philip Rivers,IND,SEA,4,00:18,-2,IND 30,Tie or take lead,FAILURE,Interception,L,20.975,DIFFICULT,no,1.2
 2025_15_IND_SEA,2025,15,REG,2025-12-14,Sam Darnold,SEA,IND,4,00:47,-1,SEA 37,Tie or take lead,CONVERSION,Offense reached required score state,W,20.975,DIFFICULT,no,1.2
-2025_15_LAC_KC,2025,15,REG,2025-12-14,Unresolved,KC,LAC,4,05:20,-3,KC 8,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2025_15_WAS_NYG,2025,15,REG,2025-12-14,Jaxson Dart,NYG,WAS,4,02:38,-8,NYG 49,TD + 2-point conversion,FAILURE,Turnover on downs,L,18.114,VERY_DIFFICULT,no,1.2
 2025_16_ATL_ARI,2025,16,REG,2025-12-21,Jacoby Brissett,ARI,ATL,4,02:05,-7,ARI 40,Touchdown,FAILURE,Interception,L,37.479,AVERAGE,no,1.2
 2025_16_BUF_CLE,2025,16,REG,2025-12-21,Shedeur Sanders,CLE,BUF,4,02:47,-3,CLE 12,Tie or take lead,FAILURE,Punt,L,46.964,AVERAGE,no,1.2
@@ -4463,7 +4413,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2025_17_CHI_SF,2025,17,REG,2025-12-28,Brock Purdy,SF,CHI,4,05:22,-3,SF 25,Tie or take lead,CONVERSION,Offense reached required score state,W,69.021,FAVORABLE,no,1.2
 2025_17_DEN_KC,2025,17,REG,2025-12-25,Bo Nix,DEN,KC,4,08:03,0,DEN 35,Take lead,CONVERSION,Offense reached required score state,W,86.048,VERY_FAVORABLE,no,1.2
 2025_17_DEN_KC,2025,17,REG,2025-12-25,Chris Oladokun,KC,DEN,4,01:45,-7,KC 35,Touchdown,FAILURE,Turnover on downs,L,14.361,VERY_DIFFICULT,no,1.2
-2025_17_JAX_IND,2025,17,REG,2025-12-28,Unresolved,IND,JAX,4,00:18,-6,IND 35,Tie or take lead,MANUAL_REVIEW,Multi qb material participation,L,,,no,1.2
 2025_17_LA_ATL,2025,17,REG,2025-12-29,Kirk Cousins,ATL,LA,4,02:46,0,ATL 35,Take lead,CONVERSION,Offense reached required score state,W,81.995,VERY_FAVORABLE,no,1.2
 2025_17_LA_ATL,2025,17,REG,2025-12-29,Matthew Stafford,LA,ATL,4,00:21,-3,LA 35,Tie or take lead,FAILURE,Turnover on downs,L,20.975,DIFFICULT,no,1.2
 2025_17_NO_TEN,2025,17,REG,2025-12-28,Cam Ward,TEN,NO,4,01:37,-8,TEN 31,TD + 2-point conversion,FAILURE,End game,L,5.827,VERY_DIFFICULT,no,1.2
@@ -4551,7 +4500,6 @@ game_id,season,week,season_type,game_date,qb,offense,opponent,quarter,clock,star
 2026_05_DEN_LAC,2026,5,REG,2026-10-11,Justin Herbert,LAC,DEN,4,01:08,-6,LAC 31,Tie or take lead,FAILURE,End game,L,22.513,DIFFICULT,no,1.2
 2026_05_NYG_WAS,2026,5,REG,2026-10-11,Jameis Winston,NYG,WAS,5,05:33,0,NYG 9,Take lead,FAILURE,Fumble lost,T,49.092,AVERAGE,no,1.2
 2026_05_NYG_WAS,2026,5,REG,2026-10-11,Jayden Daniels,WAS,NYG,5,01:55,0,WAS 23,Take lead,FAILURE,End game,T,63.685,FAVORABLE,no,1.2
-2026_05_PHI_JAX,2026,5,REG,2026-10-11,Unresolved,JAX,PHI,4,00:08,-1,PHI 39,Tie or take lead,CONVERSION,Offense reached required score state,W,,,no,1.2
 2026_05_PHI_JAX,2026,5,REG,2026-10-11,Jalen Hurts,PHI,JAX,4,01:35,-2,PHI 38,Tie or take lead,CONVERSION,Offense reached required score state,L,44.333,AVERAGE,no,1.2
 2026_05_SF_SEA,2026,5,REG,2026-10-11,Sam Darnold,SEA,SF,4,01:56,-3,SEA 15,Tie or take lead,FAILURE,Turnover on downs,L,30.456,DIFFICULT,no,1.2
 2026_05_SF_SEA,2026,5,REG,2026-10-11,Brock Purdy,SF,SEA,4,06:55,0,SF 32,Take lead,CONVERSION,Offense reached required score state,W,86.287,VERY_FAVORABLE,no,1.2

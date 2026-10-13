@@ -17,7 +17,7 @@
     "data.html",
     "methodology.html"
   ],
-  "public_decision_rows": 4557,
+  "public_decision_rows": 4505,
   "qualified_qb_rows": 64,
   "player_trajectory_rows": 9596,
   "player_trajectories_true_asof": true,
@@ -98,7 +98,7 @@
       },
       "modern_2020_2026": {
         "rank_spearman_vs_pooled": 0.9999999999999998,
-        "mean_abs_sdcr_shift_pp": 2.7859204211862125,
+        "mean_abs_sdcr_shift_pp": 2.785920421186213,
         "max_abs_sdcr_shift_pp": 2.884102773865962
       }
     },
