@@ -44,7 +44,7 @@
     },
     "modern_2020_2026": {
       "rank_spearman_vs_pooled": 0.9999999999999998,
-      "mean_abs_sdcr_shift_pp": 2.785920421186213,
+      "mean_abs_sdcr_shift_pp": 2.7859204211862125,
       "max_abs_sdcr_shift_pp": 2.884102773865962
     }
   },
