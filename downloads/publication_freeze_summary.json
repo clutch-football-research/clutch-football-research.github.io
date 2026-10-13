@@ -7,7 +7,7 @@
   "source_latest_game_date": "2026-10-12",
   "source_latest_week": 5,
   "requested_through_date": "2026-10-12",
-  "publication_status": "CORE_VALIDATED_TRAILING_SDCR_EXPLORATORY",
+  "publication_status": "CORE_VALIDATED_WITH_SCOPED_SDCR_VALIDATION",
   "publication_policy": {
     "policy_version": "CFR-PUBLICATION-1.1",
     "adopted_after_run": {
@@ -19,1031 +19,1014 @@
     "approval_date": "2026-10-05",
     "post_result_policy_amendment": true,
     "core_publication_allowed": true,
-    "reference_sensitivity_exception_applied": true,
-    "failed_rank_criteria": [
-      "reference_rank_invariant"
-    ],
+    "reference_sensitivity_exception_applied": false,
+    "failed_rank_criteria": [],
     "scientific_readiness_flags": {
       "bucket_rank_spearman_ge_0_90": true,
       "spline_rank_spearman_ge_0_90": true,
       "half_sigma_rank_spearman_ge_0_90": true,
       "double_sigma_rank_spearman_ge_0_90": true,
       "all_variant_top10_overlap_ge_7": true,
-      "reference_rank_invariant": false,
-      "heldout_qb_effect_brier_not_worse": true,
+      "reference_rank_invariant": true,
+      "heldout_qb_effect_brier_not_worse": false,
       "heldout_qb_effect_logloss_not_worse": false,
       "all_pass": false
     },
-    "scientific_rank_stability_pass": false,
+    "scientific_rank_stability_pass": true,
     "scientific_all_flags_pass": false,
     "predictive_claim_allowed": false,
-    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
+    "predictive_increment_status": "NOT_SUPPORTED_ON_PREDECLARED_SCORES",
     "assessment_scope": "trailing",
     "sdcr_roles": {
-      "trailing": "exploratory",
+      "trailing": "descriptive_with_uncertainty",
       "overall": "reference_sensitivity_not_assessed_by_trailing_audit"
     },
     "reference_sensitivity": {
       "pooled": {
-        "rank_spearman_vs_pooled": 1.0,
+        "rank_spearman_vs_pooled": 0.9999999999999998,
         "mean_abs_sdcr_shift_pp": 0.0,
         "max_abs_sdcr_shift_pp": 0.0
       },
       "equal_qb": {
-        "rank_spearman_vs_pooled": 1.0,
-        "mean_abs_sdcr_shift_pp": 0.3961096593123364,
-        "max_abs_sdcr_shift_pp": 0.41343478634166786
+        "rank_spearman_vs_pooled": 0.9999999999999998,
+        "mean_abs_sdcr_shift_pp": 0.46791791130477917,
+        "max_abs_sdcr_shift_pp": 0.48525400994292056
       },
       "modern_2020_2026": {
-        "rank_spearman_vs_pooled": 0.9999562937062937,
-        "mean_abs_sdcr_shift_pp": 2.6738858386081232,
-        "max_abs_sdcr_shift_pp": 2.77819197436979
+        "rank_spearman_vs_pooled": 0.9999999999999998,
+        "mean_abs_sdcr_shift_pp": 2.7859204211862125,
+        "max_abs_sdcr_shift_pp": 2.884102773865962
       }
     },
     "reference_rank_evidence": {
       "pooled": [
         {
           "qb_id": "00-0001361",
-          "rank": 54,
-          "sdcr_pct": 32.884797316700876
+          "rank": 52,
+          "sdcr_pct": 32.90229598318126
         },
         {
           "qb_id": "00-0001823",
-          "rank": 25,
-          "sdcr_pct": 34.398735923256694
+          "rank": 23,
+          "sdcr_pct": 34.321539195014
         },
         {
           "qb_id": "00-0003292",
           "rank": 49,
-          "sdcr_pct": 33.10431466158741
+          "sdcr_pct": 33.10820929968939
         },
         {
           "qb_id": "00-0004161",
           "rank": 8,
-          "sdcr_pct": 35.37079639045249
+          "sdcr_pct": 35.214340453353024
         },
         {
           "qb_id": "00-0005106",
           "rank": 32,
-          "sdcr_pct": 34.183355986943006
+          "sdcr_pct": 34.0988294898556
         },
         {
           "qb_id": "00-0005741",
           "rank": 13,
-          "sdcr_pct": 34.98956260963062
+          "sdcr_pct": 34.86174580061785
         },
         {
           "qb_id": "00-0005755",
-          "rank": 64,
-          "sdcr_pct": 31.880065606354453
+          "rank": 62,
+          "sdcr_pct": 31.970837224655213
         },
         {
           "qb_id": "00-0006355",
-          "rank": 9,
-          "sdcr_pct": 35.35480829223151
+          "rank": 7,
+          "sdcr_pct": 35.22953226348611
         },
         {
           "qb_id": "00-0006423",
-          "rank": 23,
-          "sdcr_pct": 34.407445111619026
+          "rank": 24,
+          "sdcr_pct": 34.31302891252592
         },
         {
           "qb_id": "00-0007091",
-          "rank": 56,
-          "sdcr_pct": 32.47573325730897
+          "rank": 54,
+          "sdcr_pct": 32.51404706842729
         },
         {
           "qb_id": "00-0008442",
-          "rank": 59,
-          "sdcr_pct": 32.319395475344734
+          "rank": 57,
+          "sdcr_pct": 32.37243070776225
         },
         {
           "qb_id": "00-0009311",
-          "rank": 51,
-          "sdcr_pct": 32.96846155212075
+          "rank": 50,
+          "sdcr_pct": 32.98783465267879
         },
         {
           "qb_id": "00-0010346",
-          "rank": 4,
-          "sdcr_pct": 35.767660487200885
+          "rank": 5,
+          "sdcr_pct": 35.33801471273198
         },
         {
           "qb_id": "00-0011022",
           "rank": 63,
-          "sdcr_pct": 31.901222436865744
+          "sdcr_pct": 31.96910995291642
         },
         {
           "qb_id": "00-0011024",
-          "rank": 15,
-          "sdcr_pct": 34.92625974893573
+          "rank": 21,
+          "sdcr_pct": 34.45942366531789
         },
         {
           "qb_id": "00-0013042",
           "rank": 47,
-          "sdcr_pct": 33.2859137741303
+          "sdcr_pct": 33.27832251028134
         },
         {
           "qb_id": "00-0017200",
-          "rank": 61,
-          "sdcr_pct": 32.25148303043698
+          "rank": 60,
+          "sdcr_pct": 32.3071799624697
         },
         {
           "qb_id": "00-0019559",
-          "rank": 43,
-          "sdcr_pct": 33.46521205806779
+          "rank": 44,
+          "sdcr_pct": 33.42968834001626
         },
         {
           "qb_id": "00-0019596",
           "rank": 3,
-          "sdcr_pct": 36.34036804968962
+          "sdcr_pct": 36.13904120694067
         },
         {
           "qb_id": "00-0019599",
           "rank": 31,
-          "sdcr_pct": 34.20008036526468
+          "sdcr_pct": 34.11848727357526
         },
         {
           "qb_id": "00-0020245",
           "rank": 14,
-          "sdcr_pct": 34.943813486455056
+          "sdcr_pct": 34.79842380516555
         },
         {
           "qb_id": "00-0020531",
-          "rank": 7,
-          "sdcr_pct": 35.373699445432166
-        },
-        {
-          "qb_id": "00-0020608",
-          "rank": 53,
-          "sdcr_pct": 32.923931592655684
+          "rank": 9,
+          "sdcr_pct": 35.210313669626665
         },
         {
           "qb_id": "00-0021206",
           "rank": 45,
-          "sdcr_pct": 33.42650804320094
+          "sdcr_pct": 33.39571731415728
         },
         {
           "qb_id": "00-0021231",
-          "rank": 42,
-          "sdcr_pct": 33.4746217584022
+          "rank": 43,
+          "sdcr_pct": 33.4304879007089
         },
         {
           "qb_id": "00-0021429",
           "rank": 36,
-          "sdcr_pct": 34.04798310681946
+          "sdcr_pct": 33.9670530829816
         },
         {
           "qb_id": "00-0021678",
-          "rank": 18,
-          "sdcr_pct": 34.76739199721259
+          "rank": 17,
+          "sdcr_pct": 34.635790473900244
         },
         {
           "qb_id": "00-0022787",
           "rank": 33,
-          "sdcr_pct": 34.128614500362154
+          "sdcr_pct": 34.050397522026174
         },
         {
           "qb_id": "00-0022803",
           "rank": 1,
-          "sdcr_pct": 37.13408375898126
+          "sdcr_pct": 36.852600994804504
         },
         {
           "qb_id": "00-0022924",
           "rank": 2,
-          "sdcr_pct": 36.827819006364095
+          "sdcr_pct": 36.57873287407254
         },
         {
           "qb_id": "00-0022942",
           "rank": 55,
-          "sdcr_pct": 32.48270616456817
+          "sdcr_pct": 32.487942835179496
         },
         {
           "qb_id": "00-0023436",
-          "rank": 65,
-          "sdcr_pct": 31.800707617030493
+          "rank": 64,
+          "sdcr_pct": 31.86885975546558
         },
         {
           "qb_id": "00-0023459",
-          "rank": 19,
-          "sdcr_pct": 34.69658331478776
+          "rank": 18,
+          "sdcr_pct": 34.57554056651945
         },
         {
           "qb_id": "00-0023460",
-          "rank": 62,
-          "sdcr_pct": 32.13473539885518
+          "rank": 61,
+          "sdcr_pct": 32.187783327531875
         },
         {
           "qb_id": "00-0023662",
-          "rank": 38,
-          "sdcr_pct": 33.95954805343032
+          "rank": 39,
+          "sdcr_pct": 33.892198528175314
         },
         {
           "qb_id": "00-0023682",
           "rank": 48,
-          "sdcr_pct": 33.28209118626193
+          "sdcr_pct": 33.249682110101915
         },
         {
           "qb_id": "00-0024226",
-          "rank": 5,
-          "sdcr_pct": 35.55641527188629
+          "rank": 4,
+          "sdcr_pct": 35.36417086925048
         },
         {
           "qb_id": "00-0026143",
           "rank": 6,
-          "sdcr_pct": 35.485901873315015
+          "sdcr_pct": 35.300376416981756
         },
         {
           "qb_id": "00-0026158",
-          "rank": 52,
-          "sdcr_pct": 32.96731545837825
+          "rank": 51,
+          "sdcr_pct": 32.94993275042402
         },
         {
           "qb_id": "00-0026498",
-          "rank": 39,
-          "sdcr_pct": 33.73685425226364
+          "rank": 37,
+          "sdcr_pct": 33.89928508735579
         },
         {
           "qb_id": "00-0027939",
           "rank": 29,
-          "sdcr_pct": 34.23886602840523
+          "sdcr_pct": 34.140626728039834
         },
         {
           "qb_id": "00-0027973",
           "rank": 40,
-          "sdcr_pct": 33.53079107888318
+          "sdcr_pct": 33.47328873717914
         },
         {
           "qb_id": "00-0029263",
-          "rank": 60,
-          "sdcr_pct": 32.29944166412135
+          "rank": 59,
+          "sdcr_pct": 32.31229817915978
         },
         {
           "qb_id": "00-0029604",
-          "rank": 20,
-          "sdcr_pct": 34.68296511656803
+          "rank": 19,
+          "sdcr_pct": 34.562215500389016
         },
         {
           "qb_id": "00-0029701",
-          "rank": 21,
-          "sdcr_pct": 34.63520662428803
+          "rank": 20,
+          "sdcr_pct": 34.51459118870355
         },
         {
           "qb_id": "00-0030565",
-          "rank": 16,
-          "sdcr_pct": 34.92315972552097
+          "rank": 15,
+          "sdcr_pct": 34.78130543264136
         },
         {
           "qb_id": "00-0031280",
           "rank": 11,
-          "sdcr_pct": 35.13546982510765
+          "sdcr_pct": 34.9790918012575
         },
         {
           "qb_id": "00-0031407",
           "rank": 58,
-          "sdcr_pct": 32.32362077923734
+          "sdcr_pct": 32.36520155211635
         },
         {
           "qb_id": "00-0031503",
           "rank": 27,
-          "sdcr_pct": 34.31983329304549
+          "sdcr_pct": 34.23047615671425
         },
         {
           "qb_id": "00-0032268",
           "rank": 28,
-          "sdcr_pct": 34.270928508567884
+          "sdcr_pct": 34.17774598659054
         },
         {
           "qb_id": "00-0032950",
-          "rank": 44,
-          "sdcr_pct": 33.45275604000343
+          "rank": 42,
+          "sdcr_pct": 33.43587463358176
         },
         {
           "qb_id": "00-0033077",
           "rank": 10,
-          "sdcr_pct": 35.274900307985966
+          "sdcr_pct": 35.110560400192924
         },
         {
           "qb_id": "00-0033106",
           "rank": 22,
-          "sdcr_pct": 34.57319739527735
+          "sdcr_pct": 34.45339477150119
         },
         {
           "qb_id": "00-0033119",
-          "rank": 57,
-          "sdcr_pct": 32.37382913823829
+          "rank": 56,
+          "sdcr_pct": 32.41436294727473
         },
         {
           "qb_id": "00-0033537",
           "rank": 41,
-          "sdcr_pct": 33.48006715822609
+          "sdcr_pct": 33.4424029114174
         },
         {
           "qb_id": "00-0033873",
           "rank": 12,
-          "sdcr_pct": 35.036545401636275
+          "sdcr_pct": 34.89235361614105
         },
         {
           "qb_id": "00-0034796",
           "rank": 26,
-          "sdcr_pct": 34.33287259826187
+          "sdcr_pct": 34.240867046162904
         },
         {
           "qb_id": "00-0034855",
           "rank": 46,
-          "sdcr_pct": 33.418217878660585
+          "sdcr_pct": 33.36727055202226
         },
         {
           "qb_id": "00-0034857",
           "rank": 30,
-          "sdcr_pct": 34.217757722891726
+          "sdcr_pct": 34.12085663175049
         },
         {
           "qb_id": "00-0034869",
-          "rank": 17,
-          "sdcr_pct": 34.78648161782329
+          "rank": 16,
+          "sdcr_pct": 34.670750181549415
         },
         {
           "qb_id": "00-0035228",
           "rank": 35,
-          "sdcr_pct": 34.09170069917729
+          "sdcr_pct": 34.00922050271188
         },
         {
           "qb_id": "00-0035710",
-          "rank": 24,
-          "sdcr_pct": 34.40205453847782
+          "rank": 25,
+          "sdcr_pct": 34.29682322180338
         },
         {
           "qb_id": "00-0036355",
           "rank": 34,
-          "sdcr_pct": 34.0944949704887
+          "sdcr_pct": 34.020385365457464
         },
         {
           "qb_id": "00-0036442",
-          "rank": 37,
-          "sdcr_pct": 33.96179487475554
+          "rank": 38,
+          "sdcr_pct": 33.892924660549525
         },
         {
           "qb_id": "00-0036971",
-          "rank": 50,
-          "sdcr_pct": 33.038272690274084
+          "rank": 53,
+          "sdcr_pct": 32.82206950753622
         }
       ],
       "equal_qb": [
         {
           "qb_id": "00-0001361",
-          "rank": 54,
-          "sdcr_pct": 32.495284351746356
+          "rank": 52,
+          "sdcr_pct": 32.440953951677024
         },
         {
           "qb_id": "00-0001823",
-          "rank": 25,
-          "sdcr_pct": 34.00021057861194
+          "rank": 23,
+          "sdcr_pct": 33.85110983157985
         },
         {
           "qb_id": "00-0003292",
           "rank": 49,
-          "sdcr_pct": 32.71341491764332
+          "sdcr_pct": 32.64546659809471
         },
         {
           "qb_id": "00-0004161",
           "rank": 8,
-          "sdcr_pct": 34.966777822433016
+          "sdcr_pct": 34.738488644263754
         },
         {
           "qb_id": "00-0005106",
           "rank": 32,
-          "sdcr_pct": 33.78598133066599
+          "sdcr_pct": 33.62968873390736
         },
         {
           "qb_id": "00-0005741",
           "rank": 13,
-          "sdcr_pct": 34.58769820441876
+          "sdcr_pct": 34.38803594325952
         },
         {
           "qb_id": "00-0005755",
-          "rank": 64,
-          "sdcr_pct": 31.496906317430234
+          "rank": 62,
+          "sdcr_pct": 31.515838915401496
         },
         {
           "qb_id": "00-0006355",
-          "rank": 9,
-          "sdcr_pct": 34.95089499077265
+          "rank": 7,
+          "sdcr_pct": 34.75360891291023
         },
         {
           "qb_id": "00-0006423",
-          "rank": 23,
-          "sdcr_pct": 34.0089104516334
+          "rank": 24,
+          "sdcr_pct": 33.84269389326205
         },
         {
           "qb_id": "00-0007091",
-          "rank": 56,
-          "sdcr_pct": 32.088782996018814
+          "rank": 54,
+          "sdcr_pct": 32.0553239581564
         },
         {
           "qb_id": "00-0008442",
-          "rank": 59,
-          "sdcr_pct": 31.933437518440645
+          "rank": 57,
+          "sdcr_pct": 31.91467654837329
         },
         {
           "qb_id": "00-0009311",
-          "rank": 51,
-          "sdcr_pct": 32.57841599355347
+          "rank": 50,
+          "sdcr_pct": 32.525907835830516
         },
         {
           "qb_id": "00-0010346",
-          "rank": 4,
-          "sdcr_pct": 35.36140304281577
+          "rank": 5,
+          "sdcr_pct": 34.86136220489045
         },
         {
           "qb_id": "00-0011022",
           "rank": 63,
-          "sdcr_pct": 31.517882786557493
+          "sdcr_pct": 31.514077596106116
         },
         {
           "qb_id": "00-0011024",
-          "rank": 15,
-          "sdcr_pct": 34.52473540183079
+          "rank": 21,
+          "sdcr_pct": 33.98816043747258
         },
         {
           "qb_id": "00-0013042",
           "rank": 47,
-          "sdcr_pct": 32.89397304879006
+          "sdcr_pct": 32.814531390966
         },
         {
           "qb_id": "00-0017200",
-          "rank": 61,
-          "sdcr_pct": 31.865946507091557
+          "rank": 60,
+          "sdcr_pct": 31.84986202628608
         },
         {
           "qb_id": "00-0019559",
-          "rank": 43,
-          "sdcr_pct": 33.0721875027154
+          "rank": 44,
+          "sdcr_pct": 32.964911802598635
         },
         {
           "qb_id": "00-0019596",
           "rank": 3,
-          "sdcr_pct": 35.930965025512705
+          "sdcr_pct": 35.65767578420449
         },
         {
           "qb_id": "00-0019599",
           "rank": 31,
-          "sdcr_pct": 33.802720037786685
+          "sdcr_pct": 33.64933692440189
         },
         {
           "qb_id": "00-0020245",
           "rank": 14,
-          "sdcr_pct": 34.54217671400995
+          "sdcr_pct": 34.325066117892725
         },
         {
           "qb_id": "00-0020531",
-          "rank": 7,
-          "sdcr_pct": 34.969522852402
-        },
-        {
-          "qb_id": "00-0020608",
-          "rank": 53,
-          "sdcr_pct": 32.53421256268598
+          "rank": 9,
+          "sdcr_pct": 34.73434054399268
         },
         {
           "qb_id": "00-0021206",
           "rank": 45,
-          "sdcr_pct": 33.033710896611645
+          "sdcr_pct": 32.93115530373127
         },
         {
           "qb_id": "00-0021231",
-          "rank": 42,
-          "sdcr_pct": 33.0815160823371
+          "rank": 43,
+          "sdcr_pct": 32.96568117199048
         },
         {
           "qb_id": "00-0021429",
           "rank": 36,
-          "sdcr_pct": 33.65141692966343
+          "sdcr_pct": 33.49875872497623
         },
         {
           "qb_id": "00-0021678",
-          "rank": 18,
-          "sdcr_pct": 34.36671245589713
+          "rank": 17,
+          "sdcr_pct": 34.163381701902075
         },
         {
           "qb_id": "00-0022787",
           "rank": 33,
-          "sdcr_pct": 33.73168201782526
+          "sdcr_pct": 33.58168551034611
         },
         {
           "qb_id": "00-0022803",
           "rank": 1,
-          "sdcr_pct": 36.720648972639594
+          "sdcr_pct": 36.367346984861584
         },
         {
           "qb_id": "00-0022924",
           "rank": 2,
-          "sdcr_pct": 36.415920046244246
+          "sdcr_pct": 36.094952706957365
         },
         {
           "qb_id": "00-0022942",
           "rank": 55,
-          "sdcr_pct": 32.09549147748387
+          "sdcr_pct": 32.02916672873741
         },
         {
           "qb_id": "00-0023436",
-          "rank": 65,
-          "sdcr_pct": 31.41800347768101
+          "rank": 64,
+          "sdcr_pct": 31.414511458784077
         },
         {
           "qb_id": "00-0023459",
-          "rank": 19,
-          "sdcr_pct": 34.29621449743588
+          "rank": 18,
+          "sdcr_pct": 34.10340672864231
         },
         {
           "qb_id": "00-0023460",
-          "rank": 62,
-          "sdcr_pct": 31.749933008997683
+          "rank": 61,
+          "sdcr_pct": 31.731274722025304
         },
         {
           "qb_id": "00-0023662",
-          "rank": 38,
-          "sdcr_pct": 33.563620567796406
+          "rank": 39,
+          "sdcr_pct": 33.42449883018526
         },
         {
           "qb_id": "00-0023682",
           "rank": 48,
-          "sdcr_pct": 32.89012021904508
+          "sdcr_pct": 32.78602279620112
         },
         {
           "qb_id": "00-0024226",
-          "rank": 5,
-          "sdcr_pct": 35.15134432392163
+          "rank": 4,
+          "sdcr_pct": 34.887399924489735
         },
         {
           "qb_id": "00-0026143",
           "rank": 6,
-          "sdcr_pct": 35.08102796331735
+          "sdcr_pct": 34.8237881937536
         },
         {
           "qb_id": "00-0026158",
-          "rank": 52,
-          "sdcr_pct": 32.57714011332503
+          "rank": 51,
+          "sdcr_pct": 32.488115055501495
         },
         {
           "qb_id": "00-0026498",
-          "rank": 39,
-          "sdcr_pct": 33.34198789751508
+          "rank": 37,
+          "sdcr_pct": 33.431283984815984
         },
         {
           "qb_id": "00-0027939",
           "rank": 29,
-          "sdcr_pct": 33.84116688439312
+          "sdcr_pct": 33.671222514352536
         },
         {
           "qb_id": "00-0027973",
           "rank": 40,
-          "sdcr_pct": 33.137275527435335
+          "sdcr_pct": 33.008130623335184
         },
         {
           "qb_id": "00-0029263",
-          "rank": 60,
-          "sdcr_pct": 31.913461445551683
+          "rank": 59,
+          "sdcr_pct": 31.854800095795138
         },
         {
           "qb_id": "00-0029604",
-          "rank": 20,
-          "sdcr_pct": 34.282674498005925
+          "rank": 19,
+          "sdcr_pct": 34.09016369993302
         },
         {
           "qb_id": "00-0029701",
-          "rank": 21,
-          "sdcr_pct": 34.23526837172125
+          "rank": 20,
+          "sdcr_pct": 34.04291361152041
         },
         {
           "qb_id": "00-0030565",
-          "rank": 16,
-          "sdcr_pct": 34.52163641254848
+          "rank": 15,
+          "sdcr_pct": 34.30804884907517
         },
         {
           "qb_id": "00-0031280",
           "rank": 11,
-          "sdcr_pct": 34.73264033936975
+          "sdcr_pct": 34.50452437979209
         },
         {
           "qb_id": "00-0031407",
           "rank": 58,
-          "sdcr_pct": 31.937634925935864
+          "sdcr_pct": 31.90749519188371
         },
         {
           "qb_id": "00-0031503",
           "rank": 27,
-          "sdcr_pct": 33.921711252797714
+          "sdcr_pct": 33.76055902343023
         },
         {
           "qb_id": "00-0032268",
           "rank": 28,
-          "sdcr_pct": 33.87310625016136
+          "sdcr_pct": 33.70817397065707
         },
         {
           "qb_id": "00-0032950",
-          "rank": 44,
-          "sdcr_pct": 33.059798336228965
+          "rank": 42,
+          "sdcr_pct": 32.97105040346191
         },
         {
           "qb_id": "00-0033077",
           "rank": 10,
-          "sdcr_pct": 34.87138413023022
+          "sdcr_pct": 34.63529679555955
         },
         {
           "qb_id": "00-0033106",
           "rank": 22,
-          "sdcr_pct": 34.17363614205517
+          "sdcr_pct": 33.98211633527024
         },
         {
           "qb_id": "00-0033119",
-          "rank": 57,
-          "sdcr_pct": 31.987501497656044
+          "rank": 56,
+          "sdcr_pct": 31.956296609036837
         },
         {
           "qb_id": "00-0033537",
           "rank": 41,
-          "sdcr_pct": 33.086933719816905
+          "sdcr_pct": 32.97752428373987
         },
         {
           "qb_id": "00-0033873",
           "rank": 12,
-          "sdcr_pct": 34.634383565348784
+          "sdcr_pct": 34.41842466308314
         },
         {
           "qb_id": "00-0034796",
           "rank": 26,
-          "sdcr_pct": 33.934776925034605
+          "sdcr_pct": 33.77098845065278
         },
         {
           "qb_id": "00-0034855",
           "rank": 46,
-          "sdcr_pct": 33.02535935313059
+          "sdcr_pct": 32.902778800665764
         },
         {
           "qb_id": "00-0034857",
           "rank": 30,
-          "sdcr_pct": 33.8202104040371
+          "sdcr_pct": 33.65160580435299
         },
         {
           "qb_id": "00-0034869",
-          "rank": 17,
-          "sdcr_pct": 34.385769560513616
+          "rank": 16,
+          "sdcr_pct": 34.19820500622588
         },
         {
           "qb_id": "00-0035228",
           "rank": 35,
-          "sdcr_pct": 33.69494072575965
+          "sdcr_pct": 33.54072376741287
         },
         {
           "qb_id": "00-0035710",
-          "rank": 24,
-          "sdcr_pct": 34.00352554343045
+          "rank": 25,
+          "sdcr_pct": 33.82656243650318
         },
         {
           "qb_id": "00-0036355",
           "rank": 34,
-          "sdcr_pct": 33.69769805125099
+          "sdcr_pct": 33.551797664287584
         },
         {
           "qb_id": "00-0036442",
-          "rank": 37,
-          "sdcr_pct": 33.56584607613574
+          "rank": 38,
+          "sdcr_pct": 33.42521213825962
         },
         {
           "qb_id": "00-0036971",
-          "rank": 50,
-          "sdcr_pct": 32.647823399572815
+          "rank": 53,
+          "sdcr_pct": 32.36127620714739
         }
       ],
       "modern_2020_2026": [
         {
           "qb_id": "00-0001361",
-          "rank": 54,
-          "sdcr_pct": 35.51779482248874
+          "rank": 52,
+          "sdcr_pct": 35.65006961826757
         },
         {
           "qb_id": "00-0001823",
-          "rank": 25,
-          "sdcr_pct": 37.08795811038623
+          "rank": 23,
+          "sdcr_pct": 37.12230116617363
         },
         {
           "qb_id": "00-0003292",
           "rank": 49,
-          "sdcr_pct": 35.74620154857031
+          "sdcr_pct": 35.8643337618478
         },
         {
           "qb_id": "00-0004161",
           "rank": 8,
-          "sdcr_pct": 38.093421794198626
+          "sdcr_pct": 38.046061297239575
         },
         {
           "qb_id": "00-0005106",
           "rank": 32,
-          "sdcr_pct": 36.86578833130023
+          "sdcr_pct": 36.89238584527742
         },
         {
           "qb_id": "00-0005741",
           "rank": 13,
-          "sdcr_pct": 37.69908996256558
+          "sdcr_pct": 37.681236303469085
         },
         {
           "qb_id": "00-0005755",
-          "rank": 64,
-          "sdcr_pct": 34.472317123243116
+          "rank": 62,
+          "sdcr_pct": 34.68077622011797
         },
         {
           "qb_id": "00-0006355",
-          "rank": 9,
-          "sdcr_pct": 38.0767477289044
+          "rank": 7,
+          "sdcr_pct": 38.06161245914295
         },
         {
           "qb_id": "00-0006423",
-          "rank": 23,
-          "sdcr_pct": 37.09659998425004
+          "rank": 24,
+          "sdcr_pct": 37.11315131639232
         },
         {
           "qb_id": "00-0007091",
-          "rank": 56,
-          "sdcr_pct": 35.09236384801147
+          "rank": 54,
+          "sdcr_pct": 35.24625349502715
         },
         {
           "qb_id": "00-0008442",
-          "rank": 59,
-          "sdcr_pct": 34.92965216687565
+          "rank": 57,
+          "sdcr_pct": 35.09884888529331
         },
         {
           "qb_id": "00-0009311",
-          "rank": 52,
-          "sdcr_pct": 35.60488442419999
+          "rank": 50,
+          "sdcr_pct": 35.739100858438846
         },
         {
           "qb_id": "00-0010346",
-          "rank": 4,
-          "sdcr_pct": 38.50388603233592
+          "rank": 5,
+          "sdcr_pct": 38.17442452940188
         },
         {
           "qb_id": "00-0011022",
           "rank": 63,
-          "sdcr_pct": 34.494761226483426
+          "sdcr_pct": 34.679346556185806
         },
         {
           "qb_id": "00-0011024",
-          "rank": 15,
-          "sdcr_pct": 37.633773954132764
+          "rank": 21,
+          "sdcr_pct": 37.26493802059521
         },
         {
           "qb_id": "00-0013042",
           "rank": 47,
-          "sdcr_pct": 35.93417556682242
+          "sdcr_pct": 36.04046943355401
         },
         {
           "qb_id": "00-0017200",
-          "rank": 61,
-          "sdcr_pct": 34.85905958515737
+          "rank": 60,
+          "sdcr_pct": 35.031013347969534
         },
         {
           "qb_id": "00-0019559",
-          "rank": 43,
-          "sdcr_pct": 36.12028429077274
+          "rank": 44,
+          "sdcr_pct": 36.19761756755266
         },
         {
           "qb_id": "00-0019596",
           "rank": 3,
-          "sdcr_pct": 39.09543568356305
+          "sdcr_pct": 39.00199762803334
         },
         {
           "qb_id": "00-0019599",
           "rank": 31,
-          "sdcr_pct": 36.882086611254046
+          "sdcr_pct": 36.9118385268891
         },
         {
           "qb_id": "00-0020245",
           "rank": 14,
-          "sdcr_pct": 37.652052023759445
+          "sdcr_pct": 37.6159804249409
         },
         {
           "qb_id": "00-0020531",
-          "rank": 7,
-          "sdcr_pct": 38.097721491406624
-        },
-        {
-          "qb_id": "00-0020608",
-          "rank": 53,
-          "sdcr_pct": 35.55813458203553
+          "rank": 9,
+          "sdcr_pct": 38.043072946014775
         },
         {
           "qb_id": "00-0021206",
           "rank": 45,
-          "sdcr_pct": 36.080170433570835
+          "sdcr_pct": 36.162402325364106
         },
         {
           "qb_id": "00-0021231",
-          "rank": 42,
-          "sdcr_pct": 36.130274659389876
+          "rank": 43,
+          "sdcr_pct": 36.19864915672088
         },
         {
           "qb_id": "00-0021429",
           "rank": 36,
-          "sdcr_pct": 36.72536429207518
+          "sdcr_pct": 36.75566788371229
         },
         {
           "qb_id": "00-0021678",
-          "rank": 18,
-          "sdcr_pct": 37.46993289295511
+          "rank": 17,
+          "sdcr_pct": 37.44802140701468
         },
         {
           "qb_id": "00-0022787",
           "rank": 33,
-          "sdcr_pct": 36.807944477270226
+          "sdcr_pct": 36.84118751031706
         },
         {
           "qb_id": "00-0022803",
           "rank": 1,
-          "sdcr_pct": 39.91227573335105
+          "sdcr_pct": 39.736703768670466
         },
         {
           "qb_id": "00-0022924",
           "rank": 2,
-          "sdcr_pct": 39.59726853440795
+          "sdcr_pct": 39.454869675707386
         },
         {
           "qb_id": "00-0022942",
           "rank": 55,
-          "sdcr_pct": 35.10165172351621
+          "sdcr_pct": 35.2209457314767
         },
         {
           "qb_id": "00-0023436",
-          "rank": 65,
-          "sdcr_pct": 34.39017119999028
+          "rank": 64,
+          "sdcr_pct": 34.575013542727405
         },
         {
           "qb_id": "00-0023459",
-          "rank": 19,
-          "sdcr_pct": 37.39751229822462
+          "rank": 18,
+          "sdcr_pct": 37.38641765313954
         },
         {
           "qb_id": "00-0023460",
-          "rank": 62,
-          "sdcr_pct": 34.73761561230435
+          "rank": 61,
+          "sdcr_pct": 34.90679774031932
         },
         {
           "qb_id": "00-0023662",
-          "rank": 38,
-          "sdcr_pct": 36.63261258917418
+          "rank": 39,
+          "sdcr_pct": 36.677087090767586
         },
         {
           "qb_id": "00-0023682",
           "rank": 48,
-          "sdcr_pct": 35.930699179219985
+          "sdcr_pct": 36.01117560647222
         },
         {
           "qb_id": "00-0024226",
-          "rank": 5,
-          "sdcr_pct": 38.28544974259793
+          "rank": 4,
+          "sdcr_pct": 38.20116105818182
         },
         {
           "qb_id": "00-0026143",
           "rank": 6,
-          "sdcr_pct": 38.21435791009208
+          "sdcr_pct": 38.136809404461935
         },
         {
           "qb_id": "00-0026158",
           "rank": 51,
-          "sdcr_pct": 35.60495532634761
+          "sdcr_pct": 35.70086012863708
         },
         {
           "qb_id": "00-0026498",
-          "rank": 39,
-          "sdcr_pct": 36.40408421867941
+          "rank": 37,
+          "sdcr_pct": 36.686505830045036
         },
         {
           "qb_id": "00-0027939",
           "rank": 29,
-          "sdcr_pct": 36.923304921037335
+          "sdcr_pct": 36.93571003595103
         },
         {
           "qb_id": "00-0027973",
           "rank": 40,
-          "sdcr_pct": 36.18922531402394
+          "sdcr_pct": 36.243671968228846
         },
         {
           "qb_id": "00-0029263",
-          "rank": 60,
-          "sdcr_pct": 34.91025796836604
+          "rank": 59,
+          "sdcr_pct": 35.03750745710386
         },
         {
           "qb_id": "00-0029604",
-          "rank": 20,
-          "sdcr_pct": 37.38341482883929
+          "rank": 19,
+          "sdcr_pct": 37.372621564648846
         },
         {
           "qb_id": "00-0029701",
-          "rank": 21,
-          "sdcr_pct": 37.333257908674064
+          "rank": 20,
+          "sdcr_pct": 37.32265906181327
         },
         {
           "qb_id": "00-0030565",
-          "rank": 16,
-          "sdcr_pct": 37.63071848964815
+          "rank": 15,
+          "sdcr_pct": 37.59829159764082
         },
         {
           "qb_id": "00-0031280",
           "rank": 11,
-          "sdcr_pct": 37.85129910325688
+          "sdcr_pct": 37.803822007686705
         },
         {
           "qb_id": "00-0031407",
           "rank": 58,
-          "sdcr_pct": 34.93405967124678
+          "sdcr_pct": 35.09133761145122
         },
         {
           "qb_id": "00-0031503",
           "rank": 27,
-          "sdcr_pct": 37.00673552897942
+          "sdcr_pct": 37.02841029903142
         },
         {
           "qb_id": "00-0032268",
           "rank": 28,
-          "sdcr_pct": 36.95593513955284
+          "sdcr_pct": 36.973650825899846
         },
         {
           "qb_id": "00-0032950",
-          "rank": 44,
-          "sdcr_pct": 36.107432922623225
+          "rank": 42,
+          "sdcr_pct": 36.204099984261696
         },
         {
           "qb_id": "00-0033077",
           "rank": 10,
-          "sdcr_pct": 37.99459254819622
+          "sdcr_pct": 37.93902272747981
         },
         {
           "qb_id": "00-0033106",
           "rank": 22,
-          "sdcr_pct": 37.268873853480976
+          "sdcr_pct": 37.2591186968423
         },
         {
           "qb_id": "00-0033119",
-          "rank": 57,
-          "sdcr_pct": 34.986528015954974
+          "rank": 56,
+          "sdcr_pct": 35.14269812329057
         },
         {
           "qb_id": "00-0033537",
           "rank": 41,
-          "sdcr_pct": 36.13587939272339
+          "sdcr_pct": 36.21097364261373
         },
         {
           "qb_id": "00-0033873",
           "rank": 12,
-          "sdcr_pct": 37.74797999363276
+          "sdcr_pct": 37.71317366967456
         },
         {
           "qb_id": "00-0034796",
           "rank": 26,
-          "sdcr_pct": 37.01930341856341
+          "sdcr_pct": 37.0383406404581
         },
         {
           "qb_id": "00-0034855",
           "rank": 46,
-          "sdcr_pct": 36.072592515594295
+          "sdcr_pct": 36.13379584884947
         },
         {
           "qb_id": "00-0034857",
           "rank": 30,
-          "sdcr_pct": 36.901172238032494
+          "sdcr_pct": 36.91498523263584
         },
         {
           "qb_id": "00-0034869",
-          "rank": 17,
-          "sdcr_pct": 37.48898701481106
+          "rank": 16,
+          "sdcr_pct": 37.48358001547098
         },
         {
           "qb_id": "00-0035228",
           "rank": 35,
-          "sdcr_pct": 36.77009419526657
+          "sdcr_pct": 36.79886365264557
         },
         {
           "qb_id": "00-0035710",
-          "rank": 24,
-          "sdcr_pct": 37.09125197491023
+          "rank": 25,
+          "sdcr_pct": 37.096579019789864
         },
         {
           "qb_id": "00-0036355",
           "rank": 34,
-          "sdcr_pct": 36.77317907054761
+          "sdcr_pct": 36.81060263914445
         },
         {
           "qb_id": "00-0036442",
-          "rank": 37,
-          "sdcr_pct": 36.635015956367575
+          "rank": 38,
+          "sdcr_pct": 36.67790626043522
         },
         {
           "qb_id": "00-0036971",
-          "rank": 50,
-          "sdcr_pct": 35.677178906042286
+          "rank": 53,
+          "sdcr_pct": 35.56656542367851
         }
       ]
     },
-    "disclosure": "Trailing sCDCR is exploratory: the exact reference-rank invariance check failed; the aggregate scientific rank-stability result remains false. All other required rank-stability and core checks passed. Independently validated core outputs are publishable under a policy adopted after review of Classifier #156.",
+    "disclosure": "The trailing sCDCR rank-stability criteria passed for this snapshot; publication still retains the separately reported predictive checks.",
     "scope_guardrail": "This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot.",
     "uncertainty_guardrail": "Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims."
   },
@@ -1108,11 +1091,11 @@
     "team_games_becoming_no_opportunity": 58,
     "desperation_drives_skipped": 208,
     "conversions": 1802,
-    "failures": 2582,
+    "failures": 2579,
     "nd_k": 93,
-    "manual_review": 80,
-    "resolved_qb_attribution": 4523,
-    "manual_qb_attribution": 34,
+    "manual_review": 83,
+    "resolved_qb_attribution": 4505,
+    "manual_qb_attribution": 52,
     "qualifying_drive_candidates": 12736,
     "clutch_response_events": 4194,
     "resolved_qbs_with_response_events": 269
@@ -1126,41 +1109,41 @@
       "bucket_vs_qbx_rank_spearman_ge_0_90": true,
       "all_pass": true
     },
-    "bucket_brier": 0.186267576,
-    "bucket_log_loss": 0.5494731918,
-    "bucket_ece_pp": 1.294,
-    "bucket_calibration_slope": 0.997253,
-    "bucket_vs_spline_cae_rank_spearman": 0.9933,
-    "bucket_vs_qb_season_excluded_cae_rank_spearman": 0.9999,
+    "bucket_brier": 0.1864733104,
+    "bucket_log_loss": 0.5499138097,
+    "bucket_ece_pp": 1.238,
+    "bucket_calibration_slope": 0.996565,
+    "bucket_vs_spline_cae_rank_spearman": 0.9924,
+    "bucket_vs_qb_season_excluded_cae_rank_spearman": 0.9998,
     "cae_positive_95_ci_qbs": 6,
-    "cae_negative_95_ci_qbs": 2
+    "cae_negative_95_ci_qbs": 1
   },
   "sdcr_publication_readiness": {
-    "rank_stability_pass": false,
+    "rank_stability_pass": true,
     "assessment_scope": "trailing",
-    "reference_rank_invariant": false,
+    "reference_rank_invariant": true,
     "readiness_flags": {
       "bucket_rank_spearman_ge_0_90": true,
       "spline_rank_spearman_ge_0_90": true,
       "half_sigma_rank_spearman_ge_0_90": true,
       "double_sigma_rank_spearman_ge_0_90": true,
       "all_variant_top10_overlap_ge_7": true,
-      "reference_rank_invariant": false,
-      "heldout_qb_effect_brier_not_worse": true,
+      "reference_rank_invariant": true,
+      "heldout_qb_effect_brier_not_worse": false,
       "heldout_qb_effect_logloss_not_worse": false,
       "all_pass": false
     },
     "publication_roles": {
-      "trailing": "exploratory",
+      "trailing": "descriptive_with_uncertainty",
       "overall": "reference_sensitivity_not_assessed_by_trailing_audit"
     },
-    "predictive_increment_status": "MIXED_NO_CLEAR_PREDICTIVE_GAIN",
+    "predictive_increment_status": "NOT_SUPPORTED_ON_PREDECLARED_SCORES",
     "predictive_claim_allowed": false,
-    "recommended_role": "exploratory_only",
-    "heldout_brier_change_pct_vs_calibrated_xcdcr": -0.008774208360214322,
-    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.008888120230799365,
+    "recommended_role": "descriptive_standardization_with_uncertainty",
+    "heldout_brier_change_pct_vs_calibrated_xcdcr": 0.007558812721058623,
+    "heldout_logloss_change_pct_vs_calibrated_xcdcr": 0.021010773514563336,
     "predeclared_all_flags_pass": false,
-    "publication_rule": "Trailing sCDCR is exploratory: the exact reference-rank invariance check failed; the aggregate scientific rank-stability result remains false. All other required rank-stability and core checks passed. Independently validated core outputs are publishable under a policy adopted after review of Classifier #156. This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot. Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims. Predictive improvement claims are prohibited."
+    "publication_rule": "The trailing sCDCR rank-stability criteria passed for this snapshot; publication still retains the separately reported predictive checks. This trailing-scope audit does not establish reference-rank invariance for overall rankings or every historical trajectory snapshot. Point-estimate ranks are uncertain; retain observed CDCR and uncertainty intervals. Mixed predictive scores do not permit predictive improvement claims. Predictive improvement claims are prohibited."
   },
   "trajectory_publication_readiness": {
     "all_acceptance_gates_pass": true,
@@ -1189,15 +1172,15 @@
     "reason": "Preserving earlier successes while superseding earlier failures makes inclusion outcome-dependent and materially changes rankings.",
     "comparison_baseline": "literal-final pre-viability ledger",
     "additional_successes_added": 2432,
-    "rank_spearman_vs_primary": 0.8282433983926522,
-    "mean_absolute_rank_change": 7.848484848484849,
+    "rank_spearman_vs_primary": 0.8290610599078341,
+    "mean_absolute_rank_change": 7.587301587301587,
     "qbs_move_10_plus": 18,
-    "qbs_move_20_plus": 9,
-    "cae_rank_spearman": 0.7424068468844588,
+    "qbs_move_20_plus": 6,
+    "cae_rank_spearman": 0.7367031490015361,
     "qbs_cae_move_10_plus": 28
   },
   "external_crosswalk": {
-    "common_cohort_qbs": 65,
+    "common_cohort_qbs": 64,
     "note": "Raw Kacsmar-style game-outcome comparison remains the primary external crosswalk; adjusted and all-drive comparisons remain supplemental."
   },
   "focal_clutch_response_counts": [
