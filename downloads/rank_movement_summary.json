@@ -9,9 +9,9 @@
     "same_rank": 0,
     "mean_signed_move": 0,
     "median_signed_move": 1,
-    "mean_absolute_move": 11.587,
+    "mean_absolute_move": 11.429,
     "median_absolute_move": 8,
-    "qbs_abs_move_10_plus": 28,
+    "qbs_abs_move_10_plus": 27,
     "qbs_abs_move_20_plus": 15,
     "qbs_abs_move_30_plus": 4
   },
@@ -82,19 +82,6 @@
       "raw_gwd_pct": 32.09
     },
     {
-      "display_name": "Geno Smith",
-      "cdcr_rank": 14,
-      "kacsmar_raw_rank": 35,
-      "raw_to_cdcr_rank_move": 21,
-      "kacsmar_adjusted_rank": 19,
-      "all_drive_conversion_rank": 44,
-      "adjustment_gap_reduction": 16,
-      "all_drive_gap_reduction": -9,
-      "lost_go_ahead_games": 4,
-      "cdcr_pct": 48.387,
-      "raw_gwd_pct": 38.462
-    },
-    {
       "display_name": "Jameis Winston",
       "cdcr_rank": 35,
       "kacsmar_raw_rank": 56,
@@ -121,14 +108,27 @@
       "raw_gwd_pct": 39.45
     },
     {
+      "display_name": "Geno Smith",
+      "cdcr_rank": 14,
+      "kacsmar_raw_rank": 34,
+      "raw_to_cdcr_rank_move": 20,
+      "kacsmar_adjusted_rank": 19,
+      "all_drive_conversion_rank": 44,
+      "adjustment_gap_reduction": 15,
+      "all_drive_gap_reduction": -10,
+      "lost_go_ahead_games": 4,
+      "cdcr_pct": 48.387,
+      "raw_gwd_pct": 38.462
+    },
+    {
       "display_name": "Marcus Mariota",
       "cdcr_rank": 15,
-      "kacsmar_raw_rank": 34,
-      "raw_to_cdcr_rank_move": 19,
+      "kacsmar_raw_rank": 33,
+      "raw_to_cdcr_rank_move": 18,
       "kacsmar_adjusted_rank": 31,
       "all_drive_conversion_rank": 35,
-      "adjustment_gap_reduction": 3,
-      "all_drive_gap_reduction": -1,
+      "adjustment_gap_reduction": 2,
+      "all_drive_gap_reduction": -2,
       "lost_go_ahead_games": 6,
       "cdcr_pct": 48.387,
       "raw_gwd_pct": 38.636
@@ -188,12 +188,12 @@
     {
       "display_name": "Mike Vick",
       "cdcr_rank": 29,
-      "kacsmar_raw_rank": 39,
-      "raw_to_cdcr_rank_move": 10,
-      "kacsmar_adjusted_rank": 29,
+      "kacsmar_raw_rank": 38,
+      "raw_to_cdcr_rank_move": 9,
+      "kacsmar_adjusted_rank": 28,
       "all_drive_conversion_rank": 40,
-      "adjustment_gap_reduction": 10,
-      "all_drive_gap_reduction": -1,
+      "adjustment_gap_reduction": 8,
+      "all_drive_gap_reduction": -2,
       "lost_go_ahead_games": 6,
       "cdcr_pct": 43.75,
       "raw_gwd_pct": 38.043
@@ -253,19 +253,6 @@
       "raw_gwd_pct": 39.855
     },
     {
-      "display_name": "Matt Hasselbeck",
-      "cdcr_rank": 40,
-      "kacsmar_raw_rank": 14,
-      "raw_to_cdcr_rank_move": -26,
-      "kacsmar_adjusted_rank": 9,
-      "all_drive_conversion_rank": 30,
-      "adjustment_gap_reduction": -5,
-      "all_drive_gap_reduction": 16,
-      "lost_go_ahead_games": 9,
-      "cdcr_pct": 38.462,
-      "raw_gwd_pct": 44.262
-    },
-    {
       "display_name": "Brad Johnson",
       "cdcr_rank": 52,
       "kacsmar_raw_rank": 27,
@@ -290,6 +277,19 @@
       "lost_go_ahead_games": 8,
       "cdcr_pct": 31.707,
       "raw_gwd_pct": 39.394
+    },
+    {
+      "display_name": "Matt Hasselbeck",
+      "cdcr_rank": 39,
+      "kacsmar_raw_rank": 14,
+      "raw_to_cdcr_rank_move": -25,
+      "kacsmar_adjusted_rank": 9,
+      "all_drive_conversion_rank": 30,
+      "adjustment_gap_reduction": -5,
+      "all_drive_gap_reduction": 16,
+      "lost_go_ahead_games": 9,
+      "cdcr_pct": 38.462,
+      "raw_gwd_pct": 44.262
     },
     {
       "display_name": "Trevor Lawrence",
